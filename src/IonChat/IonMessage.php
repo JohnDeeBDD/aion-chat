@@ -2,29 +2,13 @@
 
 namespace IonChat;
 
-interface IonMessageInterface
-{
-    public function enableAbilityToReceiveIncomingIonMessages(): bool;
+class IonMessage{
 
-    public function receiveIncomingMessage(): bool;
-
-    public function enableAbilityToSendOutgoingIonMessages(): bool;
-
-    public function sendMessage(): bool;
-
-    public function getMessage(): bool;
-}
-
-class IonMessage implements IonMessageInterface {
-
-    /**
-     * @var
-     */
     public $sender_email;
     public $thread_id;
     public $message_id;
     public $content;
-    public $mothership_url = "http://18.220.165.172";
+    public $mothership_url = "http://18.216.171.144";
     public $site_url;
     public $route = "/wp-json/ion/message";
     public $ApplicationPassword = "123";
@@ -34,7 +18,7 @@ class IonMessage implements IonMessageInterface {
 
         $this->consumeBetterMessagesWordPressPluginMessage($message);
         $url = ($this->mothership_url . $this->route);
-       // \update_site_option('nope', ($this->mothership_url . $this->route));
+        \update_site_option('IonMessage', ($this->mothership_url . $this->route));
 
         // Application Password for authentication
         $ApplicationPassword = $this->applicationPassword;
@@ -78,5 +62,6 @@ class IonMessage implements IonMessageInterface {
        //
         //\update_site_option('nope', $this);
     }
+
 
 }

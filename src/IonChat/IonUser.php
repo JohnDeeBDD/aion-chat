@@ -14,3 +14,6 @@ class IonUser extends \WP_User {
         }
     }
 }
+
+/*
+Ion User - random
