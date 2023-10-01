@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e56d9-e63a-460b-9578-8f5522aaab1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ion-chat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doMakeProd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startIonChatServers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stopIonChatServers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/SetupCept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chicken-chat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Ion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/IonMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChat/IonMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/IonUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChat/IonUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_key.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/SetupCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/SetupCept.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +180,8 @@
       <workItem from="1696150849353" duration="2674000" />
       <workItem from="1696153537539" duration="2089000" />
       <workItem from="1696156248239" duration="3000" />
-      <workItem from="1696156963834" duration="4353000" />
+      <workItem from="1696156963834" duration="5023000" />
+      <workItem from="1696162585689" duration="1672000" />
     </task>
     <servers />
   </component>
@@ -230,30 +220,30 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="743" y="335" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696152071165" />
-    <state width="1599" height="404" key="GridCell.Tab.0.bottom" timestamp="1696161385422">
+    <state width="1920" height="1021" key="GridCell.Tab.0.bottom" timestamp="1696164431222">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1599" height="404" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696161385422" />
-    <state width="1599" height="404" key="GridCell.Tab.0.center" timestamp="1696161385422">
+    <state width="1920" height="1021" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696164431222" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.center" timestamp="1696164431222">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1599" height="404" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696161385422" />
-    <state width="1599" height="404" key="GridCell.Tab.0.left" timestamp="1696161385422">
+    <state width="1920" height="1021" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696164431222" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.left" timestamp="1696164431221">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1599" height="404" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696161385422" />
-    <state width="1599" height="404" key="GridCell.Tab.0.right" timestamp="1696161385422">
+    <state width="1920" height="1021" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696164431221" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.right" timestamp="1696164431222">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1599" height="404" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696161385422" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696164431222" />
     <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1696156125541">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696156125541" />
-    <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1696152175338">
+    <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1696162292466">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696152175338" />
+    <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696162292466" />
     <state x="654" y="291" width="611" height="534" key="find.popup" timestamp="1696156083128">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="18.219.102.104" id="21605059-6780-4171-8532-2101fe40e69a" keyPath="$USER_HOME$/sportsman.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu"/>
-      <sshConfig host="3.17.143.14" id="5518cb1f-5645-4686-a67e-ed09681291ad" keyPath="$USER_HOME$/sportsman.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu"/>
+      <sshConfig host="18.117.136.104" id="21605059-6780-4171-8532-2101fe40e69a" keyPath="$USER_HOME$/sportsman.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu"/>
+      <sshConfig host="3.135.244.164" id="5518cb1f-5645-4686-a67e-ed09681291ad" keyPath="$USER_HOME$/sportsman.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu"/>
     </configs>
   </component>
 </project>

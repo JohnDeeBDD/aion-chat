@@ -24,7 +24,7 @@ node_modules/
 *.tgz
 
 # dotenv environment variables file
-
+api_key
 /vendor/
 /tests/acceptance.yml
 /tests/_output/
