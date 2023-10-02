@@ -106,6 +106,16 @@ echo ($command . PHP_EOL);shell_exec($command);
 $command = "scp -i /home/johndee/sportsman.pem servers.json ubuntu@$dev2IP:/var/www/html/wp-content/plugins/ion-chat/servers.json";
 echo ($command . PHP_EOL);shell_exec($command);
 
+//Setting up chat plugins:
+$command = "cd /var/www/html/wp-content/plugins/ion-chat";
+echo ($command . PHP_EOL); shell_exec($command);
+
+$command = "bin/codecept run acceptance SetupIonChatWordPressPluginsCept.php -vvv --html";
+echo ($command . PHP_EOL); shell_exec($command);
+
+
+
+
 //Update the PHP storm files on the remotes, in case we want to push remote versions to git
 updateXMLIPField(".idea/sshConfigs.xml", $dev1PHPStormID, $dev1IP);
 updateXMLIPField(".idea/sshConfigs.xml", $dev2PHPStormID, $dev2IP);

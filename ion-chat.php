@@ -9,52 +9,40 @@ Author URI: https://generalchicken.guru
 License: Copyright(C) 2023, generalchicken.guru . All rights reserved. THIS IS NOT FREE SOFTWARE.
 */
 
-//die("ion");
+namespace IonChat;
 
-//update_option('ion-chat', "");
-function isIonUser($user_id){
-    return true;
-}
+//die("IonChat!");
 
-add_action( 'better_messages_message_sent', 'on_message_sent', 10, 1 );
+\add_action( 'better_messages_message_sent', 'IonChat\on_message_sent', 10, 1 );
 
-function on_message_sent( $message ){
-    // Sender ID
-    $user_id = (int) $message->sender_id;
+// Hook to run the function upon plugin activation
+\register_activation_hook(__FILE__, 'IonChat\create_general_chicken_connections_table');
 
-    //log_data_to_option("inside on_message_sent 24" );
+global $functions;
+$functions = [
+    createFunctionMetadata(
+        "get_current_weather",
+        "Get the current weather in a given location",
+        [
+            "type" => "object",
+            "properties" => [
+                "location" => [
+                    "type" => "string",
+                    "description" => "The city and state, e.g. San Francisco, CA",
+                ],
+                "unit" => [
+                    "type" => "string",
+                    "enum" => ["celsius", "fahrenheit"]
+                ],
+            ],
+            "required" => ["location"],
+        ]
+    )
+];
 
-    // Conversation ID
-    $thread_id = $message->thread_id;
-
-    // Message ID
-    $message_id = $message->id;
-
-    // Message Content
-    $content = $message->message;
-    if($user_id === 1){
-        getIonReply(1);
-    }
-}
-
-function log_data_to_option($data){
-    $db = get_option('ion-chat');
-    update_option('ion-chat', $db . $data . "<br />" . rand() .  "<br />");
-}
-
-function getIonReply($thread_id){
-
-    $api_key = get_api_key(123/* to do! */);
-    $message_thread_ids_array = returnArrayOfMessagesThread(1/* to do! $thread_id*/);
-    $compiled_messages = compile_messages_for_transport_to_ChatGPT($message_thread_ids_array);
-    $response = sendToChatGPT($compiled_messages, $api_key);
-    doPutMessageInDB(3, 1, $response["choices"][0]["message"]["content"]);
-
-}
-
-function compile_messages_for_transport_to_ChatGPT($messageIDs, $conversationInitiation = []) {
+function compile_messages_for_transport($messageIDs, $conversationInitiation = []) {
+    log_data_to_option($messageIDs, "compile_messages_for_transport_to_ChatGPT");
     $conversationInitiation = [
-//        ['role' => 'system', 'content' => 'You are a chatbot on a website.'],
         ['role' => 'system', 'content' => 'You are a helpful assistant.']
     ];
     global $wpdb; // This is the WordPress database object
@@ -88,6 +76,14 @@ function compile_messages_for_transport_to_ChatGPT($messageIDs, $conversationIni
     return $objectToSend;
 }
 
+function createFunctionMetadata($name, $description, $parameters) {
+    return [
+        "name" => $name,
+        "description" => $description,
+        "parameters" => $parameters
+    ];
+}
+
 function doPutMessageInDB($sender_id, $thread_id, $content){
     $message_id = Better_Messages()->functions->new_message([
         'sender_id'    => $sender_id,
@@ -103,6 +99,109 @@ function generateInstructions(){
     return ['system', 'You are a helpful a.i. assistant named "Ion".'];
 }
 
+function get_api_key($user_id){
+    return \file_get_contents("/var/www/html/wp-content/plugins/ion-chat/api_key.txt");
+}
+
+function getIonReply($thread_id ){
+
+    $userInThread = Better_Messages()->functions->get_recipients_ids( $thread_id);
+
+    //Only support for two chatters so far!
+    if ( ! (\count($userInThread) ) === 2 ) {
+        return;
+    }
+
+    $noIons = true;
+    foreach($userInThread as $user_id){
+        if (isIonUser($user_id)){
+            $noIons = false;
+        }
+    }
+
+    if($noIons){return;}
+
+    $api_key = get_api_key(123/* to do! */);
+    log_data_to_option($api_key, "api key");
+    $message_thread_ids_array = returnArrayOfMessagesThread($thread_id);
+    log_data_to_option($message_thread_ids_array, "message thread ids array");
+    $compiled_messages = compile_messages_for_transport($message_thread_ids_array);
+    $response = sendToChatGPT($compiled_messages, $api_key);
+    log_data_to_option($response, "response from GPT");
+
+   if(isset( $response["choices"][0]["message"]["content"] )){
+        $response = $response["choices"][0]["message"]["content"];
+    }else{
+        $response = \var_export($response, true);
+    }
+    doPutMessageInDB(3, $thread_id, $response);
+
+}
+
+function isIonUser($user_id){
+    $user_info = get_userdata($user_id);
+    $user_email = $user_info->user_email;
+
+    if($user_email === "jiminac@aol.com") {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function log_data_to_option($data, $tag = "tag"){
+    $db = get_option('ion-chat');
+    \update_option('ion-chat', $db . $tag . "<br />" . \var_export($data, true) . "<br /><br />");
+}
+
+function on_message_sent( $message ){
+    log_data_to_option($message, "on_message_sent");
+    // Sender ID
+    $user_id = (int) $message->sender_id;
+
+    // Conversation ID
+    $thread_id = $message->thread_id;
+
+    // Message ID
+    $message_id = $message->id;
+
+    // Message Content
+    $content = $message->message;
+    if(isIonUser($user_id)) {
+        return;
+    }
+    getIonReply($thread_id);
+
+}
+
+/**
+ * Retrieves an array of message IDs from a given thread.
+ *
+ * @global wpdb $wpdb WordPress database abstraction object.
+ *
+ * @param int $thread_id The ID of the thread for which to retrieve messages. Default is 1.
+ * @param int $last The maximum number of message IDs to retrieve. Default is 1000.
+ *
+ * @return int[] An array of message IDs.
+ */
+function returnArrayOfMessagesThread($thread_id = 1, $last = 1000): array {
+    global $wpdb;
+
+    // Define the table name
+    $table_name = 'wp_bm_message_messages';
+
+    // Prepare the SQL query
+    $sql = $wpdb->prepare(
+        "SELECT id FROM $table_name WHERE thread_id = %d ORDER BY date_sent DESC LIMIT %d",
+        $thread_id,
+        $last
+    );
+
+    // Execute the query and retrieve the results
+    $results = $wpdb->get_col($sql);
+    return array_map('intval', $results);
+}
+
 function sendToChatGPT($messages, $api_key, $functions = null) {
     // OpenAI API endpoint for ChatGPT
     $url = "https://api.openai.com/v1/chat/completions";
@@ -113,6 +212,7 @@ function sendToChatGPT($messages, $api_key, $functions = null) {
     // Prepare the data for the request
     $data = [
         "model" => "gpt-3.5-turbo-0613",
+        //"model" => "gpt-4",
         'messages' => array_values($messages), // Convert to indexed array
         'max_tokens' => 150 // You can adjust this as needed
     ];
@@ -166,37 +266,6 @@ function sendToChatGPT($messages, $api_key, $functions = null) {
     return json_decode($response, true);
 }
 
-global $functions;
-$functions = [
-    createFunctionMetadata(
-        "get_current_weather",
-        "Get the current weather in a given location",
-        [
-            "type" => "object",
-            "properties" => [
-                "location" => [
-                    "type" => "string",
-                    "description" => "The city and state, e.g. San Francisco, CA",
-                ],
-                "unit" => [
-                    "type" => "string",
-                    "enum" => ["celsius", "fahrenheit"]
-                ],
-            ],
-            "required" => ["location"],
-        ]
-    )
-];
-
-function createFunctionMetadata($name, $description, $parameters) {
-    return [
-        "name" => $name,
-        "description" => $description,
-        "parameters" => $parameters
-    ];
-}
-
-
 function transformNicename($niceName){
     //return $niceName;
     if($niceName === "ion"){
@@ -207,42 +276,7 @@ function transformNicename($niceName){
     return $niceName;
 }
 
-/**
- * Retrieves an array of message IDs from a given thread.
- *
- * @global wpdb $wpdb WordPress database abstraction object.
- *
- * @param int $thread_id The ID of the thread for which to retrieve messages. Default is 1.
- * @param int $last The maximum number of message IDs to retrieve. Default is 1000.
- *
- * @return int[] An array of message IDs.
- */
-
-function returnArrayOfMessagesThread($thread_id = 1, $last = 1000): array {
-    global $wpdb;
-
-    // Define the table name
-    $table_name = 'wp_bm_message_messages';
-
-    // Prepare the SQL query
-    $sql = $wpdb->prepare(
-        "SELECT id FROM $table_name WHERE thread_id = %d ORDER BY date_sent DESC LIMIT %d",
-        $thread_id,
-        $last
-    );
-
-    // Execute the query and retrieve the results
-    $results = $wpdb->get_col($sql);
-    return array_map('intval', $results);
-}
-
-function get_api_key($user_id){
-    return "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";
-    //return (\get_option("ion-api-kay"));
-}
-
-// Hook to run the function upon plugin activation
-register_activation_hook(__FILE__, 'create_general_chicken_connections_table');
+//MotherShip:
 
 function create_general_chicken_connections_table() {
     global $wpdb;
@@ -326,18 +360,6 @@ function createConnection($connectionUrl, $remote_id) {
 
     // If there was an error, return null or handle the error as needed
     return null;
-}
-
-if(isset($_GET['c'])){
-    add_action('init', function(){
-        $api_key = get_api_key(123/* to do! */);
-        $message_thread_ids_array = returnArrayOfMessagesThread(1/* to do! $thread_id*/);
-        $compiled_messages = compile_messages_for_transport_to_ChatGPT($message_thread_ids_array);
-        //var_dump($compiled_messages);die("compiled messages");
-        $response = sendToChatGPT($compiled_messages, $api_key);
-
-        doPutMessageInDB(3, 1, $response["choices"][0]["message"]["content"]);
-    });
 }
 
 if(isset($_GET['b'])){
