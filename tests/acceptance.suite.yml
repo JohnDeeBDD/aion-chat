@@ -8,8 +8,8 @@ modules:
     WPWebDriver:
       url: 'http://localhost'
       url2: 'http://localhost'
-      #window_size: 400, 300
-      window_size: maximize
+      window_size: 1920x1080
+      #window_size: maximize
       adminUsername: 'Codeception'
       adminPassword: 'password'
       clear_cookies: false

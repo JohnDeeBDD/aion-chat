@@ -13,8 +13,8 @@
       <paths name="Remote Node">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$/../../.." web="/" />
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/var/www/html" local="$PROJECT_DIR$/../../.." web="/" />
+            <mapping deploy="/var/www/html/wp-content/plugins/ion-chat" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

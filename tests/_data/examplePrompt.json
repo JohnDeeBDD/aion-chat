@@ -1,0 +1,44 @@
+{
+    "model": "gpt-3.5-turbo-0613",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "You are a poopie face."
+        }
+    ],
+    "max_tokens": 150,
+    "remote_user": "codeception@email.com",
+    "remote_site_url": "http:\\\/\\\/18.222.175.23",
+    "functions": [
+        {
+            "name": "send_user_php",
+            "description": "Send user PHP related data or tasks",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "php_code": {
+                        "type": "string",
+                        "description": "The PHP code or script to be sent"
+                    },
+                    "action": {
+                        "type": "string",
+                        "enum": [
+                            "execute",
+                            "analyze",
+                            "store"
+                        ],
+                        "description": "The action to be performed on the provided PHP code"
+                    }
+                },
+                "required": [
+                    "php_code",
+                    "action"
+                ]
+            }
+        }
+    ]
+}

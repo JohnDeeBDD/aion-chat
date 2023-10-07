@@ -41,25 +41,23 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " wp config create --path=/var/www/html --dbname=wordpress --dbuser=wordpressuser --dbpass=password --force",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp core install --path=/var/www/html --url="http://' . $dev1IP . '" --title=Mothership --admin_name="Codeception" --admin_password="password" --admin_email="codeception@email.com" --skip-email',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set FS_METHOD direct --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set WP_DEBUG true --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp option update uploads_use_yearmonth_folders 0 --path=/var/www/html',
-  //  "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate email-tunnel/email-tunnel --path=/var/www/html',
-  //  "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate email-tunnel/EmailTunnelMothership --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate classic-editor --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-mail-catcher --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate user-switching --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-crontrol --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate disable-administration-email-verification-prompt --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate woocommerce --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate disable-welcome-messages-and-tips --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate better-error-messages --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set WP_DEBUG true --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp post create --path=/var/www/html --post_author=1 --post_title=Chat --post_status=publish --post_type=page',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Ion ion@email.com --role=subscriber --user_pass=password --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate buddypress --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate bp-better-messages --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate ion-chat --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate ion-chat-mothership --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-data-access --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Ion jiminac@aol.com --role=ion --user_pass=password --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
 
     //Remote Node:
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " /var/www/html/wp-content/plugins/WPbdd/startup.sh",
@@ -67,24 +65,23 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " wp config create --path=/var/www/html --dbname=wordpress --dbuser=wordpressuser --dbpass=password --force",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp core install --path=/var/www/html --url="http://' . $dev2IP . '" --title=RemoteNode --admin_name="Codeception" --admin_password="password" --admin_email="codeception@email.com" --skip-email',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set FS_METHOD direct --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set WP_DEBUG true --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp option update uploads_use_yearmonth_folders 0 --path=/var/www/html',
-    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate email-tunnel/email-tunnel --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate classic-editor --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-mail-catcher --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate user-switching --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-test-email --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-crontrol --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate disable-administration-email-verification-prompt --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate woocommerce --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate disable-welcome-messages-and-tips --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create AltAdmin altadmin@email.com --role=administrator --user_pass=password --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set WP_DEBUG true --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate better-error-messages --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp post create --path=/var/www/html --post_author=1 --post_title=Chat --post_status=publish --post_type=page',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Ion ion@email.com --role=subscriber --user_pass=password --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate buddypress --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate bp-better-messages --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate ion-chat --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-data-access --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Ion jiminac@aol.com --role=ion --user_pass=password --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create RemoteSubsriber remotesub@email.com --role=subscriber --user_pass=password --path=/var/www/html',
     ];
 
 //execute the above commands, one by one.:
@@ -113,8 +110,8 @@ echo ($command . PHP_EOL); shell_exec($command);
 $command = "bin/codecept run acceptance SetupIonChatWordPressPluginsCept.php -vvv --html";
 echo ($command . PHP_EOL); shell_exec($command);
 
-
-
+$command = "bin/codecept run acceptance SetupChatPagesCept.php -vvv --html";
+echo ($command . PHP_EOL); shell_exec($command);
 
 //Update the PHP storm files on the remotes, in case we want to push remote versions to git
 updateXMLIPField(".idea/sshConfigs.xml", $dev1PHPStormID, $dev1IP);
