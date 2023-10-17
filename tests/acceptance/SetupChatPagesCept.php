@@ -14,33 +14,42 @@ function setup_chat($I){
     $I->amOnPage("/wp-admin/post-new.php?post_type=bpbm-chat");
     $I->fillField("post_title", "Main Chat");
 
-    $I->click("//a[text()='Select All'][1]");
+    $I->clickWithLeftButton("//a[text()='Select All'][1]");
 
-    //$I->scrollTo("#editor_2");
-    $I->click("#editor_2");
+   // $I->executeJS('window.scrollTo(0,0);');
+   // $I->scrollTo("#editor_2");
+    $I->clickWithLeftButton("#editor_2");
 
+    //$I->executeJS('window.scrollTo(0,0);');
     //$I->scrollTo("#author_2");
-    $I->click("#author_2");
+    $I->clickWithLeftButton("#author_2");
 
-    //$I->scrollTo("#contributor_2");
-    $I->click("#contributor_2");
+    //$I->executeJS('window.scrollTo(0,0);');
+//    $I->scrollTo("#contributor_2");
+    $I->clickWithLeftButton("#contributor_2");
 
+  //  $I->executeJS('window.scrollTo(0,0);');
     //$I->scrollTo("#subscriber_2");
-    $I->click("#subscriber_2");
+    $I->clickWithLeftButton("#subscriber_2");
 
-    ///$I->scrollTo("#customer_2");
-    $I->click("#customer_2");
+    //$I->executeJS('window.scrollTo(0,0);');
+    //$I->scrollTo("#customer_2");
+    $I->clickWithLeftButton("#customer_2");
 
+    //$I->executeJS('window.scrollTo(0,0);');
     //$I->scrollTo("#shop_manager_2");
-    $I->click("#shop_manager_2");
+    $I->clickWithLeftButton("#shop_manager_2");
 
+
+    //$I->executeJS('window.scrollTo(0,0);');
     //$I->scrollTo("#shop_manager_2");
-    $I->click("#ion_2");
+    $I->clickWithLeftButton("#ion_2");
 
-    $I->scrollTo("#ion_3");
-    $I->click("#ion_3");
+    //$I->executeJS('window.scrollTo(0,0);');
+    //$I->scrollTo("#ion_3");
+    $I->clickWithLeftButton("#ion_3");
 
-    $I->executeJS('window.scrollTo(0,0);');
-    $I->click("#publish");
-    sleep(2);
+    //$I->executeJS('window.scrollTo(0,0);');
+    $I->clickWithLeftButton("#publish");
+    $I->see("Post published.");
 }

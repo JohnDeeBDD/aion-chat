@@ -16,6 +16,7 @@
     "@jest/globals": "^29.3.1",
     "babel-install": "^2.1.0",
     "jest-environment-jsdom": "^29.3.1",
+    "prismjs": "^1.29.0",
     "yargs": "^17.7.1"
   }
 }

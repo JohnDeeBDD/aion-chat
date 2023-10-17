@@ -7,7 +7,7 @@ License:           Nope
 License URI:       Nope
 
 == Description ==
-
+The singularity is here! Now you can talk to artificial intelligence enabled Ions right on your WordPress site. Activate the plugin and chat with A.I. autonomous entities.
 
 
 == Installation ==

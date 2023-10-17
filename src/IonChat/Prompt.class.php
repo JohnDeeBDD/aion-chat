@@ -2,7 +2,10 @@
 
 namespace IonChat;
 
-class Prompt implements IPrompt {
+use \AllowDynamicProperties;
+
+#[AllowDynamicProperties]
+class Prompt {
     
     public array $Choices = []; //array of Choice objects
     public array $Functions = []; //Array of Functions objects
@@ -12,19 +15,240 @@ class Prompt implements IPrompt {
     public int $max_tokens;
     public int $model_created;
     public int $prompt_tokens;
-    public int $remote_thread_id;
+    public int $remote_comment_id; // the bm_message id that kicked off the request
+    public int $remote_post_id;
     public int $remote_user_id;
-    public int $status; //send down //smash into db
-    public int $thread_id;
+    public string $status; //send down //smash into db
+    public int $post_id; // the local thread id
+    public int $comment_id;
+    public string $comment_content;
     public int $total_tokens;
     public int $user_id;
+    public string $user_email;
     public string $model;
     public string $model_id;
     public string $model_object_name;
     public string $OpenAI_api_key;
-    public string $remote_domain_url;
+    public string $remote_connection_domain_url;
     public string $remote_user_email;
     public string $WP_api_key;
+    public $response;
+
+    public function set_messages() {
+        // Initialize an empty array to hold the messages
+        $this->Messages = [];
+
+        // Get the comments for the post with ID stored in $this->post_id
+        $args = array(
+            'post_id' => $this->post_id,
+            'status' => 'approve'
+        );
+        $comments = get_comments($args);
+        $content = \get_post_field('post_content', $this->post_id);
+        array_push($this->Messages, ["role" => "system", "content" => $content]);
+
+        // Loop through each comment and add it to the messages array
+        foreach ($comments as $comment) {
+            $role = is_ion_user($comment->user_id) ? "assistant" : "user";
+            $Message = [
+                "role" => $role,
+                "content" => $comment->comment_content
+            ];
+            array_push($this->Messages, $Message);
+        }
+        $this->Messages = array_values($this->Messages);
+    }
+
+    public function send_to_ChatGPT()
+    {
+        $api_key = $this->OpenAI_api_key;
+        // OpenAI API endpoint for ChatGPT
+        $url = "https://api.openai.com/v1/chat/completions";
+
+        // Prepare the data for the request
+        $data = [
+            "model" => "gpt-3.5-turbo-0613",
+            //"model" => "gpt-4",
+            'messages' => ($this->Messages),
+            'max_tokens' => 1500 // You can adjust this as needed
+        ];
+        // Initialize cURL session
+        $ch = curl_init($url);
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Authorization: Bearer $api_key",
+            'Content-Type: application/json'
+        ]);
+
+        // Set cURL options
+        $options = [
+            //CURLOPT_URL => 'https://example.com/api/resource',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HEADER => true,
+            CURLOPT_VERBOSE => true,
+            CURLOPT_STDERR => $verbose = fopen('php://temp', 'w+'),
+        ];
+        //curl_setopt_array($ch, $options);
+
+
+        // Execute cURL session and get the response
+        $response = curl_exec($ch);
+
+        $debug_info = [];
+
+            $debug_info['error'] = 'cURL Error: ' . curl_error($ch);
+
+            $info = curl_getinfo($ch);
+            rewind($verbose);
+            $verboseLog = stream_get_contents($verbose);
+
+            $debug_info['verbose'] = $verboseLog;
+            $debug_info['response'] = $response;
+        curl_close($ch);
+        \update_option('wp_curl_debug_info', $debug_info);
+        \update_option('wp_curl_debug_info_data', $data);
+        // Decode the response
+        return \json_decode($response, true);
+    }
+
+    public function init_this_prompt($comment_id, $status){
+        $this->OpenAI_api_key = \get_option("openai-api-key", true);
+
+        // Set the comment_id from the method argument
+        $this->comment_id = $comment_id;
+
+        // Fetch the comment content based on the comment_id
+        $comment = \get_comment($comment_id);
+        $this->comment_content = $comment->comment_content;
+
+        // Fetch the post ID associated with the comment
+        $this->post_id = $comment->comment_post_ID;
+
+        // Fetch the user with username "Codeception"
+        $user = \get_user_by('login', 'Codeception');
+        $this->user_id = $user->ID;
+        $this->user_email = $user->user_email;
+        $this->set_messages();
+        // Set the status
+        $this->status = $status;
+    }
+
+    public function send_down(){
+
+
+        \update_option("down_bus", $this);
+        global $dev1IP;global $dev2IP;
+        $response = \wp_remote_post( "http://" . $dev2IP . "/wp-json/ion-chat/v1/ion-prompt", array(
+                'method'      => 'POST',
+                'timeout'     => 45,
+                'redirection' => 5,
+                'httpversion' => '1.0',
+                'blocking'    => true,
+                'headers'     => array(),
+                'body'        => array(
+                    'prompt'  => \serialize($this),
+                )
+            )
+        );
+        \update_option("down_bus", \var_export(\unserialize($response), true));
+
+        if ( is_wp_error( $response ) ) {
+            $error_message = $response->get_error_message();
+            echo "Something went wrong: $error_message";
+        } else {
+            echo 'Response:<pre>';
+            print_r( $response );
+            echo '</pre>';
+        }
+        return \json_decode($response, true);
+
+
+    }
+
+    public function send_up(){
+        //this action is happening on the remote.
+        \update_option("ion-chat-up-bus", $this);
+        global $dev1IP;global $dev2IP;
+        $response = \wp_remote_post( "http://" . $dev1IP . "/wp-json/ion-chat/v1/ion-prompt", array(
+                'method'      => 'POST',
+                'timeout'     => 45,
+                'redirection' => 5,
+                'httpversion' => '1.0',
+                'blocking'    => true,
+                'headers'     => array(),
+                'body'        => array(
+                    'prompt'  => \serialize($this),
+                )
+            )
+        );
+        if ( is_wp_error( $response ) ) {
+            $error_message = $response->get_error_message();
+            echo "Something went wrong: $error_message";
+        } else {
+            echo 'Response:<pre>';
+            print_r( $response );
+            echo '</pre>';
+        }
+    }
+
+    private function returnArrayOfMessagesThread($thread_id = 1, $last = 1000): array
+    {
+        global $wpdb;
+
+        // Define the table name
+        $table_name = 'wp_bm_message_messages';
+
+        // Prepare the SQL query
+        $sql = $wpdb->prepare(
+            "SELECT id FROM $table_name WHERE thread_id = %d ORDER BY date_sent DESC LIMIT %d",
+            $thread_id,
+            $last
+        );
+
+        // Execute the query and retrieve the results
+        $results = $wpdb->get_col($sql);
+        return array_map('intval', $results);
+    }
+
+    public function compile_ion_messages_from_bm_thread($thread_id, $conversationInitiation = []){
+        $messageIDs = $this->returnArrayOfMessagesThread($thread_id);
+
+        global $wpdb; // This is the WordPress database object
+
+        // Check if $messageIDs is an array and not empty
+        if (!is_array($messageIDs) || empty($messageIDs)) {
+            return false;
+        }
+
+        // Convert the message IDs to a comma-separated string
+        $ids = implode(',', array_map('intval', $messageIDs)); // Ensure the IDs are integers for security
+
+        // Query the database to get the messages
+        $query = "SELECT * FROM {$wpdb->prefix}bm_message_messages WHERE id IN ($ids) ORDER BY date_sent ASC";
+        $messages = $wpdb->get_results($query);
+        $result = [];
+        $result[] = $this->returnInstruction();
+
+        // Loop through the queried messages and format them
+        foreach ($messages as $message) {
+
+            if(is_ion_user($message->sender_id)){
+                $role = "assistant";
+            }else{
+                $role = "user";
+            }
+            $result[] = new Message( $role, $message->message );
+        }
+        $this->Messages = $result;
+    }
+
+    public function returnInstruction(){
+        return new Message("system", "You are a helpful assistant.");
+    }
 
     public static function create(Prompt $prompt) {
         global $wpdb;
@@ -137,9 +361,9 @@ class Prompt implements IPrompt {
         ) $charset_collate;";
 
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql_prompt);
-        dbDelta($sql_choice);
-        dbDelta($sql_function_data);
+        \dbDelta($sql_prompt);
+        \dbDelta($sql_choice);
+        \dbDelta($sql_function_data);
     }
 
     public static function delete(int $prompt_id) {
@@ -157,8 +381,7 @@ class Prompt implements IPrompt {
         $table_name_prompt = $wpdb->prefix . 'prompt';
         $wpdb->delete($table_name_prompt, array('id' => $prompt_id));
     }
-
-/**
+    /**
  * Determines if a given string is a serialized instance of the "Prompt" class.
  *
  * This function performs the following steps:
@@ -170,7 +393,7 @@ class Prompt implements IPrompt {
  * @return bool True if the string is a serialized instance of "Prompt", false otherwise.
  * @throws Exception If there's an error during unserialization.
  */
-public static function isSerializedPrompt($str) {
+    public static function isSerializedPrompt($str) {
     // Step 1: Check if the string contains the class name
     if (strpos($str, 'Prompt') === false) {
         return false;
@@ -178,7 +401,7 @@ public static function isSerializedPrompt($str) {
 
     // Step 2: Use a custom error handler
     set_error_handler(function($errno, $errstr) {
-        throw new Exception($errstr);
+        throw new \Exception($errstr);
     });
 
     try {
@@ -189,11 +412,11 @@ public static function isSerializedPrompt($str) {
             restore_error_handler();
             return true;
         }
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
         // Unserialization failed
     }
 
-    restore_error_handler();
+    //restore_error_handler();
     return false;
 }
     
@@ -289,16 +512,6 @@ class Choice {
     }
 }
 
-class Message {
-    public string $role;
-    public string $content;
-
-    public function __construct(string $role, string $content) {
-        $this->role = $role;
-        $this->content = $content;
-    }
-}
-
 class FunctionData {
     public string $name;
     public string $description;
@@ -311,10 +524,3 @@ class FunctionData {
     }
 }
 
-interface IPrompt {
-    public static function create_tables();
-    public static function create(Prompt $prompt);
-    public static function get(int $prompt_id);
-    public static function update(Prompt $prompt, int $prompt_id);
-    public static function delete(int $prompt_id);
-}

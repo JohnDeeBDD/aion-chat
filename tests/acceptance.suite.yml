@@ -24,3 +24,7 @@ modules:
       capabilities:
         chromeOptions:
           args: [ "no-sandbox", "headless", "disable-gpu" ]
+gherkin:
+  contexts:
+    default:
+      - AcceptanceTester

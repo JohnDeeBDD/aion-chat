@@ -42,6 +42,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp core install --path=/var/www/html --url="http://' . $dev1IP . '" --title=Mothership --admin_name="Codeception" --admin_password="password" --admin_email="codeception@email.com" --skip-email',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set FS_METHOD direct --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set WP_DEBUG true --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp config set WP_DEBUG_LOG true --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp option update uploads_use_yearmonth_folders 0 --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate classic-editor --path=/var/www/html',
@@ -66,6 +67,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp core install --path=/var/www/html --url="http://' . $dev2IP . '" --title=RemoteNode --admin_name="Codeception" --admin_password="password" --admin_email="codeception@email.com" --skip-email',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set FS_METHOD direct --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set WP_DEBUG true --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp config set WP_DEBUG_LOG true --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp option update uploads_use_yearmonth_folders 0 --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate classic-editor --path=/var/www/html',
@@ -171,3 +173,4 @@ function updateXMLIPField($XML_file, $identifier, $hostIPaddress) {
 
 
 //ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@18.224.25.197 wp user subscriberman subscriberman@email.com --role=subscriber --user_pass=password    --path=/var/www/html
+//1130
