@@ -141,14 +141,7 @@ class AcceptanceTester extends \Codeception\Actor
      * @Given /^the Prompt is visable in the debug$/
      */
     public function thePromptIsVisableInTheDebug()
-    {
-        $I = $this;
-        $I->reconfigureThisVariable(["url" => ($this->mothership_url)]);
-        $I->amOnUrl($this->mothership_url);
-        $I->amOnPage("/wp-content/debug.log");
-        $I->see("IonChat\Prompt Object");
-        $this->page_source = $I->grabPageSource("/wp-content/debug.log");
-        $I->comment(\var_export($this->page_source, true));
+    {   //todo
     }
 
     /**

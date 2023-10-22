@@ -1,5 +1,5 @@
 <?php
-
+require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php");
 // Create users
 $user_id1 = wp_create_user('Codeception', 'password', 'codeception@email.com');
 $user_id2 = wp_create_user('Ion', 'password', 'jiminac@aol.com');

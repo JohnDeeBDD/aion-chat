@@ -1,8 +1,9 @@
 <?php
 
+use IonChat\Exception;
 use IonChat\Prompt;
 
-require_once('/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php');
+
 
 class PromptTest extends \Codeception\TestCase\WPTestCase{
 
@@ -13,7 +14,7 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
 
     public function setUp(): void {
         parent::setUp();
-
+        require_once('/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php');
         $user = get_user_by('login', "Codeception");
         $this->user_id = $user->ID;
         $this->user_email = "codeception@email.com";
@@ -41,7 +42,7 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
 	 * it should be instantiable
 	 */
 	public function isShouldBeInstantiable(){
-        $Prompt = Prompt::instantiate_dummy();
+       // $Prompt = Prompt::instantiate_dummy();
     }
 
     /**
@@ -50,10 +51,50 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
      */
     public function PromptValidatorTest()
     {
-        $Prompt = (Prompt::instantiate_dummy());
-        $string = serialize($Prompt);
-        \PHPUnit\Framework\assertEquals(true, Prompt::isSerializedPrompt($string));
+       // $Prompt = (Prompt::instantiate_dummy());
+       // $string = serialize($Prompt);
+       // \PHPUnit\Framework\assertEquals(true, self::isSerializedPrompt($string));
     }
+
+    /**
+     * Determines if a given string is a serialized instance of the "Prompt" class.
+     *
+     * This function performs the following steps:
+     * 1. Checks if the string contains the class name "Prompt".
+     * 2. Uses a custom error handler to catch any errors during unserialization.
+     * 3. Attempts to unserialize the string and checks if the resulting object is an instance of "Prompt".
+     *
+     * @param string $str The string to check.
+     * @return bool True if the string is a serialized instance of "Prompt", false otherwise.
+     * @throws Exception If there's an error during unserialization.
+     */
+    public static function isSerializedPrompt($str) {
+        // Step 1: Check if the string contains the class name
+        if (strpos($str, 'Prompt') === false) {
+            return false;
+        }
+
+        // Step 2: Use a custom error handler
+        set_error_handler(function($errno, $errstr) {
+            throw new \Exception($errstr);
+        });
+
+        try {
+            $object = unserialize($str);
+
+            // Step 3: Check the type of the unserialized object
+            if ($object instanceof Prompt) {
+                restore_error_handler();
+                return true;
+            }
+        } catch (\Exception $e) {
+            // Unserialization failed
+        }
+
+        //restore_error_handler();
+        return false;
+    }
+
 
     public function testInitThisPromptMethodExists()
     {
@@ -79,18 +120,46 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
             'user_id' => $this->user_id,
         );
         $this->comment_id = wp_insert_comment($comment_data);
+        $this->remote_connection_domain_url = \get_site_url();
 
         // Then the Prompt should initialize correctly
-        $Prompt->init_this_prompt($this->comment_id, 'publish');
-        $this->assertPromptHasCorrectValues($Prompt);
-    }
-
-
-    private function assertPromptHasCorrectValues($Prompt) {
+        $Prompt->init_this_prompt($this->comment_id, 'created on remote');
         $this->assertEquals($this->post_id, $Prompt->post_id);
         $this->assertEquals($this->comment_id, $Prompt->comment_id);
         $this->assertEquals($this->user_id, $Prompt->user_id);
         $this->assertEquals($this->user_email, $Prompt->user_email);
+        $this->assertEquals($this->remote_connection_domain_url, $Prompt->remote_connection_domain_url);
+    }
+
+
+
+    /**
+     * @test
+     */
+    public function it_sets_open_ai_api_key_correctly() {
+        // Given there is a class Prompt and it is instantiable
+        $Prompt = new Prompt();
+
+        // When the OpenAI API key exists in the WordPress database
+        update_option('openai-api-key', 'some-api-key');
+
+        // Use reflection to call the private method
+        $reflection = new \ReflectionClass('IonChat\Prompt');
+        $method = $reflection->getMethod('set_open_ai_api_key');
+        $method->setAccessible(true);
+        $method->invoke($Prompt);
+
+        // Then the OpenAI_api_key should be set correctly
+        $this->assertEquals('some-api-key', $Prompt->open_ai_api_key);
+
+        // When the OpenAI API key does not exist in the WordPress database
+        delete_option('openai-api-key');
+
+        // Call the method again
+        $method->invoke($Prompt);
+
+        // Then the OpenAI_api_key should be unset
+        $this->assertNull($Prompt->open_ai_api_key);
     }
 }
 

@@ -4,6 +4,7 @@ namespace IonChatMothership;
 
 class Connections
 {
+
     public static function activate_ion_connections_cpt()
     {
         \add_action('init', function () {
@@ -37,12 +38,82 @@ class Connections
                 'has_archive' => false,
                 'hierarchical' => false,
                 'menu_position' => null,
-                'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments')
+                'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'revisions' ),
             );
 
-            \register_post_type('ion-connections', $args);
+            \register_post_type('ion-connection', $args);
 
 
         });
+    }
+
+
+    public static function slave_remote_post($remote_post_id , $remote_connection_url){
+        // Step 1: Retrieve ion-connection post ID
+        //$connection_id = self::force_get_ion_connection_id($remote_connection_url);
+
+
+        // Initialize variables
+        $args = array(
+            'post_type' => 'post',
+            'post_status' => 'draft',
+            'title' => ($remote_post_id . $remote_connection_url),
+            'posts_per_page' => 1,
+        );
+
+        // Query for existing ion-connection
+        $query = new \WP_Query($args);
+
+        // Check if ion-connection exists
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                return \get_the_ID();
+            }
+        } else {
+            // Create new ion-connection
+            $post_id = \wp_insert_post(array(
+                'post_title' => ($remote_post_id . $remote_connection_url),
+                'post_type' => 'post',
+                'post_status' => 'draft',
+                'post_author' => \IonChat\User::get_ion_user_id(),
+            ));
+
+            return $post_id;
+        }
+
+
+    }
+
+
+    public static function force_get_ion_connection_id(string $ion_connection_title): int {
+        // Initialize variables
+        $args = array(
+            'post_type' => 'ion-connection',
+            'post_status' => 'draft',
+            'title' => $ion_connection_title,
+            'posts_per_page' => 1,
+        );
+
+        // Query for existing ion-connection
+        $query = new \WP_Query($args);
+
+        // Check if ion-connection exists
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                return get_the_ID();
+            }
+        } else {
+            // Create new ion-connection
+            $post_id = wp_insert_post(array(
+                'post_title' => $ion_connection_title,
+                'post_type' => 'ion-connection',
+                'post_status' => 'draft',
+                'post_author' => \IonChat\User::get_ion_user_id(),
+            ));
+
+            return $post_id;
+        }
     }
 }

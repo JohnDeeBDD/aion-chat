@@ -1,0 +1,3 @@
+ion-chat-licence
+ion-chat-registered-admin
+ion-chat-site-status
