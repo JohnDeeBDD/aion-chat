@@ -94,7 +94,7 @@ function comment_posted($comment_ID){
     }
 }
 
-require_once (plugin_dir_path(__FILE__). 'src/plugin-update-checker/plugin-update-checker.php');
+require_once (plugin_dir_path(__FILE__). 'src/update-checker/plugin-update-checker.php');
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
     'https://ioncity.ai/wp-content/uploads/details.json',
