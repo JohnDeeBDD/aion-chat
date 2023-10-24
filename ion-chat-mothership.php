@@ -12,7 +12,7 @@ License: Copyright(C) 2023, generalchicken.guru . All rights reserved. THIS IS N
 
 namespace IonChatMothership;
 
-require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChatMothership/autoloader.php");
+require_once (plugin_dir_path(__FILE__). 'src/IonChatMothership/autoloader.php');
 
 \add_filter('comment_flood_filter', '__return_false');
 
