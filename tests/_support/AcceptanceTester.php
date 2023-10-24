@@ -141,7 +141,7 @@ class AcceptanceTester extends \Codeception\Actor
      * @Given /^the Prompt is visable in the debug$/
      */
     public function thePromptIsVisableInTheDebug()
-    {   //todo
+    {   //odo
     }
 
     /**

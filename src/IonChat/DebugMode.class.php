@@ -5,12 +5,16 @@ namespace IonChat;
 class DebugMode{
 
     public static function enable(){
+       // die("xxx");
         if(isset($_GET['option'])){
             try {
                 DebugMode::display_option($_GET['option']);
             }
             catch(\Exception $e) {}
             die();
+        }
+        if(isset($_GET['force_delete_all_posts'])){
+            DebugMode::force_delete_all_posts();
         }
     }
 
@@ -22,9 +26,28 @@ class DebugMode{
         echo '<pre>';
         var_dump($option_value);
         echo '</pre>';
-
+        die();
         // Terminate the script
         throw new \Exception("Script terminated");
     }
+
+    public static function set_option($key, $option){
+        update_option($key, $option);
+    }
+
+    public static function force_delete_all_posts() {
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'any',
+        'posts_per_page' => -1,
+        'fields' => 'ids'
+    );
+    $all_posts = get_posts($args);
+
+    foreach ($all_posts as $post_id) {
+        \wp_delete_post($post_id, true);
+    }
+}
+
 
 }

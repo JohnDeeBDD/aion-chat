@@ -34,6 +34,7 @@ class TrafficController
         $Prompt->comment_id = $comment_id;
         return $Prompt;
     }
+
     public static function prompt_incoming(Prompt $Prompt){
         \error_log( print_r( $Prompt, true ) );
         $Prompt = self::force_set_local_user($Prompt);
@@ -43,8 +44,55 @@ class TrafficController
         $Prompt = self::check_api_key($Prompt);
         $Prompt->status = "Received and processed on mothership. Ready to send to ChatGPT";
         $Prompt = self::publish_comment_from_Prompt($Prompt);
-        return comment_posted($Prompt->comment_id);
+        return TrafficController::craft_ion_response($Prompt->comment_id);
         //return $Prompt;
+    }
+
+    public static function craft_ion_response($comment_ID) {
+        // Retrieve the comment object
+        $comment = get_comment($comment_ID);
+
+        // Retrieve the user_id of the comment author
+        $user_id = $comment->user_id;
+
+        // Check if the user is an "ion user"
+        if (\IonChat\User::is_ion_user($user_id)) {
+            return; // Exit the function if the user is an "ion user"
+        }
+
+        $Prompt = new \IonChatMothership\Prompt();
+        $Prompt->init_this_prompt($comment_ID, "created-on-mothership");
+        $Prompt->response = $Prompt->send_self_to_ChatGPT();
+
+        if (isset($Prompt->response['choices'][0]['message']['content'])) {
+            $Prompt->response = $Prompt->response['choices'][0]['message']['content'];
+        } else {
+            $Prompt->response = \var_export($Prompt, true);
+        }
+
+        self::post_comment_to_post($user_id, $Prompt->post_id, $Prompt->response);
+        return ($Prompt->response);
+    }
+
+    public static function post_comment_to_post($user_id, $post_id, $comment_content) {
+        $Ion_user_id = \IonChat\User::get_ion_user_id();
+        $comment_content = str_replace('```', '###TRIPLE_BACKTICK###', $comment_content);
+        $comment_data = array(
+            'comment_post_ID'      => $post_id,
+            'comment_author'       => "Ion",
+            'comment_content'      => $comment_content,
+            'comment_type'         => '',
+            'comment_parent'       => 0,
+            'user_id'              => $Ion_user_id,
+            'comment_date'         => current_time('mysql'),
+            'comment_approved'     => 1,
+        );
+        $comment_id = wp_insert_comment($comment_data);
+        if ($comment_id) {
+            return true;
+        } else {
+            throw new Exception("An error occurred while posting the comment.");
+        }
     }
 
     private static function check_api_key(Prompt $Prompt){

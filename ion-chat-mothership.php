@@ -2,7 +2,7 @@
 /*
 Plugin Name: Ion Chat Mothership
 Plugin URI: https://generalchicken.guru
-Description: The Singularity is near.
+Description: The Singularity is here.
 Version: 1.0
 Author: johndee
 Author URI: https://generalchicken.guru
@@ -12,26 +12,14 @@ License: Copyright(C) 2023, generalchicken.guru . All rights reserved. THIS IS N
 
 namespace IonChatMothership;
 
-use function IonChat\get_ion_user_id;
-//die();
+require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChatMothership/autoloader.php");
 
-//require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChatMothership/autoloader.php");
-require_once (plugin_dir_path(__FILE__). 'vendor/autoload.php');
-//require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php");
 \add_filter('comment_flood_filter', '__return_false');
-
-\add_action("init", function(){
-    //Connections::force_get_ion_connection_id("https://ioncity.ai");
-   //echo (Connections::slave_remote_post(666, "https://ass"));
-   //die();
-});
 
 global $IonChatProtocal;
 $IonChatProtocal = "mothership";
-\update_option('ion-chat-protocol', "mothership");
 
 Connections::activate_ion_connections_cpt();
-//$DevMode = new DevMode();
 
 \add_action('ion_prompt_incoming', '\IonChatMothership\TrafficController::prompt_incoming', 10, 1);
 \add_action('rest_api_init', function () {
@@ -60,64 +48,9 @@ Connections::activate_ion_connections_cpt();
 
 //\add_action('comment_post', 'IonChatMothership\comment_posted', 10, 1);
 
-function comment_posted($comment_ID) {
-    // Retrieve the comment object
-    $comment = get_comment($comment_ID);
-
-    // Retrieve the user_id of the comment author
-    $user_id = $comment->user_id;
-
-    // Check if the user is an "ion user"
-    if (\IonChat\User::is_ion_user($user_id)) {
-        return; // Exit the function if the user is an "ion user"
-    }
-
-    $Prompt = new Prompt();
-
-    $Prompt->init_this_prompt($comment_ID, "created-on-mothership");
 
 
-    //echo '<pre>';
-    //\var_dump($Prompt);
-    //echo '</pre>';die();
 
-    $Prompt->response = $Prompt->send_self_to_ChatGPT();
-
-    if (isset($Prompt->response['choices'][0]['message']['content'])) {
-        $Prompt->response = $Prompt->response['choices'][0]['message']['content'];
-    } else {
-        $Prompt->response = \var_export($Prompt, true);
-    }
-
-    post_comment_to_post($user_id, $Prompt->post_id, $Prompt->response);
-    return ($Prompt->response);
-}
-
-function post_comment_to_post($user_id, $post_id, $comment_content) {
-    $Ion_user_id = \IonChat\User::get_ion_user_id();
-    $comment_content = str_replace('```', '###TRIPLE_BACKTICK###', $comment_content);
-
-
-    $comment_data = array(
-        'comment_post_ID'      => $post_id,
-        'comment_author'       => "Ion",
-        'comment_content'      => $comment_content,
-        'comment_type'         => '',
-        'comment_parent'       => 0,
-        'user_id'              => $Ion_user_id,
-        'comment_date'         => current_time('mysql'),
-        'comment_approved'     => 1,
-    );
-
-    // Insert the comment and get the comment ID
-    $comment_id = wp_insert_comment($comment_data);
-
-    if ($comment_id) {
-        return true;
-    } else {
-        throw new Exception("An error occurred while posting the comment.");
-    }
-}
 
 //Servers page
 if (isset($_GET['ion-dev'])) {

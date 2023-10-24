@@ -5,14 +5,14 @@
 $version = readline('Version to create: ');
 
 
-shell_exec("sudo rm -fr /var/www/html/wp-content/plugins/email-tunnel/email-tunnel");
-shell_exec("sudo mkdir /var/www/html/wp-content/plugins/email-tunnel/email-tunnel");
+shell_exec("sudo rm -fr /var/www/html/wp-content/plugins/ion-chat/ion-chat");
+shell_exec("sudo mkdir /var/www/html/wp-content/plugins/ion-chat/ion-chat");
 
-copy("/var/www/html/wp-content/plugins/email-tunnel/email-tunnel.php", "/var/www/html/wp-content/plugins/email-tunnel/email-tunnel/email-tunnel.php");
+copy("/var/www/html/wp-content/plugins/ion-chat/ion-chat.php", "/var/www/html/wp-content/plugins/ion-chat/ion-chat/ion-chat.php");
 //shell_exec("cp -r /var/www/html/wp-content/plugins/email-tunnel/src /var/www/html/wp-content/plugins/email-tunnel/email-tunnel/src");
 
-shell_exec("sudo rsync -r --exclude src/ETM src email-tunnel");
+shell_exec("sudo rsync -r --exclude src/IonChat src ion-chat");
 
-shell_exec("sudo zip -r email-tunnel-$version.zip email-tunnel");
-shell_exec("sudo rm email-tunnel.zip");
-shell_exec("sudo cp email-tunnel-$version.zip email-tunnel.zip");
+shell_exec("sudo zip -r ion-chat-$version.zip ion-chat");
+shell_exec("sudo rm ion-chat.zip");
+shell_exec("sudo cp ion-chat-$version.zip ion-chat.zip");

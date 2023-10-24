@@ -89,8 +89,8 @@ class Prompt extends \IonChat\Prompt {
 
 
         \update_option("down_bus", $this);
-        global $dev1IP;global $dev2IP;
-        $response = \wp_remote_post( "http://" . $dev2IP . "/wp-json/ion-chat/v1/ion-prompt", array(
+
+        $response = \wp_remote_post( $this->remote_connection_domain_url . "/wp-json/ion-chat/v1/ion-prompt", array(
                 'method'      => 'POST',
                 'timeout'     => 45,
                 'redirection' => 5,

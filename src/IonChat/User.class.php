@@ -2,7 +2,6 @@
 
 namespace IonChat;
 
-
 use function IonChatMothership\generateRandomString;
 
 class User
@@ -16,8 +15,9 @@ class User
 
     public static function get_ion_email()
     {
-        return "jiminac@aol.com";
+        return "johndeebdd@gmail.com";
     }
+
 
     public static function is_ion_user($user_id)
     {
