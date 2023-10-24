@@ -13,8 +13,8 @@ namespace IonChat;
 
 require_once (plugin_dir_path(__FILE__). 'src/IonChat/autoloader.php');
 
-$file = file_get_contents(plugin_dir_path(__FILE__). "servers.json");
-$IPs = json_decode($file);
+//$file = file_get_contents(plugin_dir_path(__FILE__). "servers.json");
+//$IPs = json_decode($file);
 global $dev1IP;
 global $mothershipUrl;
 global $dev2IP;
