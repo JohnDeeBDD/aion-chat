@@ -76,8 +76,8 @@ class Prompt extends \IonChat\Prompt {
         // Fetch the post ID associated with the comment
         $this->post_id = $comment->comment_post_ID;
 
-        $this->user_id = \IonChat\User::get_ion_user_id();
-        $this->user_email = \IonChat\User::get_ion_email();
+        //$this->user_id = \IonChat\User::get_ion_user_id();
+        //$this->user_email = \IonChat\User::get_ion_email();
         $this->set_messages();
         // Set the status
         $this->status = $status;
