@@ -147,7 +147,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -245,7 +245,7 @@
       <workItem from="1697886230293" duration="8444000" />
       <workItem from="1697899701866" duration="31000" />
       <workItem from="1697930866127" duration="2515000" />
-      <workItem from="1698096275324" duration="23199000" />
+      <workItem from="1698096275324" duration="23314000" />
     </task>
     <task id="LOCAL-00001" summary="Ion in the comment section working.">
       <created>1697539027716</created>
@@ -289,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698125823386</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" typo4">
+      <created>1698126002123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698126002123</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,13 +314,17 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/plugin-update-checker" />
+    </ignored-roots>
     <MESSAGE value="Ion in the comment section working." />
     <MESSAGE value="Removed bin" />
     <MESSAGE value="Comments working" />
     <MESSAGE value="Ready to go!" />
     <MESSAGE value=" typo" />
     <MESSAGE value=" typo3" />
-    <option name="LAST_COMMIT_MESSAGE" value=" typo3" />
+    <MESSAGE value=" typo4" />
+    <option name="LAST_COMMIT_MESSAGE" value=" typo4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="122" y="219" width="1243" height="683" key="#Deployment" timestamp="1696261460943">
@@ -356,10 +367,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1697487008892" />
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698125823316">
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698126002035">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698125823315" />
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126002035" />
     <state x="95" y="131" width="1730" height="854" key="DirDiffDialog" timestamp="1697697610671">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -408,10 +419,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="756" y="482" width="407" height="157" key="NewPhpFileDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696354644831" />
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1698115768922">
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1698126028471">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698115768922" />
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126028471" />
     <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2" timestamp="1698125827391">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
