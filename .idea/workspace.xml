@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e56d9-e63a-460b-9578-8f5522aaab1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ion-chat-mothership.php" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat-mothership.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChatMothership/Prompt.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +249,7 @@
       <workItem from="1697886230293" duration="8444000" />
       <workItem from="1697899701866" duration="31000" />
       <workItem from="1697930866127" duration="2515000" />
-      <workItem from="1698096275324" duration="23787000" />
+      <workItem from="1698096275324" duration="24923000" />
     </task>
     <task id="LOCAL-00001" summary="Ion in the comment section working.">
       <created>1697539027716</created>
@@ -312,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698126229563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="typo11">
+      <created>1698126506874</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698126506874</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +351,8 @@
     <MESSAGE value=" typo4" />
     <MESSAGE value=" typo4typoi" />
     <MESSAGE value="typo5" />
-    <option name="LAST_COMMIT_MESSAGE" value="typo5" />
+    <MESSAGE value="typo11" />
+    <option name="LAST_COMMIT_MESSAGE" value="typo11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="122" y="219" width="1243" height="683" key="#Deployment" timestamp="1696261460943">
@@ -385,10 +395,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1697487008892" />
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698126229405">
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698126506810">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126229405" />
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126506810" />
     <state x="95" y="131" width="1730" height="854" key="DirDiffDialog" timestamp="1697697610671">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -441,10 +451,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126028471" />
-    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2" timestamp="1698126238302">
+    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2" timestamp="1698126509976">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126238302" />
+    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126509976" />
     <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1697899335601">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>

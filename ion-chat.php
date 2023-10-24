@@ -22,7 +22,7 @@ $IonChat_mothership_url = "https://ioncity.ai";
 //$IonChat_mothership_url = "http://" . $IPs[0];
 if (!isset($IonChatProtocal)) {
     global $IonChatProtocal;
-    $IonChatProtocal = "mothership";
+    $IonChatProtocal = "remote_node";
 }
 
 DebugMode::enable();
