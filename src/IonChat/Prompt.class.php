@@ -129,7 +129,7 @@ class Prompt
         $this->post_id = $comment->comment_post_ID;
 
         // Fetch the user with username "Codeception"
-        $user = \get_user_by('login', 'Codeception');
+        $user = \get_user_by('login', $comment->comment_author);
         $this->user_id = $user->ID;
         $this->user_email = $user->user_email;
         $this->set_messages();

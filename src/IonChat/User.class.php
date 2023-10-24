@@ -15,7 +15,8 @@ class User
 
     public static function get_ion_email()
     {
-        return "johndeebdd@gmail.com";
+
+        return "ion@ioncity.ai";
     }
 
 

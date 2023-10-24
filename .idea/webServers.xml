@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="57984e38-aa58-4e14-a8bc-af2f48bda8ff" name="ioncity.ai">
+        <fileTransfer rootFolder="/var/www/ioncity.ai" accessType="SFTP" host="3.13.139.91" port="22" sshConfigId="0dce8884-dd3f-4dc1-99c0-c33407eb3619" sshConfig="ubuntu@3.13.139.91:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
     <groups>
       <group>
@@ -23,6 +30,7 @@
         <servers>
           <name value="Mothership" />
           <name value="Remote Node" />
+          <name value="ioncity.ai" />
         </servers>
       </group>
     </groups>

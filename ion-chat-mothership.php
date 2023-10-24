@@ -15,6 +15,7 @@ namespace IonChatMothership;
 require_once (plugin_dir_path(__FILE__). 'src/IonChatMothership/autoloader.php');
 
 \add_filter('comment_flood_filter', '__return_false');
+//die("xx");
 
 global $IonChatProtocal;
 $IonChatProtocal = "mothership";
@@ -46,8 +47,28 @@ Connections::activate_ion_connections_cpt();
     );
 });
 
-//\add_action('comment_post', 'IonChatMothership\comment_posted', 10, 1);
-
+\add_action('rest_api_init', function () {
+    \register_rest_route(
+        "ion-chat/v1",
+        "email",
+        array(
+            'methods' => ['POST', 'GET'],
+            'callback' => function ($args) {
+                $my_post = array(
+                    'post_title'    => "Incoming Email",
+                    'post_content'  => \var_export($args, true),
+                    'post_status'   => 'draft',
+                    'post_author'   => \IonChat\User::get_ion_user_id()
+                );
+                \wp_insert_post( $my_post );
+                return "Gotcha.";
+            },
+            'permission_callback' => function () {
+                return true;
+            },
+        )
+    );
+});
 
 
 
