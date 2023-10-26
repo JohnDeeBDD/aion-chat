@@ -15,8 +15,8 @@ class Prompt extends \IonChat\Prompt {
 
         // Prepare the data for the request
         $data = [
-            "model" => "gpt-3.5-turbo-0613",
-            //"model" => "gpt-4",
+            //"model" => "gpt-3.5-turbo-0613",
+            "model" => "gpt-4",
             'messages' => ($this->Messages),
             'max_tokens' => 1500 // You can adjust this as needed
         ];
@@ -100,7 +100,7 @@ class Prompt extends \IonChat\Prompt {
                 )
             )
         );
-        \update_option("down_bus", \var_export(\unserialize($response), true));
+       // \update_option("down_bus", \var_export(\unserialize($response), true));
 
         if ( is_wp_error( $response ) ) {
             $error_message = $response->get_error_message();
@@ -113,38 +113,6 @@ class Prompt extends \IonChat\Prompt {
         return \json_decode($response, true);
 
 
-    }
-
-
-    public function xxsend_up(){
-        //this action is happening on the remote.
-        \update_option("ion-chat-up-bus", $this);
-        global $dev1IP;global $dev2IP;
-        $response = \wp_remote_post( "http://" . $dev1IP . "/wp-json/ion-chat/v1/ion-prompt", array(
-                'method'      => 'POST',
-                'timeout'     => 45,
-                'redirection' => 5,
-                'httpversion' => '1.0',
-                'blocking'    => true,
-                'headers'     => array(),
-                'body'        => array(
-                    'prompt'  => \serialize($this),
-                )
-            )
-        );
-        if ( is_wp_error( $response ) ) {
-            $error_message = $response->get_error_message();
-            echo "Something went wrong: $error_message";
-        } else {
-            echo 'Response:<pre>';
-            print_r( $response );
-            echo '</pre>';
-        }
-    }
-
-
-    public function returnInstruction(){
-        return new Message("system", "You are a helpful assistant.");
     }
 
 }

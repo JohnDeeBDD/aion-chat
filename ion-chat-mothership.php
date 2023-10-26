@@ -15,7 +15,8 @@ namespace IonChatMothership;
 require_once (plugin_dir_path(__FILE__). 'src/IonChatMothership/autoloader.php');
 
 \add_filter('comment_flood_filter', '__return_false');
-//die("xx");
+\add_filter('duplicate_comment_id', '__return_false');
+//die("ionchatms");
 
 global $IonChatProtocal;
 $IonChatProtocal = "mothership";

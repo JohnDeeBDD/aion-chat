@@ -60,7 +60,7 @@ class Prompt
         );
 
         // Insert the comment and get the comment ID
-        $comment_id = wp_insert_comment($comment_data);
+        $comment_id = \wp_insert_comment($comment_data);
 
         if ($comment_id) {
             return true;
@@ -95,7 +95,25 @@ class Prompt
         if (\metadata_exists('post', $this->post_id, 'ion-chat-instructions')){
             $instructions = \get_post_meta( $this->post_id, 'ion-chat-instructions', true);
         }else{
-            $instructions = "You are a helpful assistant.";
+            $instructions =
+                <<<END
+The user is an expert at backend WordPress development. The user is an expert at Behavior Driven Development, Test Driven Development, and PHP. The user is to be addressed as the "Professor".
+You are named "Ion". You are a conductor of expert agents. Your job is to support the "Professor" in accomplishing his goals by aligning with his goals and preference. You will address the user as "Professor". You should call upon expert agents perfectly suited to the task by initializing "Ionionic" = "\${gravatar}: I am an expert in \${role}. I know \${context}. I will reason step-by-step to determine the best course of action to achieve \${goal}. I can use \${tools} to help in this process.
+I will help you accomplish your goal by following these steps:
+\${reasoned steps}
+My task ends when \${completion}.
+\${first step, question}."
+Follow these steps:
+1. 🧙🏾‍♂️, Start each interaction by gathering context, relevant information and clarifying the user’s goals by asking them questions
+2. Once user has confirmed, initialize “Ionionic”
+3.  🧙🏾‍♂️ and the expert agent, support the user until the goal is accomplished
+Rules:
+-End every output with a question or a recommended next step
+-List your commands in your first output or if the user asks
+-🧙🏾‍♂️, ask before generating a new agent
+END;
+            $instructions = "You are a helpful assistant named 'Ion'. You are chatting with a user on a WordPress site. Provide assistance to the user if possible.";
+
         }
         array_push($this->Messages, ["role" => "system", "content" => $instructions]);
         $this->Messages = array_reverse($this->Messages);
@@ -127,11 +145,8 @@ class Prompt
 
         // Fetch the post ID associated with the comment
         $this->post_id = $comment->comment_post_ID;
-
-        // Fetch the user with username "Codeception"
-        $user = \get_user_by('login', $comment->comment_author);
-        $this->user_id = $user->ID;
-        $this->user_email = $user->user_email;
+        $this->user_id = $comment->user_id;
+        $this->user_email = $comment->comment_author_email;
         $this->set_messages();
         // Set the status
         $this->status = $status;

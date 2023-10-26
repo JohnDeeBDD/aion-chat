@@ -1,39 +1,40 @@
 <?php
 /*
 Plugin Name: Ion Chat
-Plugin URI: https://ioncity.ai
+Plugin URI: https://ioncity.ai/ion-chat
 Description: The Singularity is here.
-Version: 1.1
+Version: 1.0
 Author: johndee
 Author URI: https://generalchicken.guru
 License: Copyright(C) 2023, generalchicken.guru . All rights reserved. THIS IS NOT FREE SOFTWARE.
 */
 
 namespace IonChat;
+//die("ionchat");
 
 require_once (plugin_dir_path(__FILE__). 'src/IonChat/autoloader.php');
 
-//$file = file_get_contents(plugin_dir_path(__FILE__). "servers.json");
-//$IPs = json_decode($file);
-global $dev1IP;
-global $mothershipUrl;
-global $dev2IP;
+global $IonChat_mothership_url;
 $IonChat_mothership_url = "https://ioncity.ai";
+//$file = file_get_contents(plugin_dir_path(__FILE__) . "servers.json");
+//$IPs = json_decode($file);
 //$IonChat_mothership_url = "http://" . $IPs[0];
+//DebugMode::enable();
+
+global $IonChatProtocal;
 if (!isset($IonChatProtocal)) {
-    global $IonChatProtocal;
     $IonChatProtocal = "remote_node";
 }
+//die($IonChatProtocal);
 
-DebugMode::enable();
 
 \register_activation_hook(__FILE__, 'IonChat\activate_ion_chat');
 function activate_ion_chat() {
-    // Check if a user with the email "jiminac@aol.com" exists
     $existing_user = \get_user_by('email', User::get_ion_email());
 
     if ($existing_user) {
-        return "Ion Already Exists";
+        //  "Ion Already Exists"
+        return;
     }
 
     // Check if the username "Ion" is already taken

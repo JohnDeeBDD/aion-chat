@@ -26,7 +26,7 @@ class TrafficController
         );
 
         // Insert the comment and get the comment ID
-        $comment_id = \wp_new_comment($comment_data);
+        $comment_id = \wp_insert_comment($comment_data);
 
         if ($comment_id === 0 || is_wp_error($comment_id)) {
             throw new \IonChat\Exception('Failed to insert comment.');
@@ -75,7 +75,6 @@ class TrafficController
     }
 
     public static function post_comment_to_post($user_id, $post_id, $comment_content) {
-        $Ion_user_id = \IonChat\User::get_ion_user_id();
         $comment_content = str_replace('```', '###TRIPLE_BACKTICK###', $comment_content);
         $comment_data = array(
             'comment_post_ID'      => $post_id,
@@ -83,11 +82,11 @@ class TrafficController
             'comment_content'      => $comment_content,
             'comment_type'         => '',
             'comment_parent'       => 0,
-            'user_id'              => $Ion_user_id,
+            'user_id'              => \IonChat\User::get_ion_user_id(),
             'comment_date'         => current_time('mysql'),
             'comment_approved'     => 1,
         );
-        $comment_id = wp_insert_comment($comment_data);
+        $comment_id = \wp_insert_comment($comment_data);
         if ($comment_id) {
             return true;
         } else {

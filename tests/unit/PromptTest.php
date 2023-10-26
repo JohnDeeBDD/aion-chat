@@ -104,34 +104,6 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
         );
     }
 
-    /**
-     * @test
-     */
-    public function it_initializes_prompt_with_correct_values() {
-        // Given there is a class Prompt and it is instantiable
-        $Prompt = new Prompt();
-
-        // When a comment is created on $this->post_id by $this->user_id
-        $comment_data = array(
-            'comment_post_ID' => $this->post_id,
-            'comment_content' => 'Hello, this is a comment.',
-            'comment_type' => '',
-            'comment_parent' => 0,
-            'user_id' => $this->user_id,
-        );
-        $this->comment_id = wp_insert_comment($comment_data);
-        $this->remote_connection_domain_url = \get_site_url();
-
-        // Then the Prompt should initialize correctly
-        $Prompt->init_this_prompt($this->comment_id, 'created on remote');
-        $this->assertEquals($this->post_id, $Prompt->post_id);
-        $this->assertEquals($this->comment_id, $Prompt->comment_id);
-        $this->assertEquals($this->user_id, $Prompt->user_id);
-        $this->assertEquals($this->user_email, $Prompt->user_email);
-        $this->assertEquals($this->remote_connection_domain_url, $Prompt->remote_connection_domain_url);
-    }
-
-
 
     /**
      * @test

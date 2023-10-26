@@ -13,8 +13,7 @@ class User
         return ($user->ID);
     }
 
-    public static function get_ion_email()
-    {
+    public static function get_ion_email(){
 
         return "ion@ioncity.ai";
     }

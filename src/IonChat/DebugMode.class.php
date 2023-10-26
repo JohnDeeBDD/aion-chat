@@ -5,7 +5,7 @@ namespace IonChat;
 class DebugMode{
 
     public static function enable(){
-       // die("xxx");
+       // die("DebugMode::enable");
         if(isset($_GET['option'])){
             try {
                 DebugMode::display_option($_GET['option']);
@@ -14,6 +14,7 @@ class DebugMode{
             die();
         }
         if(isset($_GET['force_delete_all_posts'])){
+            //die("xxx");
             DebugMode::force_delete_all_posts();
         }
     }
@@ -26,7 +27,7 @@ class DebugMode{
         echo '<pre>';
         var_dump($option_value);
         echo '</pre>';
-        die();
+        die("display_option");
         // Terminate the script
         throw new \Exception("Script terminated");
     }
