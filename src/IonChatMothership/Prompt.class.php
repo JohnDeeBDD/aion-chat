@@ -3,6 +3,8 @@
 namespace IonChatMothership;
 
 use \AllowDynamicProperties;
+use IonChat\Exception;
+use IonChat\User;
 
 #[AllowDynamicProperties]
 class Prompt extends \IonChat\Prompt {
@@ -60,7 +62,12 @@ class Prompt extends \IonChat\Prompt {
         \update_option('wp_curl_debug_info', $debug_info);
         \update_option('wp_curl_debug_info_data', $data);
         // Decode the response
-        return \json_decode($response, true);
+        $response = \json_decode($response, true);
+        if (isset($response['choices'][0]['message']['content'])) {
+            $this->response = $response['choices'][0]['message']['content'];
+        } else {
+            $this->response = \var_export($response, true);
+        }
     }
 
     public function init_this_prompt($comment_id, $status){
@@ -114,5 +121,7 @@ class Prompt extends \IonChat\Prompt {
 
 
     }
+
+
 
 }

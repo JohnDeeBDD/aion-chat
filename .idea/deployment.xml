@@ -18,14 +18,6 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="ioncity.ai">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/../../.." web="/" />
-            <mapping deploy="/wp-content/plugins/ion-chat" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
     </serverData>
     <option name="myAutoUpload" value="ALWAYS" />
   </component>

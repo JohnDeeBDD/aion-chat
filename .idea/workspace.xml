@@ -2,998 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e56d9-e63a-460b-9578-8f5522aaab1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ion-chat-1.2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ion-chat-1.4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/instance_data.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ion-chat-1.0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ion-chat-1.1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/ActivationHook.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Comment.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Conversation.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Partial.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Post.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Reflektor.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Skill.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Step.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChat/Task.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChatMothership/Aion.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChatMothership/Comment.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IonChatMothership/Email.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/Aion_notices_comment_on_homepage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/Partial_notices_comment_on_homepage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/StartupServersCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doMakeProd.php" beforeDir="false" afterPath="$PROJECT_DIR$/doMakeProd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat-1.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat-1.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat-1.4.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ion-chat-mothership.php" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat-mothership.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ion-chat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/ion-chat.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/ion-chat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/action-scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_ActionClaim.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_ActionFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_AdminView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_Compatibility.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_DataController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_DateTime.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_Exception.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_FatalErrorMonitor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_InvalidActionException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_ListTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_LogEntry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_NullLogEntry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_OptionLock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_QueueCleaner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_Versions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/ActionScheduler_wcSystemStatus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Clean_Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/WP_CLI/Migration_Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/WP_CLI/ProgressBar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_RecurringSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_Schedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_Schema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Lock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Logger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Store.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_TimezoneHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/actions/ActionScheduler_Action.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/actions/ActionScheduler_CanceledAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/actions/ActionScheduler_FinishedAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/actions/ActionScheduler_NullAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_DBLogger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_HybridStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpCommentLogger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/ActionMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/ActionScheduler_DBStoreMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/BatchFetcher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/Config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/DryRun_ActionMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/DryRun_LogMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/LogMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/Runner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/migration/Scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_CanceledSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_CronSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_IntervalSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_NullSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_Schedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schedules/ActionScheduler_SimpleSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schema/ActionScheduler_LoggerSchema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/classes/schema/ActionScheduler_StoreSchema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/codecov.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/deprecated/ActionScheduler_Abstract_QueueRunner_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/deprecated/ActionScheduler_AdminView_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/deprecated/ActionScheduler_Schedule_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/deprecated/ActionScheduler_Store_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/deprecated/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/admin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/android-chrome-256x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/api.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/assets/css/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/google14ef723abb376cd3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/perf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/version3-0.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/docs/wp-cli.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/WP_Async_Request.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_AbstractField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_DayOfMonthField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_DayOfWeekField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_FieldFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_FieldInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_HoursField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_MinutesField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_MonthField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/CronExpression_YearField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/lib/cron-expression/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/phpcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/ActionScheduler_UnitTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/ActionScheduler_Mock_Async_Request_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/ActionScheduler_Mocker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/deprecated/ActionScheduler_UnitTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_Callbacks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_Compatibility_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_TimezoneHelper_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobs/ActionScheduler_Action_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobs/ActionScheduler_NullAction_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobstore/AbstractStoreTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_DBStoreMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_DBStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_HybridStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_wpPostStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/lock/ActionScheduler_OptionLock_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/logging/ActionScheduler_DBLogger_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/logging/ActionScheduler_wpCommentLogger_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/ActionMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/BatchFetcher_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/Config_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/Controller_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/LogMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/Runner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/migration/Scheduler_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/procedural_api/procedural_api_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/procedural_api/wc_get_scheduled_actions_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/runner/ActionScheduler_QueueCleaner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/runner/ActionScheduler_QueueRunner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_CronSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_IntervalSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_NullSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_SimpleSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/action-scheduler/tests/phpunit/versioning/ActionScheduler_Versions_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-abap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-abap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-abnf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-abnf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-actionscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-actionscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ada.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ada.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-agda.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-agda.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-al.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-al.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-antlr4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-antlr4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apacheconf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apacheconf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apex.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-apl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-applescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-applescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-aql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-aql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arduino.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arduino.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arff.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-armasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-armasm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arturo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-arturo.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asciidoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asciidoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asm6502.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asm6502.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asmatmel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-asmatmel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-aspnet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-aspnet.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-autohotkey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-autohotkey.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-autoit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-autoit.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-avisynth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-avisynth.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-avro-idl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-avro-idl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-awk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-awk.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bash.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-basic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-batch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-batch.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bbcode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bbcode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bbj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bbj.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bicep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bicep.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-birb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-birb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bison.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bison.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bnf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bnf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bqn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bqn.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-brainfuck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-brainfuck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-brightscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-brightscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bro.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bsl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-bsl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-c.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cfscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cfscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-chaiscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-chaiscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cil.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cilkc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cilkc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cilkcpp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cilkcpp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-clike.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-clike.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-clojure.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-clojure.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cmake.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cmake.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cobol.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cobol.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-coffeescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-coffeescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-concurnas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-concurnas.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cooklang.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cooklang.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-coq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-coq.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-core.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cpp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cpp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-crystal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-crystal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csharp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csharp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cshtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cshtml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-css-extras.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-css-extras.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-css.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-csv.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cue.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cypher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-cypher.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-d.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dataweave.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dataweave.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dhall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dhall.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-diff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-diff.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-django.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-django.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dns-zone-file.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dns-zone-file.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-docker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-docker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-dot.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ebnf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ebnf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-editorconfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-editorconfig.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-eiffel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-eiffel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ejs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ejs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-elixir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-elixir.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-elm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-elm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-erb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-erb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-erlang.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-erlang.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-etlua.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-etlua.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-excel-formula.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-excel-formula.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-factor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-factor.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-false.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-false.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-firestore-security-rules.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-firestore-security-rules.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-flow.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-fortran.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-fortran.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-fsharp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-fsharp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ftl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ftl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gcode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gcode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gdscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gdscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gedcom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gedcom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gettext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gettext.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gherkin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gherkin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-git.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-git.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-glsl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-glsl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gn.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-go-module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-go-module.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-go.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-go.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gradle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-gradle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-graphql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-graphql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-groovy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-groovy.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-handlebars.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-handlebars.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haskell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haskell.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haxe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-haxe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hcl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hcl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hlsl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hlsl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hoon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hoon.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hpkp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hpkp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hsts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-hsts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-http.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ichigojam.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ichigojam.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-icon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-icon.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-icu-message-format.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-icu-message-format.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-idris.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-idris.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-iecst.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-iecst.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ignore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ignore.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-inform7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-inform7.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ini.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ini.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-io.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-io.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-j.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-j.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-java.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-java.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javadoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javadoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javadoclike.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javadoclike.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javascript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javascript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javastacktrace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-javastacktrace.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jexl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jexl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jolie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jolie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jq.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-js-extras.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-js-extras.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-js-templates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-js-templates.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsdoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsdoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-json.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-json5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-json5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsonp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsstacktrace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsstacktrace.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-jsx.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-julia.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-julia.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-keepalived.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-keepalived.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-keyman.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-keyman.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kotlin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kotlin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kumir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kumir.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kusto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-kusto.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-latex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-latex.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-latte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-latte.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-less.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-less.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lilypond.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lilypond.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-linker-script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-linker-script.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-liquid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-liquid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lisp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lisp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-livescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-livescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-llvm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-llvm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-log.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lolcode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lolcode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lua.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-lua.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-magma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-magma.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-makefile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-makefile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markup-templating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markup-templating.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-markup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mata.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-matlab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-matlab.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-maxscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-maxscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mermaid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mermaid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-metafont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-metafont.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mizar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mizar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mongodb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-mongodb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-monkey.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-monkey.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-moonscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-moonscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-n1ql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-n1ql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-n4js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-n4js.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nand2tetris-hdl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nand2tetris-hdl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-naniscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-naniscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nasm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-neon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-neon.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nevod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nevod.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nginx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nginx.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nix.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nsis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-nsis.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-objectivec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-objectivec.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ocaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ocaml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-odin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-odin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-opencl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-opencl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-openqasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-openqasm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-oz.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-oz.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-parigp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-parigp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-parser.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pascal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pascal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pascaligo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pascaligo.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pcaxis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pcaxis.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-peoplecode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-peoplecode.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-perl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-perl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-php-extras.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-php-extras.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-php.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-php.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-phpdoc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-phpdoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-plant-uml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-plant-uml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-plsql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-plsql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-powerquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-powerquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-powershell.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-powershell.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-processing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-processing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-prolog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-prolog.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-promql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-promql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-properties.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-properties.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-protobuf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-protobuf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-psl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-psl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pug.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-puppet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-puppet.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pure.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-pure.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-purebasic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-purebasic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-purescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-purescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-python.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-python.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-q.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qore.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qsharp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-qsharp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-r.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-r.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-racket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-racket.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-reason.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-reason.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-regex.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rego.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rego.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-renpy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-renpy.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rest.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-roboconf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-roboconf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-robotframework.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-robotframework.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ruby.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-ruby.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rust.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-rust.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sas.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sass.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scala.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scala.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scheme.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scheme.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-scss.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-shell-session.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-shell-session.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smali.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smali.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smalltalk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smalltalk.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smarty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-smarty.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-solidity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-solidity.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-solution-file.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-solution-file.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-soy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-soy.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sparql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sparql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-splunk-spl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-splunk-spl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sqf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sqf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-sql.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-squirrel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-squirrel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stan.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stan.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stata.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stylus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-stylus.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-supercollider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-supercollider.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-swift.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-swift.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-systemd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-systemd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-cs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-templating.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-templating.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-vb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-t4-vb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tcl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tcl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-textile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-textile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-toml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-toml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tremor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tremor.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tsx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tsx.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tt2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-tt2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-turtle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-turtle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-twig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-twig.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-typescript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-typescript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-typoscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-typoscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-unrealscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-unrealscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-uorazor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-uorazor.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-uri.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-uri.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-v.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-v.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vala.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vala.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vbnet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vbnet.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-velocity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-velocity.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-verilog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-verilog.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vhdl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vhdl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-vim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-visual-basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-visual-basic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-warpscript.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-warpscript.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wasm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wasm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-web-idl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-web-idl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wgsl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wgsl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wiki.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wiki.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wolfram.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wolfram.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wren.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-wren.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xeora.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xeora.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xml-doc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xml-doc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xojo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xojo.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-xquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-yaml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-yang.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-yang.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-zig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/components/prism-zig.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/dependencies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autolinker/prism-autolinker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autolinker/prism-autolinker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autolinker/prism-autolinker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autolinker/prism-autolinker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autoloader/prism-autoloader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/autoloader/prism-autoloader.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/command-line/prism-command-line.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/command-line/prism-command-line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/command-line/prism-command-line.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/command-line/prism-command-line.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/custom-class/prism-custom-class.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/custom-class/prism-custom-class.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/diff-highlight/prism-diff-highlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/diff-highlight/prism-diff-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/download-button/prism-download-button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/download-button/prism-download-button.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/file-highlight/prism-file-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/file-highlight/prism-file-highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/inline-color/prism-inline-color.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/inline-color/prism-inline-color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/inline-color/prism-inline-color.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/inline-color/prism-inline-color.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/keep-markup/prism-keep-markup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/keep-markup/prism-keep-markup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-highlight/prism-line-highlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-highlight/prism-line-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-highlight/prism-line-highlight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-highlight/prism-line-highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-numbers/prism-line-numbers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-numbers/prism-line-numbers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-numbers/prism-line-numbers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/line-numbers/prism-line-numbers.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/match-braces/prism-match-braces.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/match-braces/prism-match-braces.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/match-braces/prism-match-braces.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/match-braces/prism-match-braces.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/previewers/prism-previewers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/previewers/prism-previewers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/previewers/prism-previewers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/previewers/prism-previewers.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-invisibles/prism-show-invisibles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-invisibles/prism-show-invisibles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-language/prism-show-language.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/show-language/prism-show-language.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/toolbar/prism-toolbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/toolbar/prism-toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/toolbar/prism-toolbar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/toolbar/prism-toolbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/treeview/prism-treeview.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/treeview/prism-treeview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/treeview/prism-treeview.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/treeview/prism-treeview.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/wpd/prism-wpd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/wpd/prism-wpd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/wpd/prism-wpd.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/plugins/wpd/prism-wpd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/prism.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-coy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-coy.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-dark.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-funky.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-funky.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-okaidia.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-okaidia.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-solarizedlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-solarizedlight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-tomorrow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-tomorrow.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-twilight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism-twilight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/prismjs/themes/prism.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5/PucFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/DebugBar/Extension.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/DebugBar/Panel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/DebugBar/PluginExtension.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/DebugBar/PluginPanel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/DebugBar/ThemePanel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/InstalledPackage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Metadata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/OAuthSignature.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Plugin/Package.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Plugin/PluginInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Plugin/Ui.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Plugin/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Plugin/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/PucFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/StateStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Theme/Package.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Theme/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Theme/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/UpgraderStatus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Utils.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/Api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/BaseChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/BitBucketApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/GitHubApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/GitLabApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/Reference.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/ReleaseAssetSupport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/ReleaseFilteringFeature.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/ThemeUpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/Puc/v5p2/Vcs/VcsCheckerMethods.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/build/bump-version.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/css/puc-debug-bar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/examples/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/examples/theme.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/js/debug-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ca.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ca.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-cs_CZ.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-da_DK.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-da_DK.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-de_DE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-de_DE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_AR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_AR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CO.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_CR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_DO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_DO.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_ES.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_ES.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_GT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_GT.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_HN.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_HN.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_MX.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_MX.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_PE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_PE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_PR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_PR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_UY.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_UY.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_VE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-es_VE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fa_IR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fa_IR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fr_CA.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fr_CA.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-hu_HU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-hu_HU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-it_IT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-it_IT.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ja.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ja.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-nl_BE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-nl_BE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-nl_NL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-pt_BR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-ru_RU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-sl_SI.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-sl_SI.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-sv_SE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-sv_SE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-tr_TR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-tr_TR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-uk_UA.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-uk_UA.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-zh_CN.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker-zh_CN.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/languages/plugin-update-checker.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/load-v5p2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/phpcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/plugin-update-checker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/vendor/Parsedown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/vendor/ParsedownModern.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat/src/update-checker/vendor/PucReadmeParser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/DebugMode.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChat/DebugMode.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChat/Prompt.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IonChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChat/User.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Connections.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChatMothership/Connections.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChatMothership/Prompt.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IonChatMothership/TrafficController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/IonChatMothership/TrafficController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/startIonChatServers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/_support/test_stubs_are_deployed_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/test_stubs_are_deployed_context.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_stubs_are_deployed.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/PromptTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/PromptTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1131,8 +173,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/acceptance/test_stubs_are_deployed.feature" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP&#10;TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/IonChatMothership" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1141,26 +183,26 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/IonChatMothership" />
+      <recent name="$PROJECT_DIR$/src/IonChat" />
+      <recent name="$PROJECT_DIR$/../anything-machine/src/AnythingMachine" />
+      <recent name="$PROJECT_DIR$/../anything-machine" />
+      <recent name="$PROJECT_DIR$/tests/acceptance" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/IonChatMothership" />
       <recent name="$PROJECT_DIR$/tests/_support" />
       <recent name="$PROJECT_DIR$/tests/acceptance" />
       <recent name="$PROJECT_DIR$/src/IonChat" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/IonChatMothership" />
-      <recent name="$PROJECT_DIR$/tests/acceptance" />
-      <recent name="$PROJECT_DIR$/../gc-deploy/tests" />
-      <recent name="$PROJECT_DIR$/../general-chicken-deploy" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
   </component>
-  <component name="RunManager" selected="Codeception.Intelligent Response">
+  <component name="RunManager" selected="PHP Script.Start_Ion">
     <configuration name="Intelligent Response" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/unit" file="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" method="" scope="File" />
       <method v="2" />
@@ -1242,7 +284,9 @@
       <workItem from="1698096275324" duration="31297000" />
       <workItem from="1698140766411" duration="561000" />
       <workItem from="1698182667963" duration="23540000" />
-      <workItem from="1698265623861" duration="11891000" />
+      <workItem from="1698265623861" duration="26372000" />
+      <workItem from="1698358383106" duration="23741000" />
+      <workItem from="1698438770888" duration="20415000" />
     </task>
     <task id="LOCAL-00001" summary="Ion in the comment section working.">
       <created>1697539027716</created>
@@ -1335,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698182711983</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="version 1.0">
+      <created>1698293006923</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698293006923</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1369,13 +420,14 @@
     <MESSAGE value="typo12" />
     <MESSAGE value="typo 1" />
     <MESSAGE value="morning has broken" />
-    <option name="LAST_COMMIT_MESSAGE" value="morning has broken" />
+    <MESSAGE value="version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="122" y="219" width="1243" height="683" key="#Deployment" timestamp="1698130778032">
+    <state x="122" y="219" width="1243" height="683" key="#Deployment" timestamp="1698299492452">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="122" y="219" width="1243" height="683" key="#Deployment/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698130778032" />
+    <state x="122" y="219" width="1243" height="683" key="#Deployment/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698299492452" />
     <state x="608" y="190" width="704" height="780" key="#PHP" timestamp="1696081967282">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -1396,26 +448,30 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="95" y="131" width="1730" height="854" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698273943830" />
-    <state x="669" y="358" width="692" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1697608546834">
+    <state x="669" y="358" width="692" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1698304230963">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="669" y="358" width="692" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1697608546834" />
-    <state x="0" y="31" width="507" height="413" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1698116509032">
+    <state x="669" y="358" width="692" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698304230963" />
+    <state x="0" y="31" width="507" height="413" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1698401680819">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="0" y="31" width="507" height="413" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698116509032" />
-    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1698114224269">
+    <state x="0" y="31" width="507" height="413" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698401680819" />
+    <state x="714" y="388" width="491" height="519" key="#com.intellij.tools.ToolEditorDialog" timestamp="1698461705481">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698114224269" />
+    <state x="714" y="388" width="491" height="519" key="#com.intellij.tools.ToolEditorDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698461705481" />
+    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1698483020412">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698483020412" />
     <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1697487008892">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1697487008892" />
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698182710933">
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2" timestamp="1698293005890">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698182710933" />
+    <state x="458" y="95" width="1003" height="932" key="CommitChangelistDialog2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698293005890" />
     <state x="95" y="131" width="1730" height="854" key="DirDiffDialog" timestamp="1697697610671">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -1424,25 +480,25 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="743" y="335" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698130643046" />
-    <state width="1920" height="1021" key="GridCell.Tab.0.bottom" timestamp="1698292867505">
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom" timestamp="1698441883263">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="1021" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698292867505" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698441883263" />
     <state width="925" height="993" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1697899731932" />
-    <state width="1920" height="1021" key="GridCell.Tab.0.center" timestamp="1698292867505">
+    <state width="1920" height="990" key="GridCell.Tab.0.center" timestamp="1698441883262">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="1021" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698292867505" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698441883262" />
     <state width="925" height="993" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1697899731932" />
-    <state width="1920" height="1021" key="GridCell.Tab.0.left" timestamp="1698292867504">
+    <state width="1920" height="990" key="GridCell.Tab.0.left" timestamp="1698441883262">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="1021" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698292867504" />
+    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698441883262" />
     <state width="925" height="993" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1697899731932" />
-    <state width="1920" height="1021" key="GridCell.Tab.0.right" timestamp="1698292867505">
+    <state width="1920" height="990" key="GridCell.Tab.0.right" timestamp="1698441883262">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="1021" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698292867505" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698441883262" />
     <state width="925" height="993" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1697899731932" />
     <state width="1874" height="341" key="GridCell.Tab.1.bottom" timestamp="1697612348792">
       <screen x="0" y="31" width="1920" height="1049" />
@@ -1460,18 +516,22 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state width="1874" height="341" key="GridCell.Tab.1.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1697612348792" />
+    <state x="651" y="274" width="617" height="574" key="NewPhpClassDialog" timestamp="1698466927887">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="651" y="274" width="617" height="574" key="NewPhpClassDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698466927887" />
     <state x="756" y="482" width="407" height="157" key="NewPhpFileDialog" timestamp="1696354644831">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="756" y="482" width="407" height="157" key="NewPhpFileDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1696354644831" />
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1698126028471">
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1698461707139">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698126028471" />
-    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2" timestamp="1698182720205">
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698461707139" />
+    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2" timestamp="1698293015025">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698182720205" />
+    <state x="555" y="294" width="810" height="534" key="Vcs.Push.Dialog.v2/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1698293015025" />
     <state x="570" y="171" width="780" height="779" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1697899335601">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>

@@ -8,6 +8,36 @@ use IonChat\User;
 
 class TrafficController
 {
+    public static function enable_comment_response(){
+
+    }
+    public static function enable_prompt_incoming(){
+        \add_action('ion_prompt_incoming', '\IonChatMothership\TrafficController::prompt_incoming', 10, 1);
+        \add_action('rest_api_init', function () {
+            \register_rest_route(
+                "ion-chat/v1",
+                "ion-prompt",
+                array(
+                    'methods' => ['POST', 'GET'],
+                    'callback' => function ($args) {
+                        $Prompt = \unserialize($args["prompt"]);
+
+
+                        //this function passes the prompt to ion_prompt_incoming on the next page load
+                        //\wp_schedule_single_event(time(), "ion_prompt_incoming", [$Prompt]);
+                        $response =  \IonChatMothership\TrafficController::prompt_incoming($Prompt);
+                        \update_option("ion-chat-down-bus", $response);
+                        return $response;
+
+                        //return "Prompt received. Status 200";
+                    },
+                    'permission_callback' => function () {
+                        return true;
+                    },
+                )
+            );
+        });
+    }
     public static function publish_comment_from_Prompt(Prompt $Prompt) {
         // Prepare comment data
         $comment_data = array(
@@ -62,13 +92,9 @@ class TrafficController
 
         $Prompt = new \IonChatMothership\Prompt();
         $Prompt->init_this_prompt($comment_ID, "created-on-mothership");
-        $Prompt->response = $Prompt->send_self_to_ChatGPT();
+        $Prompt->send_self_to_ChatGPT();
 
-        if (isset($Prompt->response['choices'][0]['message']['content'])) {
-            $Prompt->response = $Prompt->response['choices'][0]['message']['content'];
-        } else {
-            $Prompt->response = \var_export($Prompt, true);
-        }
+
 
         self::post_comment_to_post($user_id, $Prompt->post_id, $Prompt->response);
         return ($Prompt->response);

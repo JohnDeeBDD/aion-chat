@@ -7,6 +7,42 @@ use function IonChatMothership\generateRandomString;
 class User
 {
 
+    public static function get_user_roles_by_user_id( $user_id ) {
+        $user = \get_userdata( $user_id );
+        return empty( $user ) ? array() : $user->roles;
+    }
+
+    public static function is_user_an_Aion( $user_id ) {
+        $user_info = get_userdata($user_id);
+        if ($user_info) {
+            $email = $user_info->user_email;
+            if ($email === self::get_ion_email()){
+                return true;
+            }
+        }
+        return false;
+        //$role = "aion";
+        //return in_array( $role, self::get_user_roles_by_user_id( $user_id ) );
+    }
+
+    public static function enable(){
+        \add_action('init', '\IonChat\User::add_ion_role');
+    }
+    public static function add_ion_role() {
+        if (!\get_role('aion')) {
+            \add_role('aion', 'Aion', array());
+        }
+    }
+
+
+    public static function assign_aion_role_to_user($user_id) {
+        // Check if user exists
+        $user = \get_user_by('ID', $user_id);
+        if ($user) {
+            // Add 'ion' role to existing roles
+            $user->add_role('aion');
+        }
+    }
     public static function get_ion_user_id()
     {
         $user = \get_user_by('email', self::get_ion_email());
@@ -16,6 +52,7 @@ class User
     public static function get_ion_email(){
 
         return "ion@ioncity.ai";
+
     }
 
 

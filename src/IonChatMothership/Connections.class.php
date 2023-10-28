@@ -5,7 +5,7 @@ namespace IonChatMothership;
 class Connections
 {
 
-    public static function activate_ion_connections_cpt()
+    public static function enable_ion_connections_cpt()
     {
         \add_action('init', function () {
             $labels = array(
@@ -33,7 +33,7 @@ class Connections
                 'show_ui' => true,
                 'show_in_menu' => true,
                 'query_var' => true,
-                'rewrite' => array('slug' => 'ion-connections'),
+                'rewrite' => array('slug' => 'ion-connection'),
                 'capability_type' => 'post',
                 'has_archive' => false,
                 'hierarchical' => false,
@@ -81,7 +81,6 @@ class Connections
 
             return $post_id;
         }
-
 
     }
 

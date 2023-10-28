@@ -3,21 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="bd4d3276-3e83-4ca9-97fa-b980611eca2a" name="Mothership">
-        <fileTransfer accessType="SFTP" host="18.118.167.189" port="22" sshConfigId="21605059-6780-4171-8532-2101fe40e69a" sshConfig="ubuntu@18.118.167.189:22 key" keyPair="true">
+        <fileTransfer accessType="SFTP" host="3.139.57.220" port="22" sshConfigId="21605059-6780-4171-8532-2101fe40e69a" sshConfig="ubuntu@3.139.57.220:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="efc375a9-0e66-43d3-b63c-ea8afbcb1fb5" name="Remote Node">
-        <fileTransfer accessType="SFTP" host="18.217.187.5" port="22" sshConfigId="5518cb1f-5645-4686-a67e-ed09681291ad" sshConfig="ubuntu@18.217.187.5:22 key" keyPair="true">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="57984e38-aa58-4e14-a8bc-af2f48bda8ff" name="ioncity.ai">
-        <fileTransfer rootFolder="/var/www/ioncity.ai" accessType="SFTP" host="3.13.139.91" port="22" sshConfigId="0dce8884-dd3f-4dc1-99c0-c33407eb3619" sshConfig="ubuntu@3.13.139.91:22 key" keyPair="true">
+        <fileTransfer accessType="SFTP" host="18.117.121.135" port="22" sshConfigId="5518cb1f-5645-4686-a67e-ed09681291ad" sshConfig="ubuntu@18.117.121.135:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
@@ -30,7 +23,6 @@
         <servers>
           <name value="Mothership" />
           <name value="Remote Node" />
-          <name value="ioncity.ai" />
         </servers>
       </group>
     </groups>
