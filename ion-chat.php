@@ -13,22 +13,12 @@ namespace IonChat;
 //die("ionchat");
 
 require_once(plugin_dir_path(__FILE__) . 'src/IonChat/autoloader.php');
+\add_filter('comment_flood_filter', '__return_false');
+\add_filter('duplicate_comment_id', '__return_false');
 
+DevMode::enable();
 
-global $IonChat_mothership_url;
-//$IonChat_mothership_url = "https://ioncity.ai";
-$file = file_get_contents(plugin_dir_path(__FILE__) . "servers.json");
-$IPs = json_decode($file);
-$IonChat_mothership_url = "http://" . $IPs[0];
-DebugMode::enable();
-
-global $IonChatProtocal;
-if (!isset($IonChatProtocal)) {
-    $IonChatProtocal = "remote_node";
-}
-//die($IonChatProtocal);
-
-AdminPage::enable();
+IonChatPlugin::enable();
 Comment::enable_interaction();
 User::enable();
 \register_activation_hook(__FILE__, '\IonChat\ActivationHook::do_activation_hook');

@@ -28,7 +28,7 @@ TrafficController::enable_prompt_incoming();
 Comment::enable_interaction();
 Email::enable_receiveing();
 
-
+DevMode::enable();
 
 //Servers page
 if (isset($_GET['ion-dev'])) {

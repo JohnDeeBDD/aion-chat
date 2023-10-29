@@ -2,10 +2,25 @@
 
 namespace IonChat;
 
-class AdminPage{
+class IonChatPlugin{
 
     public static function enable(){
+        self::setupProtocol();
         \add_action('admin_menu', '\IonChat\AdminPage::do_create_admin_page');
+
+    }
+
+    public static function setupProtocol(){
+        global $IonChat_mothership_url;
+        //$IonChat_mothership_url = "https://ioncity.ai";
+        $file = file_get_contents(plugin_dir_path(__FILE__) . "../../servers.json");
+        $IPs = json_decode($file);
+        $IonChat_mothership_url = "http://" . $IPs[0];
+        global $IonChatProtocal;
+        if (!isset($IonChatProtocal)) {
+            $IonChatProtocal = "remote_node";
+        }
+       // die($IonChatProtocal);
     }
 
     public static function do_create_admin_page(){
@@ -17,7 +32,7 @@ class AdminPage{
             'Ion', // Menu title
             'manage_options', // Capability
             'ion-admin-page', // Menu slug
-            'IonChat\AdminPage::ion_admin_page_content', // Callback function for content
+            'IonChat\IonChatPlugin::ion_admin_page_content', // Callback function for content
             'dashicons-admin-generic', // Icon
             99 // Position
         );
