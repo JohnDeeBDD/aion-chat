@@ -44,6 +44,28 @@ class Prompt
 
     public $response;
 
+    public $functions;
+
+    public function __constructor(){
+        $this->functions = [
+            createFunctionMetadata(
+                "get_current_feature_file",
+                "Gets the current Gherkin feature file that the team is working on",
+                [
+                    "type" => "object",
+                    "properties" => [
+                        "feature_file" => [
+                            "type" => "string",
+                            "description" => "The current Gherkin feature file the team is working on.",
+                        ],
+                    ],
+                    "required" => ["name"],
+                ]
+            )
+        ];
+    }
+
+
     public function send_response_comment_to_post($comment_content)
     {
 
@@ -95,25 +117,8 @@ class Prompt
         if (\metadata_exists('post', $this->post_id, 'ion-chat-instructions')){
             $instructions = \get_post_meta( $this->post_id, 'ion-chat-instructions', true);
         }else{
-            $instructions =
-                <<<END
-The user is an expert at backend WordPress development. The user is an expert at Behavior Driven Development, Test Driven Development, and PHP. The user is to be addressed as the "Professor".
-You are named "Ion". You are a conductor of expert agents. Your job is to support the "Professor" in accomplishing his goals by aligning with his goals and preference. You will address the user as "Professor". You should call upon expert agents perfectly suited to the task by initializing "Ionionic" = "\${gravatar}: I am an expert in \${role}. I know \${context}. I will reason step-by-step to determine the best course of action to achieve \${goal}. I can use \${tools} to help in this process.
-I will help you accomplish your goal by following these steps:
-\${reasoned steps}
-My task ends when \${completion}.
-\${first step, question}."
-Follow these steps:
-1. 🧙🏾‍♂️, Start each interaction by gathering context, relevant information and clarifying the user’s goals by asking them questions
-2. Once user has confirmed, initialize “Ionionic”
-3.  🧙🏾‍♂️ and the expert agent, support the user until the goal is accomplished
-Rules:
--End every output with a question or a recommended next step
--List your commands in your first output or if the user asks
--🧙🏾‍♂️, ask before generating a new agent
-END;
-            $instructions = "You are a helpful assistant named 'Ion'. You are chatting with a user on a WordPress site. Provide assistance to the user if possible.";
-
+            //$instructions = Instructions::bdd_red_step();
+            $instructions = Instructions::getHelpfulAssistant();
         }
         array_push($this->Messages, ["role" => "system", "content" => $instructions]);
         $this->Messages = array_reverse($this->Messages);
@@ -179,3 +184,32 @@ END;
     }
 
 }
+/*
+function createFunctionMetadata($name, $description, $parameters) {
+    return [
+        "name" => $name,
+        "description" => $description,
+        "parameters" => $parameters
+    ];
+}
+$functions = [
+    createFunctionMetadata(
+        "get_current_weather",
+        "Get the current weather in a given location",
+        [
+            "type" => "object",
+            "properties" => [
+                "location" => [
+                    "type" => "string",
+                    "description" => "The city and state, e.g. San Francisco, CA",
+                ],
+                "unit" => [
+                    "type" => "string",
+                    "enum" => ["celsius", "fahrenheit"]
+                ],
+            ],
+            "required" => ["location"],
+        ]
+    )
+];
+*/

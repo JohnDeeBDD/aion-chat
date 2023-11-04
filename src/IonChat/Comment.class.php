@@ -7,12 +7,12 @@ class Comment
 
     public static function enable_interaction()
     {
-        \add_action('comment_post', '\IonChat\Comment::comment_posted', 10, 1);
+        \add_action('comment_post', '\IonChat\Comment::comment_controller', 10, 1);
     }
 
 
 
-    public static function comment_posted($comment_ID)
+    public static function comment_controller($comment_ID)
     {
         global $IonChatProtocal;
         if ("remote_node" === $IonChatProtocal) {

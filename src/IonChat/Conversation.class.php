@@ -43,6 +43,8 @@ class Conversation
             );
 
             \register_post_type('aion-conversation', $args);
+            \flush_rewrite_rules();
+
         });
     }
 

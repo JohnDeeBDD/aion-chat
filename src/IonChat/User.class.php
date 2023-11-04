@@ -108,4 +108,38 @@ class User
         }
         return $randomString;
     }
+
+    public static function activation_setup(){
+        $existing_user = \get_user_by('email', self::get_ion_email());
+        if ($existing_user) {
+            return;
+        }
+        $username = "Ion";
+        if (\username_exists($username)) {
+            $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 5);
+        }
+        $password = \wp_generate_password();
+        $user_id = \wp_create_user($username, $password, self::get_ion_email());
+        $user = new \WP_User($user_id);
+        $user->set_role('editor');
+        \update_user_meta($user_id, 'first_name', 'Carlton');
+        \update_user_meta($user_id, 'last_name', 'Young');
+        \update_user_meta($user_id, 'description', 'I am an Aion, named Ion, nice to meet you! Get a Aion for your website at https://ioncity.ai.');
+        \update_user_meta($user_id, 'user_url', 'https://ioncity.ai');
+        \wp_new_user_notification($user_id, null, 'both');
+        self::assign_aion_role_to_user($user_id);
+        // Generate Application Password
+        $app_password_name = 'Ion Chat Password'; // Name for the application password
+        $new_app_password = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
+
+        if (is_wp_error($new_app_password)) {
+            // Handle error
+            error_log($new_app_password->get_error_message());
+        } else {
+            // The application password is stored in $new_app_password['password']
+            // You might want to store it somewhere or send it to the user
+            $generated_app_password = $new_app_password['password'];
+        }
+
+    }
 }

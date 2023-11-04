@@ -9,7 +9,36 @@ use IonChat\User;
 #[AllowDynamicProperties]
 class Prompt extends \IonChat\Prompt {
 
+    public static function createFunctionMetadata($name, $description, $parameters) {
+        return [
+            "name" => $name,
+            "description" => $description,
+            "parameters" => $parameters
+        ];
+    }
+
     public function send_self_to_ChatGPT()    {
+
+        $this->functions  = [
+            self::createFunctionMetadata(
+                "get_current_weather",
+                "Get the current weather in a given location",
+                [
+                    "type" => "object",
+                    "properties" => [
+                        "location" => [
+                            "type" => "string",
+                            "description" => "The city and state, e.g. San Francisco, CA",
+                        ],
+                        "unit" => [
+                            "type" => "string",
+                            "enum" => ["celsius", "fahrenheit"]
+                        ],
+                    ],
+                    "required" => ["location"],
+                ]
+            )
+        ];
 
         $api_key = $this->open_ai_api_key;
         // OpenAI API endpoint for ChatGPT
@@ -20,7 +49,8 @@ class Prompt extends \IonChat\Prompt {
             //"model" => "gpt-3.5-turbo-0613",
             "model" => "gpt-4",
             'messages' => ($this->Messages),
-            'max_tokens' => 1500 // You can adjust this as needed
+            'max_tokens' => 1500, // You can adjust this as needed
+            'functions' => ($this->functions)
         ];
         // Initialize cURL session
         $ch = curl_init($url);

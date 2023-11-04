@@ -2,7 +2,7 @@
 
 namespace IonChat;
 
-class Task{
+class Task{ //a.k.a. "Gherkin /scenario"
 
     //A task can be thought of ideally as a specific Gherkin scenario with data
     //It should be matched to a known scenario outline that has a positive outcome

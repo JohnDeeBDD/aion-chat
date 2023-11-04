@@ -10,4 +10,5 @@ class Aion{
     public function dispatch(){}
     public function act_now(){}
     public function update_self(){}
+
 }

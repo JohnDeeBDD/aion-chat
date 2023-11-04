@@ -9,25 +9,18 @@ class ActivationHook{
     }
 
     public static function do_activation_hook(){
-        $existing_user = \get_user_by('email', User::get_ion_email());
-        if ($existing_user) {
-            return;
-        }
-        $username = "Ion";
-        if (\username_exists($username)) {
-            $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 5);
-        }
-        $password = \wp_generate_password();
-        $user_id = \wp_create_user($username, $password, User::get_ion_email());
-        $user = new \WP_User($user_id);
-        $user->set_role('subscriber');
-        \update_user_meta($user_id, 'first_name', 'Carlton');
-        \update_user_meta($user_id, 'last_name', 'Young');
-        \update_user_meta($user_id, 'description', 'I am an Aion, named Ion, nice to meet you! Get a Aion for your website at https://ioncity.ai.');
-        \update_user_meta($user_id, 'user_url', 'https://ioncity.ai');
-        \wp_new_user_notification($user_id, null, 'both');
-        User::assign_aion_role_to_user($user_id);
+        User::activation_setup();
+        //self::doCreateIonHomePage();
+    }
 
-        return "New Aion user created";
+    private static function doCreateIonHomePage(){
+        $my_post = array(
+            'post_title'    => "Ion Home Page",
+            'post_content'  => "Hi! I am an Aion named Ion.",
+            'post_status'   => 'publish',
+            'post_author'   => User::get_ion_user_id(),
+            'post_type'     => 'aion-conversation'
+        );
+        \wp_insert_post( $my_post );
     }
 }

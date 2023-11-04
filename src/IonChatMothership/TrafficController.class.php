@@ -79,24 +79,11 @@ class TrafficController
     }
 
     public static function craft_ion_response($comment_ID) {
-        // Retrieve the comment object
         $comment = get_comment($comment_ID);
-
-        // Retrieve the user_id of the comment author
-        $user_id = $comment->user_id;
-
-        // Check if the user is an "ion user"
-        if (\IonChat\User::is_ion_user($user_id)) {
-            return; // Exit the function if the user is an "ion user"
-        }
-
         $Prompt = new \IonChatMothership\Prompt();
         $Prompt->init_this_prompt($comment_ID, "created-on-mothership");
         $Prompt->send_self_to_ChatGPT();
-
-
-
-        self::post_comment_to_post($user_id, $Prompt->post_id, $Prompt->response);
+        self::post_comment_to_post($comment->user_id, $Prompt->post_id, $Prompt->response);
         return ($Prompt->response);
     }
 

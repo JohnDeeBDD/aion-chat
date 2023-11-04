@@ -15,10 +15,11 @@ namespace IonChat;
 require_once(plugin_dir_path(__FILE__) . 'src/IonChat/autoloader.php');
 \add_filter('comment_flood_filter', '__return_false');
 \add_filter('duplicate_comment_id', '__return_false');
+\add_filter( 'wp_is_application_passwords_available', '__return_true' );
 
 DevMode::enable();
 
-IonChatPlugin::enable();
+Plugin::enable();
 Comment::enable_interaction();
 User::enable();
 \register_activation_hook(__FILE__, '\IonChat\ActivationHook::do_activation_hook');

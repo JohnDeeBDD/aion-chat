@@ -27,7 +27,7 @@ class DevMode{
         $args = [
             'post_type' => 'aion-conversation',
             'post_status' => 'any',
-            'title' => 'Stub',
+            'post_title' => 'Ion Home',
             'posts_per_page' => -1
         ];
         $query = new \WP_Query($args);
