@@ -132,14 +132,7 @@ class User
         $app_password_name = 'Ion Chat Password'; // Name for the application password
         $new_app_password = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
 
-        if (is_wp_error($new_app_password)) {
-            // Handle error
-            error_log($new_app_password->get_error_message());
-        } else {
-            // The application password is stored in $new_app_password['password']
-            // You might want to store it somewhere or send it to the user
-            $generated_app_password = $new_app_password['password'];
-        }
+        return $new_app_password['password'];
 
     }
 }

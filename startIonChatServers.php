@@ -6,7 +6,7 @@ two servers will be spun up
 their IPs will be stored in the file servers.json
 */
 
-$dev1instance = "i-054ee3b5cbcce9710";
+$dev1instance = "i-0df7131d5f40759f3";
 $dev2instance = "i-00021f9572af5111c";
 
 //why are there 2?

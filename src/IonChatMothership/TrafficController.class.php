@@ -145,9 +145,9 @@ class TrafficController
 
         // Initialize variables
         $args = array(
-            'post_type' => 'post',
+            'post_type' => 'aion-conversation',
             'post_status' => 'draft',
-            'title' => ($Prompt->remote_post_id . $Prompt->remote_connection_domain_url),
+            'title' => \IonChat\Conversation::buildIonConversationTitle($Prompt->remote_post_id, $Prompt->user_id, $Prompt->origin_domain_url),
             'posts_per_page' => 1,
         );
 
@@ -164,8 +164,8 @@ class TrafficController
         } else {
             // Create new ion-connection
             $post_id = \wp_insert_post(array(
-                'post_title' => ($Prompt->remote_post_id . $Prompt->remote_connection_domain_url),
-                'post_type' => 'post',
+                'post_title' => \IonChat\Conversation::buildIonConversationTitle($Prompt->remote_post_id, $Prompt->user_id, $Prompt->origin_domain_url),
+                'post_type' => 'aion-conversation',
                 'post_status' => 'draft',
                 'post_author' => \IonChat\User::get_ion_user_id(),
             ));

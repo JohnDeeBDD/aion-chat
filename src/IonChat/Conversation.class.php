@@ -48,8 +48,44 @@ class Conversation
         });
     }
 
-    public static function parseIonConversationTitle($string)
-    {
+    /**
+     * Parses a conversation title string into its components.
+     *
+     * The expected format is "remote_post_id:user_id:remote_site_url".
+     * Note: The remote site URL can contain colons (e.g., "https://").
+     *
+     * @param string $titleString The conversation title string to parse.
+     * @return array|null An associative array of components, or null if the format is incorrect.
+     */
+    public static function parseIonConversationTitle($titleString) {
+        // Define the regex pattern to extract the conversation components
+        $pattern = '/^(\d+):(\d+):(.+)$/';
 
+
+        // Attempt to match the pattern against the provided string
+        if (preg_match($pattern, $titleString, $matches)) {
+            // Check if we have the expected number of matches (full match + 3 capturing groups)
+            if (count($matches) === 4) {
+                // Map the matches to their respective named components
+                return [
+                    'remote_post_id' => $matches[1],
+                    'user_id' => $matches[2],
+                    'remote_site_url' => $matches[3]
+                ];
+            }
+        }
+
+        // If the string does not match the expected format, log the error
+        error_log('parseIonConversationTitle: Incorrect format for title string: ' . $titleString);
+
+        // Return null to indicate an error in parsing
+        return null;
     }
+
+    public static function buildIonConversationTitle($remote_post_id, $user_id, $remote_site_url) {
+        return ($remote_post_id . ":" . $user_id . ":" . $remote_site_url);
+    }
+
+
+    public static function doCreateNewConversation($room_id, $speaker_user_id, $hearer_suer_id){}
 }

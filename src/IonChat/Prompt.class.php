@@ -8,7 +8,6 @@ class Prompt
     public array $Choices = []; //array of Choice objects
     public array $Functions = []; //Array of Functions objects
     public array $Messages = []; //Array of Message object
-
     public int $account_user_id;
     public string $status;
     public int $completion_tokens;
@@ -37,7 +36,7 @@ class Prompt
     public $open_ai_api_key;
     public $remote_open_ai_api_key;
 
-    public string $remote_connection_domain_url;
+    public string $origin_domain_url;
     public string $wordpress_api_key;
 
     public string $system_instructions;
@@ -46,20 +45,12 @@ class Prompt
 
     public $functions;
 
-    public function __constructor(){
+    public function xxconstructor(){
         $this->functions = [
             createFunctionMetadata(
-                "get_current_feature_file",
-                "Gets the current Gherkin feature file that the team is working on",
+                "move_on_to_next_step",
+                "moves the situation on to the next step",
                 [
-                    "type" => "object",
-                    "properties" => [
-                        "feature_file" => [
-                            "type" => "string",
-                            "description" => "The current Gherkin feature file the team is working on.",
-                        ],
-                    ],
-                    "required" => ["name"],
                 ]
             )
         ];
@@ -139,7 +130,8 @@ class Prompt
     {
         $this->set_open_ai_api_key();
 
-        $this->remote_connection_domain_url = \get_site_url();
+        $this->origin_domain_url = \get_site_url();
+
 
         // Set the comment_id from the method argument
         $this->comment_id = $comment_id;

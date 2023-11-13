@@ -27,6 +27,7 @@ $IonChatProtocal = "mothership";
 TrafficController::enable_prompt_incoming();
 Comment::enable_interaction();
 Email::enable_receiveing();
+Ping::enableReceivePing();
 
 DevMode::enable();
 
