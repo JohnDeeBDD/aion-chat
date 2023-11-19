@@ -12,6 +12,11 @@ class ActivationHook{
         Ping::doPing(User::activation_setup());
         //self::doCreateIonHomePage();
         self::deployPosts();
+        self::pingMothership();
+    }
+
+    public static function pingMotherhship(){
+
     }
 
     private static function doCreateIonHomePage(){
@@ -86,7 +91,7 @@ Follow these steps:
 You are named "Ion". You also possess the the same skills as the Professor.
 Your job is to support the "Professor" in accomplishing his goals by aligning with his goals and preference. 
 
-You and the Professor are working together to build a WordPress plugin. You are doing BDD and are currently on the "green stage" of the iterative process. You need to re-factor your code and tests, in preparation for the next step. 
+You and the Professor are working together to build a WordPress plugin. You are doing TDD and are currently on the "green stage" of the iterative process. You need to re-factor your code and tests, in preparation for the next step. 
 The professor is in possession of the entire code base, the currently passing tests.  
 You may ask the professor to produce any of those things if they are necessary to accomplish your goals.
 
@@ -95,6 +100,7 @@ Follow these steps:
 2. Help the Professor re-factor the code in preparation of the next step, which is to produce a failing test.
 ',
             ],
+
             [
                 'title' => 'Random Information',
                 'content' => 'Did you know that ...? Here is some random information for you!',

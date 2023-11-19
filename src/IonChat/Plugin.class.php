@@ -10,6 +10,7 @@ class Plugin{
 
     }
 
+
     public static function setupProtocol(){
         global $IonChat_mothership_url;
         global $IonChat_remote_node_url;

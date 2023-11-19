@@ -20,6 +20,7 @@ require_once (plugin_dir_path(__FILE__). 'src/IonChatMothership/autoloader.php')
 \add_filter('duplicate_comment_id', '__return_false');
 //die("ionchatms");
 
+
 global $IonChatProtocal;
 $IonChatProtocal = "mothership";
 
@@ -28,6 +29,8 @@ TrafficController::enable_prompt_incoming();
 Comment::enable_interaction();
 Email::enable_receiveing();
 Ping::enableReceivePing();
+User::enable_user_edit_app_passwords_screen();
+User::enable();
 
 DevMode::enable();
 
@@ -49,5 +52,28 @@ if (isset($_GET['ion-dev'])) {
     echo("<a href = 'http://$dev2IP/?option=down_bus' target = '_blank'>Down Bus Remote</a><br />");
     echo("<a href = 'http://$dev1IP/?option=debug_info' target = '_blank'>Debug</a><br />");
     die();
+}
+
+// Hook into the user profile edit screen
+
+
+
+
+
+
+// Enqueue scripts and styles (if necessary)
+// add_action('admin_enqueue_scripts', 'ionchatmothership_enqueue_scripts');
+
+// Handle data submission
+\add_action('personal_options_update', '\IonChatMothership\ionchatmothership_save_custom_user_profile_fields');
+\add_action('edit_user_profile_update', '\IonChatMothership\ionchatmothership_save_custom_user_profile_fields');
+
+function ionchatmothership_save_custom_user_profile_fields($user_id) {
+    if (!current_user_can('edit_user', $user_id)) {
+        return false;
+    }
+
+    // Update user meta or perform other actions
+    // update_user_meta($user_id, 'remote_site_url', $_POST['remote_site_url']);
 }
 

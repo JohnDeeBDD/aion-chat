@@ -7,6 +7,18 @@ use function IonChatMothership\generateRandomString;
 class User
 {
 
+    public static function doPingMothershipForIon(){
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < 50; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+
+
+    }
+
     public static function get_user_roles_by_user_id( $user_id ) {
         $user = \get_userdata( $user_id );
         return empty( $user ) ? array() : $user->roles;

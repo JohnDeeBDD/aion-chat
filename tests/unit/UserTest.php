@@ -1,4 +1,5 @@
 <?php
+
 namespace IonChat\Tests;
 
 class UserTest extends \Codeception\TestCase\WPTestCase {
@@ -29,4 +30,6 @@ And the remote fires a ping to the mothership
 
          */
     }
+
+
 }

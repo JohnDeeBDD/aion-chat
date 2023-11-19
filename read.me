@@ -1,23 +1,35 @@
-Development
+#H1 About
+Ion Chat is a plugin for WordPress sites that allows you to communicate with autonomous agents that are powered by artificial intelligence, called "Aions".
+Aions can do almost anything on a WordPress site, including modify or create text, images or code. We are just learning their capabilities.
 
-Starting Development Servers
-cd /var/www/html/wp-content/plugins/email-tunnel
-sudo php startDevServers.php
+Concepts
+Various Large Language Models &#91;LLMs&#93;, are capable of "chatting" with a user in an intelligent way. Chats on LLMs - like Open AI's Chat GPT - are developed with a series of independent "prompts".
+The prompts are independent, in that the entire history of the conversation is fed into the LLM with each prompt like a function call, and the LLM's "conversation compleation" is added to the conversation like a stack of pancakes.
+We suggest that LLM "prompts" are analogous to WordPress comment conversations. Each conversation is a post, and it's coresponding comment threads. To create a prompt, the conversation history is fed to the LLM, and it's response is added as a new comment to the post.
 
-Starting local servers
-cd /var/www/html/wp-content/plugins/WPbdd
-./startDesktopServers.sh
+Aions
+Aions are the personifications of roles that agents enhanced with artificial inteligence can perform. For instance, a site can have an "editor" or an "administrator" Aion.
+You can also have Aions that fulfil more complex tasks like "secretary" or "security officer".
+You can name Aions, like "Sally the Secretary" to designate particular instances of Aions with specific histories and memories.
 
-Stopping Development Servers
-cd /var/www/html/wp-content/plugins/email-tunnel
-sudo php stopEmailTunnel.php
+Aions can
 
-test browser
-bin/codecept run acceptance BrowserIsWorkingCept.php -vvv --html
 
-test js
-npm test
+Aion Conversation Start Page
+A start page is a WordPress post where an inteligent conversation or action can be initiated. The page is authored by the Aion who is supposed to respond to the intelligent action or conversation.
+When an entity posts a comment to a start page, an "aion-conversation" is created.
+{commenter_user_id}:{start_page_post_id}:site_url
 
-rollup for prod:
-npx spack
 
+
+
+
+
+At this time, Ion City Aions are only capable of having a one-on-one conversation.
+
+Usage
+Aions are artificial inteligence entities that can do things. On your WordPress site, they are assigned roles and capabilities just like normal human users.
+
+
+ What their capabilities are on your site,
+Aions can be the authors of posts, and when a user makes a comment on the post, the Aion will respond to the comment, if appropriate.

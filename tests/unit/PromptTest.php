@@ -3,8 +3,6 @@
 use IonChat\Exception;
 use IonChat\Prompt;
 
-
-
 class PromptTest extends \Codeception\TestCase\WPTestCase{
 
     private $post_id;

@@ -29,3 +29,4 @@ gherkin:
     default:
       - AcceptanceTester
       - test_stubs_are_deployed_context
+      - app_passwords_storage_context
