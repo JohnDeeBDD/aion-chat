@@ -1,18 +1,24 @@
 # /var/www/html/wp-content/plugins/ion-chat/tests/acceptance/test_stubs_are_deployed_context.php
-Feature: Intelligent Response from Ion
+# Note: This feature can be run in 3 separate contexts, those contexts are set in the yml file
+
+Feature: Basic intelligent response
 
   As an acceptance tester
-  I want to receive intelligent replies from Ion
-  So that I can improve my understanding and efficiency
+  I want to receive intelligent replies in aion-conversations
+  So that I can receive a basic intelligent response
 
-  Scenario: Ion replies to a comment on a remote
-    Given the plugin is setup on the servers
-    And appropriate test stubs have been deployed on the remote
-    When I make a comment on the remote
-    Then I should see an intelligent response from Ion on the remote
 
-  Scenario: Ion replies to a comment on the mothership
-    Given the plugin is setup on the servers
-    And appropriate test stubs have been deployed on the mothership
-    When I make a comment on the mothership
-    Then I should see an intelligent response from Ion on the mothership
+  Scenario: the plugin is setup on localhost
+    Given the plugin is setup on localhost
+
+   Scenario Outline: Ion replies to comments
+    When I make a comment with text "<post_comment>"
+    Then I should see an intelligent response "<response>"
+
+    Examples:
+      | post_comment                              | response    |
+      | What is the capital city of France        | Paris       |
+      | What is the tallest structure in that city? | Eiffel Tower |
+
+  Scenario: tear down after
+    When the feature test is done the post is deleted

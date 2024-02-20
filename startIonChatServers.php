@@ -54,6 +54,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-data-access --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Ion ion@ioncity.ai --role=administrator --user_pass=password --path=/var/www/html',
 
     //Remote Node:
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " /var/www/html/wp-content/plugins/WPbdd/startup.sh",
@@ -76,6 +77,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create RemoteSubsriber remotesub@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Ion ion@ioncity.ai --role=administrator --user_pass=password --path=/var/www/html',
     ];
 
 //execute the above commands, one by one.:

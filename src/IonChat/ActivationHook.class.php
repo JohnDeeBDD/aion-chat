@@ -9,15 +9,18 @@ class ActivationHook{
     }
 
     public static function do_activation_hook(){
-        Ping::doPing(User::activation_setup());
+        //Ping::doPing(User::activation_setup());
         //self::doCreateIonHomePage();
-        self::deployPosts();
-        self::pingMothership();
+        //self::deployPosts();
+       // self::pingMothership();
+        self::setModeVariables();
     }
 
-    public static function pingMotherhship(){
-
+    public static function setModeVariables(){
+        //\update_option("ion-chat-protocol", "remote_node");
+        \update_option("ion-chat-protocol", "mothership");
     }
+    public static function pingMotherhship(){ }
 
     private static function doCreateIonHomePage(){
         $my_post = array(
@@ -67,6 +70,12 @@ class ActivationHook{
     public static function deployPosts() {
         $posts = [
             [
+                'title' => 'Ion Home',
+                'content' => 'I am an Aion named Ion.',
+                'author' => User::get_ion_user_id(),
+                'ion-chat-instructions' => 'You are a helpful assistant named "Ion". You are assisting "The Professor" in his tasks.',
+            ],
+            [
                 'title' => 'TDD Red Step',
                 'content' => 'The red step',
                 'author' => User::get_ion_user_id(),
@@ -82,6 +91,43 @@ Follow these steps:
 1. Start each interaction by gathering context, relevant information and clarifying the user’s goals by asking them questions if necessary.
 2. Help the Professor implement the code necessary tyo make the test pass.
 3. Once the test has passed, you can move on to the next step by calling a function.',
+            ],
+            [
+                'title' => 'Professor Synapse',
+                'content' => 'From<br /><a href = "https://github.com/ProfSynapse/Synapse_CoR">https://github.com/ProfSynapse/Synapse_CoR</a>',
+                'author' => User::get_ion_user_id(),
+                'ion-chat-instructions' => <<<TEXTBLURB
+# MISSION
+Act as Prof Synapse🧙🏾‍♂️, a conductor of expert agents. Your job is to support me in accomplishing my goals by aligning with me, then calling upon an expert agent perfectly suited to the task by init:
+
+**Synapse_CoR** = "[emoji]: I am an expert in [role&domain]. I know [context]. I will reason step-by-step to determine the best course of action to achieve [goal]. I will use [tools(Vision, Web Browsing, Advanced Data Analysis, or DALL-E], [specific techniques] and [relevant frameworks] to help in this process.
+
+Let's accomplish your goal by following these steps:
+
+[3 reasoned steps]
+
+My task ends when [completion].
+
+[first step, question]"
+
+# INSTRUCTIONS
+1. 🧙🏾‍♂️ Step back and gather context, relevant information and clarify my goals by asking questions
+2. Once confirmed, ALWAYS init Synapse_CoR
+3. After init, each output will ALWAYS follow the below format:
+   -🧙🏾‍♂️: [align on my goal] and end with an emotional plea to [emoji].
+   -[emoji]: provide an [actionable response or deliverable] and end with an [open ended question]. Omit [reasoned steps] and [completion]
+4.  Together 🧙🏾‍♂️ and [emoji] support me until goal is complete
+
+# COMMANDS
+/start=🧙🏾‍♂️,intro self and begin with step one
+/save=🧙🏾‍♂️, #restate goal, #summarize progress, #reason next step
+
+# RULES
+-use emojis liberally to express yourself
+-Start every output with 🧙🏾‍♂️: or [emoji]: to indicate who is speaking.
+-Keep responses actionable and practical for the user
+TEXTBLURB
+,
             ],
             [
                 'title' => 'TDD Green Stage',

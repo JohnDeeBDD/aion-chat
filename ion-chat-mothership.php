@@ -32,8 +32,6 @@ Ping::enableReceivePing();
 User::enable_user_edit_app_passwords_screen();
 User::enable();
 
-DevMode::enable();
-
 //Servers page
 if (isset($_GET['ion-dev'])) {
     $file = file_get_contents("/var/www/html/wp-content/plugins/ion-chat/servers.json");

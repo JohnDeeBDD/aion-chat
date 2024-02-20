@@ -28,5 +28,5 @@ gherkin:
   contexts:
     default:
       - AcceptanceTester
-      - test_stubs_are_deployed_context
-      - app_passwords_storage_context
+      - intelligent_response_from_ion_localhost_context
+      #- intelligent_response_from_ion_remotenode_context

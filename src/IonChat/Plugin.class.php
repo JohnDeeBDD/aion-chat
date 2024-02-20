@@ -23,6 +23,12 @@ class Plugin{
         if (!isset($IonChatProtocal)) {
             $IonChatProtocal = "remote_node";
         }
+        $siteURL = \get_site_url();
+        if($siteURL === "http://localhost"){
+            $IonChatProtocal = "mothership";
+        }
+
+
     }
 
 
@@ -48,61 +54,77 @@ class Plugin{
             // Verify nonce
             check_admin_referer('ion_admin_page_nonce_action', 'ion_admin_page_nonce');
 
-            // Update the option
+            // Update the OpenAI API Key option
             $openai_api_key = sanitize_text_field($_POST['openai-api-key']);
             update_option('openai-api-key', $openai_api_key);
+
+            // Save the Ion Chat Protocol option
+            $ion_chat_protocol = sanitize_text_field($_POST['ion-chat-protocol']);
+            update_option('ion-chat-protocol', $ion_chat_protocol);
         }
 
-        // Get the existing API key, if any
+        // Get the existing options, if any
         $existing_api_key = get_option('openai-api-key', '');
+        $existing_protocol = get_option('ion-chat-protocol', 'remote_node'); // Default to 'remote_node'
 
         ?>
         <div class="wrap">
-            <h1></h1>
+            <h1>Ion Chat Settings</h1>
             <form method="post" action="">
                 <?php wp_nonce_field('ion_admin_page_nonce_action', 'ion_admin_page_nonce'); ?>
                 <table class="form-table">
                     <tr>
                         <th scope="row">
-                            <label for="openai-api-key"><?php echo __('OpenAI API Key', 'ion-chat'); ?></label>
+                            <label for="openai-api-key">OpenAI API Key</label>
                         </th>
                         <td>
                             <input
-                                name="openai-api-key"
-                                type="text"
-                                id="openai-api-key"
-                                value="<?php echo esc_attr($existing_api_key); ?>"
-                                placeholder="<?php echo __('Get at https://platform.openai.com/', 'ion-chat'); ?>"
-                                class="regular-text"
-                                oninput="checkInput()"
+                                    name="openai-api-key"
+                                    type="text"
+                                    id="openai-api-key"
+                                    value="<?php echo esc_attr($existing_api_key); ?>"
+                                    placeholder="Get at https://platform.openai.com/"
+                                    class="regular-text"
+                                    oninput="checkInput()"
                             />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ion Chat Protocol</th>
+                        <td>
+                            <fieldset>
+                                <label>
+                                    <input type="radio" name="ion-chat-protocol" value="remote_node" <?php checked($existing_protocol, 'remote_node'); ?>>
+                                    Remote Node
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="ion-chat-protocol" value="mothership" <?php checked($existing_protocol, 'mothership'); ?>>
+                                    Mothership
+                                </label>
+                            </fieldset>
                         </td>
                     </tr>
                 </table>
                 <p class="submit">
                     <input
-                        type="submit"
-                        name="submit"
-                        id="submit"
-                        class="button button-primary"
-                        value="<?php echo __('Save Changes', 'ion-chat'); ?>"
+                            type="submit"
+                            name="submit"
+                            id="submit"
+                            class="button button-primary"
+                            value="Save Changes"
                         <?php echo($existing_api_key === '' ? 'disabled' : ''); ?>
                     />
                 </p>
             </form>
             <script>
                 function checkInput() {
-                    const inputField = document.getElementById("openai-api-key");
+                    const apiKeyInput = document.getElementById("openai-api-key");
                     const submitButton = document.getElementById("submit");
-
-                    if (inputField.value !== "") {
-                        submitButton.disabled = false;
-                    } else {
-                        submitButton.disabled = true;
-                    }
+                    submitButton.disabled = apiKeyInput.value === "";
                 }
             </script>
         </div>
         <?php
     }
+
 }

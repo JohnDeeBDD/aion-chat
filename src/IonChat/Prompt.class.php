@@ -150,7 +150,7 @@ class Prompt
     }
 
     public function send_up()
-    {
+    {   //die("153");
         //this action is happening on the remote.
         \update_option("ion-chat-up-bus", $this);
         global $IonChat_mothership_url;

@@ -38,7 +38,7 @@ class Prompt extends \IonChat\Prompt {
                     "required" => ["location"],
                 ]
             )
-        ];
+        ]; 
 
         $api_key = $this->open_ai_api_key;
         // OpenAI API endpoint for ChatGPT

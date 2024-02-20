@@ -16,6 +16,7 @@ class Comment
     {
         global $IonChatProtocal;
         if ("remote_node" === $IonChatProtocal) {
+           // die("wtf2");
             $comment = \get_comment($comment_ID);
             if(!\get_post_type($comment->comment_post_ID) === "aion-conversation"){
                 return;

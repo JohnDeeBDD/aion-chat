@@ -43,6 +43,9 @@ class Acceptance extends \Codeception\Module{
         return json_decode(file_get_contents('/var/www/html/wp-content/plugins/ion-chat/servers.json'), true);
     }
 
+
+
+    /*
     public function clickSendConnectionEmailButton(\AcceptanceTester $I, $siteURL){
         $I->reconfigureThisVariable(["url" => ('http://' . $siteURL)]);
         $I->loginAsAdmin();
@@ -56,7 +59,8 @@ class Acceptance extends \Codeception\Module{
         //sleep(1);
         //return;
     }
-
+*/
+    /*
     public function resetEmailTunnel(\AcceptanceTester $I){
         //This script resets email-tunnel and ETM to a ready state
         global $testSiteURLs;
@@ -77,4 +81,5 @@ class Acceptance extends \Codeception\Module{
         } catch (Exception $e) {
         }//Nothing. We don't care about an error here. It just means 'nothing to delete'
     }
+    */
 }
