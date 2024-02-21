@@ -2,78 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aion-chat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ion-chat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php-test-framework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aion-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aion-chat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doMakeProd.php" beforeDir="false" afterPath="$PROJECT_DIR$/doMakeProd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat-mothership.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ion-chat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/read.me" beforeDir="false" afterPath="$PROJECT_DIR$/read.me" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/ActivationHook.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Comment.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Conversation.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/DebugMode.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/DevMode.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/ErrorHandler.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Instructions.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/ModeStrategy.interface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Partial.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Ping.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Plugin.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Post.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Prompt.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Reflektor.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Skill.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Step.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/Task.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/User.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChat/autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Aion.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Comment.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Connections.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Email.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Ping.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/Prompt.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/TrafficController.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/User.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IonChatMothership/xxxDevMode.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/startIonChatServers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/FeatureContext.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/FeaturesTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/FeaturesTester.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/app_passwords_storage_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/app_passwords_storage_context.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-mothership.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/read.me" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Aion.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Comment.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Connections.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Email.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Ping.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Prompt.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/TrafficController.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/User.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/autoloader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/xxxDevMode.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/startIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/startAionChatServers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stopIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/stopAionChatServers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/StartupServersCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/StartupServersCept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/ConversationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/ConversationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/PromptTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/PromptTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/_bootstrap.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -206,8 +160,25 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../aion-mother/src/AionChatMothership" />
+      <recent name="$PROJECT_DIR$/../aion-mother" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="stopAionChatServers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aion-chat/wp-content/plugins/aion-chat/stopAionChatServers.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.stopAionChatServers.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -217,7 +188,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708514505376</updated>
-      <workItem from="1708514506779" duration="1898000" />
+      <workItem from="1708514506779" duration="7095000" />
+      <workItem from="1708529719967" duration="1406000" />
     </task>
     <servers />
   </component>
@@ -225,6 +197,26 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="418" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708529769494">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="418" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529769494" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1708529617808">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1708529617808">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1708529617807">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617807" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1708529617808">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
     <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1708514523967">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>

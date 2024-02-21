@@ -15,10 +15,6 @@ $I->click("#activate-aion-chat");
 $I->click("#activate-aion-chat-mothership");
 //$I->see("Plugin activated.");
 
-$I->amOnPage("/wp-admin/admin.php?page=ion-admin-page");
-$I->fillField("openai-api-key", "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");
-$I->click("Save Changes");
-
 
 $I->reconfigureThisVariable(["url" => ('http://' . $testSiteURLs[1])]);
 $I->loginAsAdmin();

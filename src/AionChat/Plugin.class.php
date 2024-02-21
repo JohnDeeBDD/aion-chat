@@ -52,7 +52,7 @@ class Plugin{
         // Check if form has been submitted
         if (isset($_POST['submit'])) {
             // Verify nonce
-            check_admin_referer('ion_admin_page_nonce_action', 'ion_admin_page_nonce');
+            check_admin_referer('aion_admin_page_nonce_action', 'aion_admin_page_nonce');
 
             // Update the OpenAI API Key option
             $openai_api_key = sanitize_text_field($_POST['openai-api-key']);
@@ -69,9 +69,9 @@ class Plugin{
 
         ?>
         <div class="wrap">
-            <h1>Ion Chat Settings</h1>
+            <h1>Aion Chat Settings</h1>
             <form method="post" action="">
-                <?php wp_nonce_field('ion_admin_page_nonce_action', 'ion_admin_page_nonce'); ?>
+                <?php wp_nonce_field('aion_admin_page_nonce_action', 'aion_admin_page_nonce'); ?>
                 <table class="form-table">
                     <tr>
                         <th scope="row">
@@ -90,15 +90,15 @@ class Plugin{
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Ion Chat Protocol</th>
+                        <th scope="row">Aion Chat Protocol</th>
                         <td>
                             <fieldset>
                                 <label>
-                                    <input type="radio" name="ion-chat-protocol" value="remote_node" <?php checked($existing_protocol, 'remote_node'); ?>>
+                                    <input type="radio" name="aion-chat-protocol" value="remote_node" <?php checked($existing_protocol, 'remote_node'); ?>>
                                     Remote Node
                                 </label><br>
                                 <label>
-                                    <input type="radio" name="ion-chat-protocol" value="mothership" <?php checked($existing_protocol, 'mothership'); ?>>
+                                    <input type="radio" name="aion-chat-protocol" value="mothership" <?php checked($existing_protocol, 'mothership'); ?>>
                                     Mothership
                                 </label>
                             </fieldset>
