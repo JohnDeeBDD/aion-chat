@@ -35,7 +35,7 @@ class intelligent_response_from_ion_localhost_context extends \Codeception\Actor
         global $postID;
         $postID = ( $this->extractPostNumeral(shell_exec($command)));
 
-        $command = "wp post meta update " . $postID . " ion-chat-instructions 'You are a helpful assistant.'";
+        $command = "wp post meta update " . $postID . " aion-chat-instructions 'You are a helpful assistant.'";
         echo(shell_exec($command));
 
         $command = 'wp user get Ion --field=ID';

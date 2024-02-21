@@ -9,11 +9,11 @@ class DebugOptionTest extends \Codeception\TestCase\WPTestCase{
     public function testDebugOptionClassAndMethodExist()
     {
         // Check if the class "DebugOption" exists
-        $classExists = class_exists('\IonChat\DebugMode');
+        $classExists = class_exists('\AionChat\DebugMode');
         $this->assertTrue($classExists, 'Class DebugOption does not exist.');
 
         // Check if the static method "display" exists in the class
-        $methodExists = method_exists('\IonChat\DebugMode', 'display_option');
+        $methodExists = method_exists('\AionChat\DebugMode', 'display_option');
         $this->assertTrue($methodExists, 'Method display does not exist in class DebugOption.');
     }
 
@@ -23,7 +23,7 @@ class DebugOptionTest extends \Codeception\TestCase\WPTestCase{
      */
     public function test_method_display_arguments(){
         // Given: Initialize reflection to inspect the DebugOption::display method
-        $reflection = new \ReflectionMethod('\IonChat\DebugMode', 'display_option');
+        $reflection = new \ReflectionMethod('\AionChat\DebugMode', 'display_option');
 
         // When: Retrieve the parameters of the display_option method
         $parameters = $reflection->getParameters();

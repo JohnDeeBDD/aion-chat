@@ -17,8 +17,8 @@
   },
   "autoload": {
     "classmap": [
-      "src/IonChat",
-      "src/IonChatMothership"
+      "src/AionChat",
+      "src/AionChatMothership"
     ]
   },
   "require": {

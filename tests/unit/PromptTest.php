@@ -1,7 +1,7 @@
 <?php
 
-use IonChat\Exception;
-use IonChat\Prompt;
+use AionChat\Exception;
+use AionChat\Prompt;
 
 class PromptTest extends \Codeception\TestCase\WPTestCase{
 
@@ -12,7 +12,7 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
 
     public function setUp(): void {
         parent::setUp();
-        require_once('/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php');
+        require_once('/var/www/html/wp-content/plugins/aion-chat/src/AionChat/autoloader.php');
         $user = get_user_by('login', "Codeception");
         $this->user_id = $user->ID;
         $this->user_email = "codeception@email.com";
@@ -97,7 +97,7 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
     public function testInitThisPromptMethodExists()
     {
         $this->assertTrue(
-            method_exists('IonChat\Prompt', 'init_this_prompt'),
+            method_exists('AionChat\Prompt', 'init_this_prompt'),
             'Method init_this_prompt does not exist in Prompt class'
         );
     }
@@ -114,7 +114,7 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
         update_option('openai-api-key', 'some-api-key');
 
         // Use reflection to call the private method
-        $reflection = new \ReflectionClass('IonChat\Prompt');
+        $reflection = new \ReflectionClass('AionChat\Prompt');
         $method = $reflection->getMethod('set_open_ai_api_key');
         $method->setAccessible(true);
         $method->invoke($Prompt);

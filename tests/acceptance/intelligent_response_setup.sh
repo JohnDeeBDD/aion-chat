@@ -24,7 +24,7 @@ else
 fi
 
 # Update the post meta for the newly created post
-wp post meta set $POST_ID ion-chat-instructions "You are a helpful assistant named John." --path=/var/www/html
+wp post meta set $POST_ID aion-chat-instructions "You are a helpful assistant named John." --path=/var/www/html
 
 if [ $? -eq 0 ]; then
     echo "Post meta updated successfully."

@@ -35,7 +35,7 @@ class intelligent_response_from_ion_remotenode_context extends \Codeception\Acto
         $I->amOnPage("/wp-admin/");
         $I->see("RemoteNode");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/ion-chat/tests/acceptance/intelligent_response_setup.sh";
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         echo(shell_exec($command));
     }
 

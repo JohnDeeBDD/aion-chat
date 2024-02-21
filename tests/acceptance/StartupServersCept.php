@@ -10,9 +10,9 @@ $I->click(".welcome-panel-close");
 $I->click(".woocommerce-message-close");
 $I->clickWithLeftButton(".fs-close");
 $I->amOnPage("/wp-admin/plugins.php");
-$I->click("#activate-ion-chat");
+$I->click("#activate-aion-chat");
 //$I->see("Plugin activated.");
-$I->click("#activate-ion-chat-mothership");
+$I->click("#activate-aion-chat-mothership");
 //$I->see("Plugin activated.");
 
 $I->amOnPage("/wp-admin/admin.php?page=ion-admin-page");
@@ -30,5 +30,5 @@ try {
 }
 $I->clickWithLeftButton(".fs-close");
 $I->amOnPage("/wp-admin/plugins.php");
-$I->click("#activate-ion-chat");
+$I->click("#activate-aion-chat");
 

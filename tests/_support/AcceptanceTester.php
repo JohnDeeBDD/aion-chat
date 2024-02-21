@@ -46,7 +46,7 @@ class AcceptanceTester extends \Codeception\Actor
 
 
         // Define the path to servers.json
-        $serversJsonPath = '/var/www/html/wp-content/plugins/ion-chat/servers.json';
+        $serversJsonPath = '/var/www/html/wp-content/plugins/aion-chat/servers.json';
 
         // Check if the file is accessible and readable
         $I->amGoingTo("Check if the file at {$serversJsonPath} is accessible and readable");
@@ -181,7 +181,7 @@ class AcceptanceTester extends \Codeception\Actor
         $command = 'wp post create --post_type=aion-conversation --post_title="TestPost"';
         $postID = ( $this->extractPostNumeral(shell_exec($command)));
 
-        $command = "wp post meta update " . $postID . " ion-chat-instructions 'You are a helpful assistant.'";
+        $command = "wp post meta update " . $postID . " aion-chat-instructions 'You are a helpful assistant.'";
         echo(shell_exec($command));
 
         $command = 'wp user get Ion --field=ID';
@@ -202,7 +202,7 @@ class AcceptanceTester extends \Codeception\Actor
         $this->amOnPage("/wp-admin/");
         $this->see("Mothership");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/ion-chat/tests/acceptance/intelligent_response_setup.sh";
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         return (shell_exec($command));
     }
 
@@ -215,7 +215,7 @@ class AcceptanceTester extends \Codeception\Actor
         $this->amOnPage("/wp-admin/");
         $this->see("RemoteNode");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/ion-chat/tests/acceptance/intelligent_response_setup.sh";
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         return(shell_exec($command));
     }
 

@@ -1,6 +1,6 @@
 <?php
-require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php");
-require_once("/var/www/html/wp-content/plugins/ion-chat/src/IonChatMothership/autoloader.php");
+require_once("/var/www/html/wp-content/plugins/aion-chat/src/AionChat/autoloader.php");
+require_once("/var/www/html/wp-content/plugins/aion-chat/src/AionChatMothership/autoloader.php");
 // Create users
 $user_id1 = wp_create_user('Codeception', 'password', 'codeception@email.com');
 $user_id2 = wp_create_user('Ion', 'password', 'jiminac@aol.com');

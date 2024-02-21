@@ -1,6 +1,6 @@
 <?php
 
-use IonChat\Conversation;
+use AionChat\Conversation;
 
 class ConversationTest extends \Codeception\TestCase\WPTestCase
 {
@@ -8,7 +8,7 @@ class ConversationTest extends \Codeception\TestCase\WPTestCase
     public function setUp(): void
     {
         parent::setUp();
-        require_once('/var/www/html/wp-content/plugins/ion-chat/src/IonChat/autoloader.php');
+        require_once('/var/www/html/wp-content/plugins/aion-chat/src/AionChat/autoloader.php');
     }
 
     /**
@@ -16,7 +16,7 @@ class ConversationTest extends \Codeception\TestCase\WPTestCase
      * it should be exist
      */
     public function testClassAndMethodExistence() {
-        $className = '\IonChat\Conversation';
+        $className = '\AionChat\Conversation';
         $methodName = 'parseIonConversationTitle';
 
         // Check if the class exists

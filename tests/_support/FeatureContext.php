@@ -17,7 +17,7 @@ class FeatureContext implements Context
         $I->wantToTest('Read server IPs from servers.json file');
 
         // Define the path to servers.json
-        $serversJsonPath = '/var/www/html/wp-content/plugins/ion-chat/servers.json';
+        $serversJsonPath = '/var/www/html/wp-content/plugins/aion-chat/servers.json';
 
         // Check if the file is accessible and readable
         $I->amGoingTo("Check if the file at {$serversJsonPath} is accessible and readable");

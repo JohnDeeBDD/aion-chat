@@ -50,7 +50,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate woocommerce --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate disable-welcome-messages-and-tips --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate better-error-messages --path=/var/www/html',
-    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate ion-chat --path=/var/www/html',
+    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate aion-chat --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-data-access --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
@@ -72,7 +72,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate woocommerce --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate disable-welcome-messages-and-tips --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate better-error-messages --path=/var/www/html',
-    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate ion-chat --path=/var/www/html',
+    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate aion-chat --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-data-access --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
@@ -88,15 +88,15 @@ foreach($SSH_Commands as $command){
 
 //Store the IP addresses in the file servers.json
 $servers = [$dev1IP, $dev2IP];
-$fp = fopen('/var/www/html/wp-content/plugins/ion-chat/servers.json', 'w');
+$fp = fopen('/var/www/html/wp-content/plugins/aion-chat/servers.json', 'w');
 fwrite($fp, json_encode($servers));
 fclose($fp);
 
 
 echo("Copying servers.json to remotes:" . PHP_EOL);
-$command = "scp -i /home/johndee/sportsman.pem servers.json ubuntu@$dev1IP:/var/www/html/wp-content/plugins/ion-chat/servers.json";
+$command = "scp -i /home/johndee/sportsman.pem servers.json ubuntu@$dev1IP:/var/www/html/wp-content/plugins/aion-chat/servers.json";
 echo ($command . PHP_EOL);shell_exec($command);
-$command = "scp -i /home/johndee/sportsman.pem servers.json ubuntu@$dev2IP:/var/www/html/wp-content/plugins/ion-chat/servers.json";
+$command = "scp -i /home/johndee/sportsman.pem servers.json ubuntu@$dev2IP:/var/www/html/wp-content/plugins/aion-chat/servers.json";
 echo ($command . PHP_EOL);shell_exec($command);
 
 
@@ -106,21 +106,21 @@ updateXMLIPField(".idea/sshConfigs.xml", $dev1PHPStormID, $dev1IP);
 updateXMLIPField(".idea/sshConfigs.xml", $dev2PHPStormID, $dev2IP);
 
 //Setting up chat plugins:
-$command = "cd /var/www/html/wp-content/plugins/ion-chat";
+$command = "cd /var/www/html/wp-content/plugins/aion-chat";
 echo ($command . PHP_EOL); shell_exec($command);
 
 $command = "bin/codecept run acceptance StartupServersCept.php -vvv --html";
 echo ($command . PHP_EOL); shell_exec($command);
 
 ////Creating WooCommerce product and order
-//$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " php /var/www/html/wp-content/plugins/ion-chat/startupWooCommerce.php";
+//$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " php /var/www/html/wp-content/plugins/aion-chat/startupWooCommerce.php";
 //echo ($command . PHP_EOL);shell_exec($command);
 
 //$orderID = getOrderIDfromMothership($dev1IP);
 
 /*
 //Update Constants.class.php
-$constantsFile = "/var/www/html/wp-content/plugins/ion-chat/src/EmailTunnel/Constants.class.php";
+$constantsFile = "/var/www/html/wp-content/plugins/aion-chat/src/EmailTunnel/Constants.class.php";
 $blurb = file_get_contents($constantsFile);
 $replaceWith = "http://$dev1IP";
 $blurb = replaceTextInBetweenSingleQuotes($blurb, $replaceWith);

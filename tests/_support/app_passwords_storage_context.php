@@ -12,11 +12,11 @@ class app_passwords_storage_context extends Actor{
     public function ionIsAUserOnTheMothership()
     {
         $I = $this;
-        $file = file_get_contents("/var/www/html/wp-content/plugins/ion-chat/servers.json");
+        $file = file_get_contents("/var/www/html/wp-content/plugins/aion-chat/servers.json");
         $IPs = json_decode($file);
-        global $IonChat_mothership_url;
-        $IonChat_mothership_url = "http://" . $IPs[0];
-        $I->reconfigureThisVariable(["url" => $IonChat_mothership_url]);
+        global $AionChat_mothership_url;
+        $AionChat_mothership_url = "http://" . $IPs[0];
+        $I->reconfigureThisVariable(["url" => $AionChat_mothership_url]);
         $I->loginAsAdmin();
         $I->amOnPage("/wp-admin/users.php");
         $I->fillField("#user-search-input", "ion@ioncity.ai");
@@ -51,11 +51,11 @@ class app_passwords_storage_context extends Actor{
     public function iAmLoggedInAsAnAdmin()
     {
         $I = $this;
-        $file = file_get_contents("/var/www/html/wp-content/plugins/ion-chat/servers.json");
+        $file = file_get_contents("/var/www/html/wp-content/plugins/aion-chat/servers.json");
         $IPs = json_decode($file);
-        global $IonChat_mothership_url;
-        $IonChat_mothership_url = "http://" . $IPs[0];
-        $I->reconfigureThisVariable(["url" => $IonChat_mothership_url]);
+        global $AionChat_mothership_url;
+        $AionChat_mothership_url = "http://" . $IPs[0];
+        $I->reconfigureThisVariable(["url" => $AionChat_mothership_url]);
         $I->loginAsAdmin();
     }
 

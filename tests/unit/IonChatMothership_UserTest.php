@@ -1,8 +1,8 @@
 <?php
 
-use IonChatMothership\User;
+use AionChatMothership\User;
 
-class IonChatMothership_UserTest extends \Codeception\TestCase\WPTestCase {
+class AionChatMothership_UserTest extends \Codeception\TestCase\WPTestCase {
     private $userId;
     private $remoteSiteUrl = 'https://example.com';
     private $remoteUserName = 'testuser';

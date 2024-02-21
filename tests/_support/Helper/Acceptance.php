@@ -40,7 +40,7 @@ class Acceptance extends \Codeception\Module{
     }
 
     public function getSiteUrls(){
-        return json_decode(file_get_contents('/var/www/html/wp-content/plugins/ion-chat/servers.json'), true);
+        return json_decode(file_get_contents('/var/www/html/wp-content/plugins/aion-chat/servers.json'), true);
     }
 
 

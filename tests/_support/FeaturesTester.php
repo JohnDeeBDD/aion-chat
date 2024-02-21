@@ -25,7 +25,7 @@ class FeaturesTester extends \Codeception\Actor
      */
      public function thereAreTwoServers(){
          $I = $this;
-         $servers = json_decode(file_get_contents("/var/www/html/wp-content/plugins/ion-chat/servers.json"));
+         $servers = json_decode(file_get_contents("/var/www/html/wp-content/plugins/aion-chat/servers.json"));
          $I->amOnUrl("http://" . $servers[0]);
          $I->see("Mothership");
 
