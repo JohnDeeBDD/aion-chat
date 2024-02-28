@@ -7,7 +7,6 @@ class Plugin{
     public static function enable($prodMode = "prod"){
         self::setupProtocol($prodMode);
         \add_action('admin_menu', '\AionChat\Plugin::do_create_admin_page');
-
     }
 
 

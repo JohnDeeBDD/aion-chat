@@ -3,14 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="8124d539-7eaa-4a96-a9cd-2ea3ab90c76a" name="Remote">
-        <fileTransfer accessType="SFTP" host="3.21.204.181" port="22" sshConfigId="7dddac4c-398a-4e26-b322-7c880a02f49d" sshConfig="Remote" keyPair="true">
+        <fileTransfer accessType="SFTP" host="13.58.79.164" port="22" sshConfigId="7dddac4c-398a-4e26-b322-7c880a02f49d" sshConfig="Remote" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="f72537bf-0a72-4df2-843e-3bdb59bab5b2" name="Mothership">
-        <fileTransfer accessType="SFTP" host="18.191.137.214" port="22" sshConfigId="e084db73-71ee-4f6b-be2a-0d282438da4b" sshConfig="Mothership" keyPair="true">
+        <fileTransfer accessType="SFTP" host="18.218.72.121" port="22" sshConfigId="e084db73-71ee-4f6b-be2a-0d282438da4b" sshConfig="Mothership" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

@@ -3,7 +3,7 @@
 Plugin Name: Aion Chat
 Plugin URI: https://aion.garden
 Description: The Singularity is here.
-Version: 1.2
+Version: 1.3
 Author: johndee
 Author URI: https://generalchicken.guru
 License: Copyright(C) 2024, generalchicken.guru . All rights reserved. THIS IS NOT FREE SOFTWARE.
