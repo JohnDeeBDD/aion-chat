@@ -184,7 +184,7 @@ class AcceptanceTester extends \Codeception\Actor
         $command = "wp post meta update " . $postID . " aion-chat-instructions 'You are a helpful assistant.'";
         echo(shell_exec($command));
 
-        $command = 'wp user get Ion --field=ID';
+        $command = 'wp user get Assistant --field=ID';
         $IonUserID = (shell_exec($command));
         $command = "wp post update " . $postID . " --post_author=" . $IonUserID;
         echo(shell_exec($command));
@@ -206,7 +206,7 @@ class AcceptanceTester extends \Codeception\Actor
         return (shell_exec($command));
     }
 
-    public function setupPluginOnRemoteNOde()
+    public function setupPluginOnRemoteNode()
     {
         $remoteNodeIP = $this->getSiteUrls();
         $remoteNodeIP = $remoteNodeIP[1];
@@ -233,6 +233,7 @@ class AcceptanceTester extends \Codeception\Actor
     }
 
     public function makeAComment($comment)
+
     {
         $I = $this;
         $I->amOnPage("/aion-conversation/testpost");
@@ -249,4 +250,5 @@ class AcceptanceTester extends \Codeception\Actor
         $I->see($response);
     }
 
+    public function cleanupAfterRemotenodeIntelligentResponse(){}
 }

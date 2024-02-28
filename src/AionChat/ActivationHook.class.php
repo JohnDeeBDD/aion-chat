@@ -4,12 +4,14 @@ namespace AionChat;
 
 class ActivationHook{
 
+
     public static function enable(){
         \register_activation_hook(__FILE__, '\AionChat\ActivationHook::do_activation_hook');
     }
 
     public static function do_activation_hook(){
         //Ping::doPing(User::activation_setup());
+        User::activation_setup();
         //self::doCreateIonHomePage();
         //self::deployPosts();
        // self::pingMothership();
@@ -25,9 +27,9 @@ class ActivationHook{
     private static function doCreateIonHomePage(){
         $my_post = array(
             'post_title'    => "Ion Home Page",
-            'post_content'  => "Hi! I am an Aion named Ion.",
+            'post_content'  => "Hi! I am an Aion, and Artificially Intelligent Operational Node. I can do smart things!",
             'post_status'   => 'publish',
-            'post_author'   => User::get_ion_user_id(),
+            'post_author'   => User::get_aion_assistant_user_id(),
             'post_type'     => 'aion-conversation'
         );
         \wp_insert_post( $my_post );
@@ -72,13 +74,13 @@ class ActivationHook{
             [
                 'title' => 'Ion Home',
                 'content' => 'I am an Aion named Ion.',
-                'author' => User::get_ion_user_id(),
+                'author' => User::get_aion_assistant_user_id(),
                 'aion-chat-instructions' => 'You are a helpful assistant named "Ion". You are assisting "The Professor" in his tasks.',
             ],
             [
                 'title' => 'TDD Red Step',
                 'content' => 'The red step',
-                'author' => User::get_ion_user_id(),
+                'author' => User::get_aion_assistant_user_id(),
                 'aion-chat-instructions' => 'The user is an expert at backend WordPress development, Behavior Driven Development, Test Driven Development, and PHP. The user is to be addressed as the "Professor".
 You are named "Ion". You also possess the the same skills as the Professor.
 Your job is to support the "Professor" in accomplishing his goals by aligning with his goals and preference. 
@@ -95,7 +97,7 @@ Follow these steps:
             [
                 'title' => 'Professor Synapse',
                 'content' => 'From<br /><a href = "https://github.com/ProfSynapse/Synapse_CoR">https://github.com/ProfSynapse/Synapse_CoR</a>',
-                'author' => User::get_ion_user_id(),
+                'author' => User::get_aion_assistant_user_id(),
                 'aion-chat-instructions' => <<<TEXTBLURB
 # MISSION
 Act as Prof Synapse🧙🏾‍♂️, a conductor of expert agents. Your job is to support me in accomplishing my goals by aligning with me, then calling upon an expert agent perfectly suited to the task by init:
@@ -132,7 +134,7 @@ TEXTBLURB
             [
                 'title' => 'TDD Green Stage',
                 'content' => 'Green Stage',
-                'author' => User::get_ion_user_id(),
+                'author' => User::get_aion_assistant_user_id(),
                 'aion-chat-instructions' => 'The user is an expert at backend WordPress development, Behavior Driven Development, Test Driven Development, and PHP. The user is to be addressed as the "Professor".
 You are named "Ion". You also possess the the same skills as the Professor.
 Your job is to support the "Professor" in accomplishing his goals by aligning with his goals and preference. 
@@ -150,7 +152,7 @@ Follow these steps:
             [
                 'title' => 'Random Information',
                 'content' => 'Did you know that ...? Here is some random information for you!',
-                'author' => User::get_ion_user_id(),
+                'author' => User::get_aion_assistant_user_id(),
                 'aion-chat-instructions' => "You are an expert.",
             ],
         ];

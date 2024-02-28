@@ -4,21 +4,26 @@ namespace AionChat;
 
 class Plugin{
 
-    public static function enable(){
-        self::setupProtocol();
+    public static function enable($prodMode = "prod"){
+        self::setupProtocol($prodMode);
         \add_action('admin_menu', '\AionChat\Plugin::do_create_admin_page');
 
     }
 
 
-    public static function setupProtocol(){
+    public static function setupProtocol($prodMode){
         global $AionChat_mothership_url;
         global $AionChat_remote_node_url;
-        //$AionChat_mothership_url = "https://ioncity.ai";
-        $file = file_get_contents(\plugin_dir_path(__FILE__) . "../../servers.json");
-        $IPs = json_decode($file);
-        $AionChat_mothership_url = "http://" . $IPs[0];
-        $AionChat_remote_node_url = "http://" . $IPs[1];
+        if($prodMode === "prod"){
+            $AionChat_mothership_url = "https://aion.garden";
+            $AionChat_remote_node_url = "https://aion.garden";
+        }else{
+            $file = file_get_contents(\plugin_dir_path(__FILE__) . "../../servers.json");
+            // if(!file_exists($path)) return false
+            $IPs = json_decode($file);
+            $AionChat_mothership_url = "http://" . $IPs[0];
+            $AionChat_remote_node_url = "http://" . $IPs[1];
+        }
         global $AionChatProtocal;
         if (!isset($AionChatProtocal)) {
             $AionChatProtocal = "remote_node";
@@ -27,8 +32,6 @@ class Plugin{
         if($siteURL === "http://localhost"){
             $AionChatProtocal = "mothership";
         }
-
-
     }
 
 
@@ -123,8 +126,7 @@ class Plugin{
                     submitButton.disabled = apiKeyInput.value === "";
                 }
             </script>
-        </div>
-        <?php
+        </div><?php
     }
 
 }

@@ -4,31 +4,22 @@ namespace AionChat\Tests;
 
 class UserTest extends \Codeception\TestCase\WPTestCase {
 
-    public function testGetIonEmail() {
-        $expected_email = "ion@ioncity.ai";
-        $actual_email = \AionChat\User::get_ion_email();
+    public function testGetAionAssistantEmail() {
+        $expected_email = "assistant@aion.garden";
+        $actual_email = \AionChat\User::get_aion_assistant_email();
         $this->assertEquals($expected_email, $actual_email, "The emails should match.");
     }
 
-    public function testForceReturnUserId() {
+    public function test_User_force_return_user_id() {
+        /* The purpose of this function is that when given an email address, it either returns the user ID or creates a new user and returns that id.
+        */
         $email = 'new_user@example.com';
         $user_id = \AionChat\User::force_return_user_id($email);
         $this->assertIsInt($user_id, "The returned user ID should be an integer.");
     }
 
-    /**
-     * @test
-     */
-    public function IonShouldBeCreatedUponActivation(){
-        /*
-         *     Scenario: There is no Ion user
-    Given there is no user with the email address "jiminac@aol.com"
-    When the plugin is activated
-    Then a user should be created with the email "jiminac@aol.com", username "Ion"
-And an email should be sent to Ion with a password
-And the remote fires a ping to the mothership
+    public function test_mothership_user_receive_store_application_password_request(){
 
-         */
     }
 
 

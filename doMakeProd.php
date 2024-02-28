@@ -9,7 +9,8 @@ shell_exec("sudo rm -fr /var/www/html/wp-content/plugins/aion-chat/aion-chat");
 shell_exec("sudo mkdir /var/www/html/wp-content/plugins/aion-chat/aion-chat");
 
 copy("/var/www/html/wp-content/plugins/aion-chat/aion-chat.php", "/var/www/html/wp-content/plugins/aion-chat/aion-chat/aion-chat.php");
-//shell_exec("cp -r /var/www/html/wp-content/plugins/aion-chat/src /var/www/html/wp-content/plugins/aion-chat/aion-chat/src");
+copy("/var/www/html/wp-content/plugins/aion-chat/servers.json", "/var/www/html/wp-content/plugins/aion-chat/aion-chat/servers.json");
+
 
 shell_exec("sudo rsync -r --exclude src/AionChatMothership src aion-chat");
 

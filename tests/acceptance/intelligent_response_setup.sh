@@ -12,18 +12,18 @@ else
 fi
 
 
-# Get the user ID of the author "Ion"
-AUTHOR_ID=$(wp user get Ion --field=ID --path=/var/www/html)
+
+# Get the user ID of the author "Aion"
+AUTHOR_ID=$(wp user get Assistant --field=ID --path=/var/www/html)
 
 # Check if the user ID was retrieved successfully
 if [ -z "$AUTHOR_ID" ]; then
-    echo "Failed to retrieve user ID for 'Ion'."
+    echo "Failed to retrieve user ID for 'Assistant'."
     exit 1
 else
-    echo "User 'Ion' has ID $AUTHOR_ID"
+    echo "User 'Assistant' has ID $AUTHOR_ID"
 fi
 
-# Update the post meta for the newly created post
 wp post meta set $POST_ID aion-chat-instructions "You are a helpful assistant named John." --path=/var/www/html
 
 if [ $? -eq 0 ]; then

@@ -10,9 +10,10 @@ $I->click(".welcome-panel-close");
 $I->click(".woocommerce-message-close");
 $I->clickWithLeftButton(".fs-close");
 $I->amOnPage("/wp-admin/plugins.php");
-$I->click("#activate-aion-chat");
+//$I->click("#activate-aion-chat");
 //$I->see("Plugin activated.");
-$I->click("#activate-aion-chat-mothership");
+//$I->click("#activate-aion-chat-mothership");
+
 //$I->see("Plugin activated.");
 
 

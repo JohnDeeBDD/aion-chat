@@ -2,25 +2,894 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/ConnectRemoteNodeToMothership.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/EmailVerificationAfterApplicationPasswordTransfer.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/aion-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aion-chat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-test-framework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat-mothership.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/read.me" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doMakeProd.php" beforeDir="false" afterPath="$PROJECT_DIR$/doMakeProd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat-1.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat-1.1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-1.2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ion-chat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Comment.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Comment.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/DebugMode.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/DebugMode.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/DevMode.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/DevMode.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ErrorHandler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ErrorHandler.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ModeStrategy.interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ModeStrategy.interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Partial.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Partial.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Ping.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Ping.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Aion.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Comment.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Connections.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Email.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Ping.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/Prompt.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/TrafficController.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/User.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChatMothership/xxxDevMode.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/startAionChatServers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stopIonChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/stopAionChatServers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Post.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Post.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Reflektor.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Reflektor.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Skill.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Skill.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Step.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Step.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Task.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Task.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-abap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-abap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-abap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-abap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-abnf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-abnf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-abnf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-abnf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-actionscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-actionscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-actionscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-actionscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ada.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ada.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ada.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ada.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-agda.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-agda.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-agda.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-agda.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-al.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-al.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-al.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-al.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-antlr4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-antlr4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-antlr4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-antlr4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apacheconf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apacheconf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apacheconf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apacheconf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apex.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-apl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-apl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-applescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-applescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-applescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-applescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-aql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-aql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-aql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-aql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arduino.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arduino.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arduino.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arduino.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arff.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arff.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arff.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-armasm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-armasm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-armasm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-armasm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arturo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arturo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-arturo.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-arturo.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asciidoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asciidoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asciidoc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asciidoc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asm6502.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asm6502.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asm6502.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asm6502.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asmatmel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asmatmel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-asmatmel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-asmatmel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-aspnet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-aspnet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-aspnet.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-aspnet.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-autohotkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-autohotkey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-autohotkey.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-autohotkey.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-autoit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-autoit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-autoit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-autoit.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-avisynth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-avisynth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-avisynth.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-avisynth.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-avro-idl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-avro-idl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-avro-idl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-avro-idl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-awk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-awk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-awk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-awk.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bash.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bash.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-basic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-basic.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-batch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-batch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-batch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-batch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bbcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bbcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bbcode.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bbcode.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bbj.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bbj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bbj.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bbj.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bicep.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bicep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bicep.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bicep.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-birb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-birb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-birb.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-birb.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bison.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bison.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bison.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bnf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bnf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bnf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bnf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bqn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bqn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bqn.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bqn.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-brainfuck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-brainfuck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-brainfuck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-brainfuck.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-brightscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-brightscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-brightscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-brightscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bro.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bro.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bsl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bsl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-bsl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-bsl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-c.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-c.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-c.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cfscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cfscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cfscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cfscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-chaiscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-chaiscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-chaiscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-chaiscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cil.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cil.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cil.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cilkc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cilkc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cilkc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cilkc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cilkcpp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cilkcpp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cilkcpp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cilkcpp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-clike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-clike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-clike.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-clike.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-clojure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-clojure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-clojure.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-clojure.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cmake.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cmake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cmake.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cmake.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cobol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cobol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cobol.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cobol.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-coffeescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-coffeescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-coffeescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-coffeescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-concurnas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-concurnas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-concurnas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-concurnas.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cooklang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cooklang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cooklang.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cooklang.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-coq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-coq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-coq.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-coq.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cpp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cpp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cpp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cpp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-crystal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-crystal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-crystal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-crystal.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csharp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csharp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csharp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cshtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cshtml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cshtml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cshtml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-css-extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-css-extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-css-extras.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-css-extras.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-css.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-css.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-css.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-csv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-csv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cue.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cue.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cypher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cypher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-cypher.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-cypher.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-d.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-d.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dataweave.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dataweave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dataweave.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dataweave.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dax.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dax.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dhall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dhall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dhall.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dhall.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-diff.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-diff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-diff.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-diff.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-django.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-django.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-django.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-django.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dns-zone-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dns-zone-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dns-zone-file.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dns-zone-file.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-docker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-docker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-docker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-docker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-dot.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-dot.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ebnf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ebnf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ebnf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ebnf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-editorconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-editorconfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-editorconfig.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-editorconfig.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-eiffel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-eiffel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-eiffel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-eiffel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ejs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ejs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ejs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ejs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-elixir.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-elixir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-elixir.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-elixir.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-elm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-elm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-elm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-elm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-erb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-erb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-erb.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-erb.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-erlang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-erlang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-erlang.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-erlang.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-etlua.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-etlua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-etlua.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-etlua.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-excel-formula.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-excel-formula.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-excel-formula.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-excel-formula.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-factor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-factor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-factor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-factor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-false.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-false.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-false.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-false.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-firestore-security-rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-firestore-security-rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-firestore-security-rules.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-firestore-security-rules.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-flow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-flow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-fortran.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-fortran.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-fortran.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-fortran.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-fsharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-fsharp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-fsharp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-fsharp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ftl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ftl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ftl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ftl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gcode.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gcode.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gdscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gdscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gdscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gdscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gedcom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gedcom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gedcom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gedcom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gettext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gettext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gettext.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gettext.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gherkin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gherkin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gherkin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gherkin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-git.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-git.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-git.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-git.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-glsl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-glsl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-glsl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-glsl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gn.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gn.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-go-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-go-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-go-module.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-go-module.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-go.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-go.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-go.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-go.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gradle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gradle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-gradle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-gradle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-graphql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-graphql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-graphql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-groovy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-groovy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-groovy.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-groovy.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-handlebars.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haskell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haskell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haskell.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haskell.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haxe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haxe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-haxe.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-haxe.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hcl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hcl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hcl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hcl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hlsl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hlsl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hlsl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hlsl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hoon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hoon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hoon.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hoon.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hpkp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hpkp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hpkp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hpkp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hsts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hsts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-hsts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-hsts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-http.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-http.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ichigojam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ichigojam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ichigojam.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ichigojam.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-icon.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-icon.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-icu-message-format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-icu-message-format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-icu-message-format.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-icu-message-format.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-idris.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-idris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-idris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-idris.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-iecst.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-iecst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-iecst.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-iecst.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ignore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ignore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ignore.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ignore.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-inform7.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-inform7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-inform7.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-inform7.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ini.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ini.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ini.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ini.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-io.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-io.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-io.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-io.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-j.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-j.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-j.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-j.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-java.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-java.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-java.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-java.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javadoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javadoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javadoc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javadoc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javadoclike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javadoclike.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javadoclike.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javadoclike.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javascript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javascript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javastacktrace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javastacktrace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-javastacktrace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-javastacktrace.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jexl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jexl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jexl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jexl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jolie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jolie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jolie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jolie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jq.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jq.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-js-extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-js-extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-js-extras.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-js-extras.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-js-templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-js-templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-js-templates.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-js-templates.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsdoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsdoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsdoc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsdoc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-json.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-json.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-json5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-json5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-json5.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-json5.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsonp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsonp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsonp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsonp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsstacktrace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsstacktrace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsstacktrace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsstacktrace.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-jsx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-jsx.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-julia.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-julia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-julia.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-julia.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-keepalived.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-keepalived.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-keepalived.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-keepalived.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-keyman.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-keyman.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-keyman.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-keyman.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kotlin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kotlin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kotlin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kotlin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kumir.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kumir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kumir.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kumir.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kusto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kusto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-kusto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-kusto.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-latex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-latex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-latex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-latex.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-latte.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-latte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-latte.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-latte.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-less.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-less.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-less.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-less.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lilypond.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lilypond.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lilypond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lilypond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-linker-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-linker-script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-linker-script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-linker-script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-liquid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-liquid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-liquid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-liquid.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lisp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lisp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lisp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lisp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-livescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-livescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-livescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-livescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-llvm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-llvm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-llvm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-llvm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-log.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-log.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lolcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lolcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lolcode.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lolcode.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lua.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-lua.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-lua.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-magma.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-magma.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-magma.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-magma.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-makefile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-makefile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-makefile.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-makefile.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markup-templating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markup-templating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markup-templating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markup-templating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-markup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-markup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mata.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mata.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-matlab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-matlab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-matlab.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-matlab.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-maxscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-maxscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-maxscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-maxscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mermaid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mermaid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mermaid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mermaid.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-metafont.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-metafont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-metafont.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-metafont.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mizar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mizar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mizar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mizar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mongodb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mongodb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-mongodb.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-mongodb.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-monkey.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-monkey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-monkey.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-monkey.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-moonscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-moonscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-moonscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-moonscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-n1ql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-n1ql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-n1ql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-n1ql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-n4js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-n4js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-n4js.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-n4js.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nand2tetris-hdl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nand2tetris-hdl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nand2tetris-hdl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nand2tetris-hdl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-naniscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-naniscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-naniscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-naniscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nasm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nasm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nasm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nasm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-neon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-neon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-neon.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-neon.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nevod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nevod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nevod.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nevod.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nginx.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nginx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nginx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nginx.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nix.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nix.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nix.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nsis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nsis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-nsis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-nsis.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-objectivec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-objectivec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-objectivec.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-objectivec.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ocaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ocaml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ocaml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ocaml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-odin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-odin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-odin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-odin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-opencl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-opencl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-opencl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-opencl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-openqasm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-openqasm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-openqasm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-openqasm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-oz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-oz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-oz.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-oz.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-parigp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-parigp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-parigp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-parigp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-parser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-parser.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pascal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pascal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pascal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pascal.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pascaligo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pascaligo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pascaligo.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pascaligo.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pcaxis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pcaxis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pcaxis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pcaxis.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-peoplecode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-peoplecode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-peoplecode.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-peoplecode.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-perl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-perl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-perl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-perl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-php-extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-php-extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-php-extras.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-php-extras.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-php.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-php.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-php.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-php.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-phpdoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-phpdoc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-phpdoc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-phpdoc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-plant-uml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-plant-uml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-plant-uml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-plant-uml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-plsql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-plsql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-plsql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-plsql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-powerquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-powerquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-powerquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-powerquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-powershell.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-powershell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-powershell.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-powershell.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-processing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-processing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-processing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-processing.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-prolog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-prolog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-prolog.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-prolog.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-promql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-promql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-promql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-promql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-properties.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-properties.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-properties.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-protobuf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-protobuf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-protobuf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-protobuf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-psl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-psl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-psl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-psl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pug.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pug.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pug.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-puppet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-puppet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-puppet.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-puppet.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pure.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-pure.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-pure.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-purebasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-purebasic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-purebasic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-purebasic.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-purescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-purescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-purescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-purescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-python.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-python.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-python.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-python.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-q.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-q.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-q.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-q.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qore.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qore.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qsharp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qsharp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-qsharp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-qsharp.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-r.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-r.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-r.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-r.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-racket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-racket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-racket.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-racket.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-reason.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-reason.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-reason.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-reason.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-regex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-regex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-regex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-regex.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rego.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rego.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rego.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rego.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-renpy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-renpy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-renpy.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-renpy.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rest.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rest.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rip.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-roboconf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-roboconf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-roboconf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-roboconf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-robotframework.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-robotframework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-robotframework.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-robotframework.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ruby.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ruby.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-ruby.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-ruby.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rust.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rust.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-rust.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-rust.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sas.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sass.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sass.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sass.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scala.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scala.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scala.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scheme.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scheme.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-scss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-scss.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-shell-session.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-shell-session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-shell-session.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-shell-session.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smali.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smali.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smali.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smali.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smalltalk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smalltalk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smalltalk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smalltalk.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smarty.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smarty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-smarty.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-smarty.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-solidity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-solidity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-solidity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-solidity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-solution-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-solution-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-solution-file.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-solution-file.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-soy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-soy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-soy.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-soy.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sparql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sparql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sparql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sparql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-splunk-spl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-splunk-spl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-splunk-spl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-splunk-spl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sqf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sqf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sqf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sqf.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-sql.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-sql.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-squirrel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-squirrel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-squirrel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-squirrel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stan.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stan.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stata.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stata.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stylus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stylus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-stylus.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-stylus.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-supercollider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-supercollider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-supercollider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-supercollider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-swift.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-swift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-swift.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-swift.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-systemd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-systemd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-systemd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-systemd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-cs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-cs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-templating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-templating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-templating.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-templating.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-vb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-vb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-t4-vb.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-t4-vb.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tcl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tcl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tcl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tcl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-textile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-textile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-textile.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-textile.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-toml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-toml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-toml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-toml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tremor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tremor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tremor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tremor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tsx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tsx.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tt2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tt2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-tt2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-tt2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-turtle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-turtle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-turtle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-turtle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-twig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-twig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-twig.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-twig.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-typescript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-typescript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-typoscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-typoscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-typoscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-typoscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-unrealscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-unrealscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-unrealscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-unrealscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-uorazor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-uorazor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-uorazor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-uorazor.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-uri.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-uri.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-uri.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-uri.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-v.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-v.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-v.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-v.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vala.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vala.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vala.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vbnet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vbnet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vbnet.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vbnet.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-velocity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-velocity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-velocity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-velocity.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-verilog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-verilog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-verilog.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-verilog.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vhdl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vhdl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vhdl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vhdl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-vim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-vim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-visual-basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-visual-basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-visual-basic.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-visual-basic.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-warpscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-warpscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-warpscript.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-warpscript.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wasm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wasm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wasm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wasm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-web-idl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-web-idl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-web-idl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-web-idl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wgsl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wgsl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wgsl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wgsl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wiki.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wiki.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wiki.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wiki.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wolfram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wolfram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wolfram.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wolfram.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wren.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-wren.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-wren.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xeora.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xeora.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xeora.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xeora.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xml-doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xml-doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xml-doc.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xml-doc.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xojo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xojo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xojo.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xojo.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-xquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-xquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-yaml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-yaml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-yaml.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-yaml.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-yang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-yang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-yang.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-yang.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-zig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-zig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/components/prism-zig.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/components/prism-zig.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/dependencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/dependencies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autolinker/prism-autolinker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autoloader/prism-autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autoloader/prism-autoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/autoloader/prism-autoloader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/autoloader/prism-autoloader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/command-line/prism-command-line.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/custom-class/prism-custom-class.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/custom-class/prism-custom-class.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/custom-class/prism-custom-class.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/custom-class/prism-custom-class.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/data-uri-highlight/prism-data-uri-highlight.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/diff-highlight/prism-diff-highlight.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/download-button/prism-download-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/download-button/prism-download-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/download-button/prism-download-button.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/download-button/prism-download-button.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/file-highlight/prism-file-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/file-highlight/prism-file-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/file-highlight/prism-file-highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/file-highlight/prism-file-highlight.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/filter-highlight-all/prism-filter-highlight-all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/inline-color/prism-inline-color.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/jsonp-highlight/prism-jsonp-highlight.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/keep-markup/prism-keep-markup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/keep-markup/prism-keep-markup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/keep-markup/prism-keep-markup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/keep-markup/prism-keep-markup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-highlight/prism-line-highlight.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/line-numbers/prism-line-numbers.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/match-braces/prism-match-braces.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/previewers/prism-previewers.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/remove-initial-line-feed/prism-remove-initial-line-feed.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-invisibles/prism-show-invisibles.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-language/prism-show-language.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-language/prism-show-language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/show-language/prism-show-language.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/show-language/prism-show-language.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/toolbar/prism-toolbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/treeview/prism-treeview.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/plugins/wpd/prism-wpd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/prism.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/prism.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-coy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-coy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-coy.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-coy.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-dark.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-dark.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-funky.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-funky.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-funky.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-funky.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-okaidia.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-okaidia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-okaidia.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-okaidia.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-solarizedlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-solarizedlight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-solarizedlight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-solarizedlight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-tomorrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-tomorrow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-tomorrow.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-tomorrow.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-twilight.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-twilight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism-twilight.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism-twilight.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prismjs/themes/prism.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/prismjs/themes/prism.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5/PucFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5/PucFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Autoloader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Autoloader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/Extension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/Extension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/Panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/Panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/PluginExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/PluginExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/PluginPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/PluginPanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/ThemePanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/DebugBar/ThemePanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/InstalledPackage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/InstalledPackage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Metadata.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Metadata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/OAuthSignature.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/OAuthSignature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Package.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Package.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/PluginInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/PluginInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Ui.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Ui.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/UpdateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Plugin/UpdateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/PucFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/PucFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Scheduler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Scheduler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/StateStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/StateStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/Package.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/Package.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/UpdateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Theme/UpdateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/UpdateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/UpdateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/UpgraderStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/UpgraderStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/Api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/BaseChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/BaseChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/BitBucketApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/BitBucketApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/GitHubApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/GitHubApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/GitLabApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/GitLabApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/Reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/Reference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ReleaseAssetSupport.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ReleaseAssetSupport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ReleaseFilteringFeature.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ReleaseFilteringFeature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ThemeUpdateChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/ThemeUpdateChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/VcsCheckerMethods.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/Puc/v5p2/Vcs/VcsCheckerMethods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/build/bump-version.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/build/bump-version.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/css/puc-debug-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/css/puc-debug-bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/examples/plugin.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/examples/plugin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/examples/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/examples/theme.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/js/debug-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/js/debug-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ca.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ca.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ca.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ca.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-cs_CZ.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-cs_CZ.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-cs_CZ.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-cs_CZ.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-da_DK.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-da_DK.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-da_DK.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-da_DK.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-de_DE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-de_DE.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-de_DE.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-de_DE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_AR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_AR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_AR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_AR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CL.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CL.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CL.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CL.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CO.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CO.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CO.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CO.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_CR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_DO.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_DO.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_DO.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_DO.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_ES.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_ES.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_ES.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_ES.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_GT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_GT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_GT.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_GT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_HN.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_HN.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_HN.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_HN.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_MX.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_MX.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_MX.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_MX.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PE.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PE.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_PR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_UY.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_UY.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_UY.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_UY.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_VE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_VE.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_VE.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-es_VE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fa_IR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fa_IR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fa_IR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fa_IR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_CA.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_CA.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_CA.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_CA.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_FR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_FR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_FR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-fr_FR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-hu_HU.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-hu_HU.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-hu_HU.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-hu_HU.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-it_IT.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-it_IT.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-it_IT.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-it_IT.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ja.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ja.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ja.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ja.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_BE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_BE.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_BE.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_BE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_NL.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_NL.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_NL.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-nl_NL.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-pt_BR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-pt_BR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-pt_BR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-pt_BR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ru_RU.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ru_RU.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ru_RU.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-ru_RU.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sl_SI.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sl_SI.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sl_SI.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sl_SI.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sv_SE.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sv_SE.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sv_SE.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-sv_SE.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-tr_TR.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-tr_TR.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-tr_TR.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-tr_TR.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-uk_UA.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-uk_UA.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-uk_UA.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-uk_UA.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-zh_CN.mo" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-zh_CN.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-zh_CN.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker-zh_CN.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker.pot" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/languages/plugin-update-checker.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/license.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/license.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/load-v5p2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/load-v5p2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/phpcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/phpcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/plugin-update-checker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/plugin-update-checker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/vendor/Parsedown.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/vendor/Parsedown.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/vendor/ParsedownModern.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/vendor/ParsedownModern.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/update-checker/vendor/PucReadmeParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/update-checker/vendor/PucReadmeParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startAionChatServers.php" beforeDir="false" afterPath="$PROJECT_DIR$/startAionChatServers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_data/examplePrompt.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_data/examplePrompt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/FeatureContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/FeaturesTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/FeaturesTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/Helper/Features.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/Helper/Features.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/ApiTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/ApiTesterActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/JsTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/JsTesterActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/UnitTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/UnitTesterActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/app_passwords_storage_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/app_passwords_storage_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/ActivationIonUserNotExtant.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/ActivationIonUserNotExtant.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/ActivationIonUserPreviouslyExtant.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/ActivationIonUserPreviouslyExtant.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/AionTag.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/AionTag.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/Aion_notices_comment_on_homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/Aion_notices_comment_on_homepage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/GeneralArchitecture.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/GeneralArchitecture.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/Partial_notices_comment_on_homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/Partial_notices_comment_on_homepage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/StartupServersCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/StartupServersCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/UserChatsOnRemote.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/UserChatsOnRemote.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/app_passwords_storage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/app_passwords_storage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/instance_data.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/instance_data.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/BootstrapTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/BootstrapTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/ConversationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/ConversationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/DebugOptionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/_bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/_bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/docs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +903,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
@@ -145,15 +1014,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2cftY3VmVQ2K73wmktK1dNFtUi4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stopAionChatServers.php" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,7 +1034,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -170,15 +1043,22 @@
       <recent name="$PROJECT_DIR$/../aion-mother" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="stopAionChatServers.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aion-chat/wp-content/plugins/aion-chat/stopAionChatServers.php" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="PHP Script.Start">
+    <configuration name="Intelligent Response" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" method="" scope="File" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.stopAionChatServers.php" />
-      </list>
-    </recent_temporary>
+    <configuration name="Start" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/startAionChatServers.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Stop" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/stopAionChatServers.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Codeception.Intelligent Response" />
+      <item itemvalue="PHP Script.Start" />
+      <item itemvalue="PHP Script.Stop" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -189,42 +1069,89 @@
       <option name="presentableId" value="Default" />
       <updated>1708514505376</updated>
       <workItem from="1708514506779" duration="7095000" />
-      <workItem from="1708529719967" duration="1406000" />
+      <workItem from="1708529719967" duration="15684000" />
+      <workItem from="1708614095902" duration="9636000" />
+      <workItem from="1708702970459" duration="6736000" />
+      <workItem from="1708759770865" duration="3341000" />
+      <workItem from="1708788344891" duration="15043000" />
+      <workItem from="1708860462591" duration="8607000" />
+      <workItem from="1708887855122" duration="9439000" />
+      <workItem from="1708988373195" duration="4009000" />
+      <workItem from="1709030140615" duration="23057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1708529769494">
+    <state x="555" y="219" width="810" height="683" key="#Deployment" timestamp="1709031004886">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="418" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529769494" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1708529617808">
+    <state x="555" y="219" width="810" height="683" key="#Deployment/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709031004886" />
+    <state x="657" y="378" width="605" height="366" key="#Notifications" timestamp="1709080581847">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1708529617808">
+    <state x="657" y="378" width="605" height="366" key="#Notifications/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709080581847" />
+    <state x="561" y="213" width="798" height="696" key="#Options" timestamp="1708704732986">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1708529617807">
+    <state x="561" y="213" width="798" height="696" key="#Options/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708704732986" />
+    <state x="539" y="209" width="842" height="710" key="#SSH_Configurations" timestamp="1709031003539">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617807" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1708529617808">
+    <state x="539" y="209" width="842" height="710" key="#SSH_Configurations/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709031003539" />
+    <state x="752" y="244" width="1084" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1709036404951">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708529617808" />
-    <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1708514523967">
+    <state x="752" y="244" width="1084" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709036404951" />
+    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl" timestamp="1709036399868">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="449" y="193" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708514523967" />
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1708517340060">
+    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709036399868" />
+    <state width="1920" height="936" key="GridCell.Tab.0.bottom" timestamp="1709047236593">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708517340060" />
+    <state width="1920" height="936" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709047236593" />
+    <state width="1920" height="936" key="GridCell.Tab.0.center" timestamp="1709047236593">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1920" height="936" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709047236593" />
+    <state width="1920" height="936" key="GridCell.Tab.0.left" timestamp="1709047236593">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1920" height="936" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709047236593" />
+    <state width="1920" height="936" key="GridCell.Tab.0.right" timestamp="1709047236593">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1920" height="936" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709047236593" />
+    <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1708541210783">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="449" y="193" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708541210783" />
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1708891023561">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708891023561" />
+    <state x="96" y="297" width="1396" height="534" key="find.popup" timestamp="1708797783868">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="96" y="297" width="1396" height="534" key="find.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708797783868" />
+    <state x="861" y="264" width="432" height="599" key="ftp.server.browser" timestamp="1708550037448">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="861" y="264" width="432" height="599" key="ftp.server.browser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708550037448" />
+    <state x="822" y="433" width="276" height="255" key="publish.login" timestamp="1708766152979">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="822" y="433" width="276" height="255" key="publish.login/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708766152979" />
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1709080577888">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709080577888" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>

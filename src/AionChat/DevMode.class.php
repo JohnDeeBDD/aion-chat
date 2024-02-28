@@ -43,7 +43,7 @@ class DevMode{
             'post_title' => 'Ion Home',
             'post_content' => "Hello! I am an Aion named Ion.",
             'post_status' => 'publish',
-            'post_author' => \AionChat\User::get_ion_user_id(),
+            'post_author' => \AionChat\User::get_aion_assistant_user_id(),
             'post_type' => 'aion-conversation',
             'comment_status'   => 'open',
             'ping_status'   => 'open'

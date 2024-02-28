@@ -63,11 +63,11 @@ class Prompt
         $comment_content = str_replace('```', '###TRIPLE_BACKTICK###', $comment_content);
         $comment_data = array(
             'comment_post_ID' => $this->post_id,
-            'comment_author' => "Ion",
+            'comment_author' => "Assistant",
             'comment_content' => $comment_content,
             'comment_type' => '',
             'comment_parent' => 0,
-            'user_id' => User::get_ion_user_id(),
+            'user_id' => User::get_aion_assistant_user_id(),
             'comment_date' => current_time('mysql'),
             'comment_approved' => 1,
         );
@@ -84,6 +84,7 @@ class Prompt
 
     public function set_messages()
     {
+
         // Initialize an empty array to hold the messages
         $this->Messages = [];
 
@@ -92,12 +93,12 @@ class Prompt
             'post_id' => $this->post_id,
             'status' => 'approve'
         );
-        $comments = get_comments($args);
+        $comments = \get_comments($args);
 
 
         // Loop through each comment and add it to the messages array
         foreach ($comments as $comment) {
-            $role = User::is_ion_user($comment->user_id) ? "assistant" : "user";
+            $role = User::is_user_an_Aion($comment->user_id) ? "assistant" : "user";
             $Message = [
                 "role" => $role,
                 "content" => $comment->comment_content
@@ -105,13 +106,17 @@ class Prompt
             array_push($this->Messages, $Message);
         }
 
-        if (\metadata_exists('post', $this->post_id, 'aion-chat-instructions')){
-            $instructions = \get_post_meta( $this->post_id, 'aion-chat-instructions', true);
-        }else{
-            //$instructions = Instructions::bdd_red_step();
-            $instructions = Instructions::getHelpfulAssistant();
+        if(!isset($this->system_instructions)){
+            if (\metadata_exists('post', $this->post_id, 'aion-chat-instructions')){
+                $this->system_instructions = \get_post_meta( $this->post_id, 'aion-chat-instructions', true);
+            }else{
+                //$instructions = Instructions::bdd_red_step();
+                $this->system_instructions = Instructions::getHelpfulAssistantInstructions();
+            }
         }
-        array_push($this->Messages, ["role" => "system", "content" => $instructions]);
+
+
+        array_push($this->Messages, ["role" => "system", "content" => $this->system_instructions]);
         $this->Messages = array_reverse($this->Messages);
         $this->Messages = array_values($this->Messages);
 

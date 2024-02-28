@@ -69,9 +69,9 @@ Rules:
 END;
     }
 
-    public static function getHelpfulAssistant(){
-        return "You are a helpful assistant named 'Ion'. You are chatting with a user on a WordPress site. Provide assistance to the user if possible.";
+    public static function getHelpfulAssistantInstructions(){
 
+        return "You are a helpful assistant named 'Yorn'. You are chatting with a user on a WordPress site. Provide assistance to the user if possible.";
     }
 
 }

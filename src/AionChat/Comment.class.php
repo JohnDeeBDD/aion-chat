@@ -21,13 +21,13 @@ class Comment
             if(!\get_post_type($comment->comment_post_ID) === "aion-conversation"){
                 return;
             }
-            if (!User::is_ion_user(\get_post_field( 'post_author', $comment->comment_post_ID))) {
+            if (!User::is_user_an_Aion(\get_post_field( 'post_author', $comment->comment_post_ID))) {
                 return;
             }
             $Prompt = new Prompt();
             $Prompt->init_this_prompt($comment_ID, "created on remote");
-            $response = $Prompt->send_up();
-            $Prompt->send_response_comment_to_post(self::chopEnds($response['body']));
+            $Prompt->response = $Prompt->send_up();
+            $Prompt->send_response_comment_to_post(self::chopEnds($Prompt->response['body']));
         }
     }
 

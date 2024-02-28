@@ -5,12 +5,11 @@
 $I = new AcceptanceTester($scenario);
 
 localhost_mode_test($I);
-//mothership_mode_test($I);
-//remote_mode_test($I);
+mothership_mode_test($I);
+remote_mode_test($I);
 
 function localhost_mode_test($I){
     //LOCALHOST MODE TEST
-
 //This setup function creates a "test post" "aion-converstaion" CPT on localhost:
     $localhostPostID = $I->setupPluginOnLocalhost();
 
@@ -48,6 +47,7 @@ function mothership_mode_test($I){
 }
 function remote_mode_test($I){
 
+
     //REMOTE NODE MODE
     $remoteNodeIP = $I->getSiteUrls();
     $mothershipIP = $I->getSiteUrls();
@@ -63,6 +63,7 @@ function remote_mode_test($I){
     $I->makeAComment("Who was the next President after that one?");
     $I->shouldSeeAnIntelligentResponse("Obama");
 
+
 //Cleanup
     $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
     echo(shell_exec($command));
@@ -73,6 +74,7 @@ function remote_mode_test($I){
 
     $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
     echo(shell_exec($command));
+
 }
 
 
