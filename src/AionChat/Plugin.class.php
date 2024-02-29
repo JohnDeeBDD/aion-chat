@@ -4,12 +4,6 @@ namespace AionChat;
 
 class Plugin{
 
-    public static function enable($prodMode = "prod"){
-        self::setupProtocol($prodMode);
-        \add_action('admin_menu', '\AionChat\Plugin::do_create_admin_page');
-    }
-
-
     public static function setupProtocol($prodMode){
         global $AionChat_mothership_url;
         global $AionChat_remote_node_url;
@@ -91,7 +85,7 @@ class Plugin{
                             />
                         </td>
                     </tr>
-                    <tr>
+                    <tr style = "display:none;">
                         <th scope="row">Aion Chat Protocol</th>
                         <td>
                             <fieldset>

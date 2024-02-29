@@ -147,7 +147,7 @@ class User
         }
         $username = "Assistant";
         if (\username_exists($username)) {
-            $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 5);
+            $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
         }
         $password = \wp_generate_password();
         $user_id = \wp_create_user($username, $password, self::get_aion_assistant_email());
@@ -161,11 +161,23 @@ class User
         self::assign_aion_role_to_user($user_id);
         // Generate Application Password
         $app_password_name = 'Aion Chat'; // Name for the application password
-        $new_app_password = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
-
-
-        return \var_export($new_app_password, true);
-
+        global $AionChat_mothership_url;
+        $endpoint = $AionChat_mothership_url . "/wp-json/aion-chat/v1/receive-remote-application-password";
+        $body = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
+        $body = wp_json_encode( $body );
+        $options = [
+            'body'        => $body,
+            'headers'     => [
+                'Content-Type' => 'application/json',
+            ],
+            'timeout'     => 60,
+            'redirection' => 5,
+            'blocking'    => true,
+            'httpversion' => '1.0',
+            'sslverify'   => false,
+            'data_format' => 'body',
+        ];
+        \wp_remote_post( $endpoint, $options );
     }
 
     public static function sendApplicationPasswordToMothership($user_id, $password){

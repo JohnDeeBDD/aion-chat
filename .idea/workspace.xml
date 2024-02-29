@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User.class.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,9 @@
       <workItem from="1708887855122" duration="9439000" />
       <workItem from="1708988373195" duration="4009000" />
       <workItem from="1709030140615" duration="24110000" />
-      <workItem from="1709122850809" duration="1386000" />
+      <workItem from="1709122850809" duration="6481000" />
+      <workItem from="1709161005168" duration="835000" />
+      <workItem from="1709219011239" duration="5757000" />
     </task>
     <servers />
   </component>
@@ -231,22 +233,26 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709036399868" />
-    <state width="1920" height="930" key="GridCell.Tab.0.bottom" timestamp="1709123931824">
-      <screen x="0" y="31" width="1920" height="1049" />
+    <state width="1920" height="978" key="GridCell.Tab.0.bottom" timestamp="1709223013655">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="930" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709123931824" />
-    <state width="1920" height="930" key="GridCell.Tab.0.center" timestamp="1709123931824">
-      <screen x="0" y="31" width="1920" height="1049" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290105" />
+    <state width="1920" height="978" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013655" />
+    <state width="1920" height="978" key="GridCell.Tab.0.center" timestamp="1709223013654">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="930" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709123931824" />
-    <state width="1920" height="930" key="GridCell.Tab.0.left" timestamp="1709123931823">
-      <screen x="0" y="31" width="1920" height="1049" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
+    <state width="1920" height="978" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
+    <state width="1920" height="978" key="GridCell.Tab.0.left" timestamp="1709223013654">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="930" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709123931823" />
-    <state width="1920" height="930" key="GridCell.Tab.0.right" timestamp="1709123931824">
-      <screen x="0" y="31" width="1920" height="1049" />
+    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
+    <state width="1920" height="978" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
+    <state width="1920" height="978" key="GridCell.Tab.0.right" timestamp="1709223013654">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="930" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709123931824" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
+    <state width="1920" height="978" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
     <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1708541210783">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -267,10 +273,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="822" y="433" width="276" height="255" key="publish.login/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708766152979" />
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1709080577888">
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1709132129686">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709080577888" />
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709132129686" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>

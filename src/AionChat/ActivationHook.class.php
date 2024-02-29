@@ -15,12 +15,11 @@ class ActivationHook{
         //self::doCreateIonHomePage();
         //self::deployPosts();
        // self::pingMothership();
-        self::setModeVariables();
+        self::setModeVariables("remote_node");
     }
 
-    public static function setModeVariables(){
-        //\update_option("aion-chat-protocol", "remote_node");
-        \update_option("aion-chat-protocol", "mothership");
+    public static function setModeVariables($protocalMode){
+        \update_option("aion-chat-protocol", $protocalMode);
     }
     public static function pingMotherhship(){ }
 
