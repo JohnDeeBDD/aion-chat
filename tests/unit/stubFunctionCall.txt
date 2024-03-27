@@ -1,0 +1,34 @@
+array (
+  'id' => 'chatcmpl-94ik0hMQq6kutveZ7J8Whxt23r60A',
+  'object' => 'chat.completion',
+  'created' => 1710912324,
+  'model' => 'gpt-4-0613',
+  'choices' => 
+  array (
+    0 => 
+    array (
+      'index' => 0,
+      'message' => 
+      array (
+        'role' => 'assistant',
+        'content' => NULL,
+        'function_call' => 
+        array (
+          'name' => 'execute_local_command',
+          'arguments' => '{
+  "command": "ls /var/www/html"
+}',
+        ),
+      ),
+      'logprobs' => NULL,
+      'finish_reason' => 'function_call',
+    ),
+  ),
+  'usage' => 
+  array (
+    'prompt_tokens' => 295,
+    'completion_tokens' => 20,
+    'total_tokens' => 315,
+  ),
+  'system_fingerprint' => NULL,
+)
