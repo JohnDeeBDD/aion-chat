@@ -4,6 +4,6 @@ namespace AionChat;
 
 class FunctionalFred{
 
-    
+
 
 }

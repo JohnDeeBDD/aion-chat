@@ -66,8 +66,8 @@ class intelligent_response_from_ion_remotenode_context extends \Codeception\Acto
      */
     public function theFeatureTestIsDoneThePostIsDeleted()
     {
-        global $postID;
-        echo(shell_exec("wp post delete $postID --force"));
+        global $localhostPostID;
+        echo(shell_exec("wp post delete $localhostPostID --force"));
     }
 
     private function generateRandomString($length = 10) {

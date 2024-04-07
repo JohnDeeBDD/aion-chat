@@ -32,17 +32,17 @@ class intelligent_response_from_ion_localhost_context extends \Codeception\Actor
         $I->amOnPage("/wp-admin/");
         $I->see("Ion");
         $command = 'wp post create --post_type=aion-conversation --post_title="' . $this->createdPostTitle . '"';
-        global $postID;
-        $postID = ( $this->extractPostNumeral(shell_exec($command)));
+        global $localhostPostID;
+        $localhostPostID = ( $this->extractPostNumeral(shell_exec($command)));
 
-        $command = "wp post meta update " . $postID . " aion-chat-instructions 'You are a helpful assistant.'";
+        $command = "wp post meta update " . $localhostPostID . " aion-chat-instructions 'You are a helpful assistant.'";
         echo(shell_exec($command));
 
         $command = 'wp user get Ion --field=ID';
         $IonUserID = (shell_exec($command));
-        $command = "wp post update " . $postID . " --post_author=" . $IonUserID;
+        $command = "wp post update " . $localhostPostID . " --post_author=" . $IonUserID;
         echo(shell_exec($command));
-        $command = "wp post update " . $postID . " --post_status='publish'";
+        $command = "wp post update " . $localhostPostID . " --post_status='publish'";
         echo(shell_exec($command));
 
 
@@ -77,8 +77,8 @@ class intelligent_response_from_ion_localhost_context extends \Codeception\Actor
      */
     public function theFeatureTestIsDoneThePostIsDeleted()
     {
-        global $postID;
-        echo(shell_exec("wp post delete $postID --force"));
+        global $localhostPostID;
+        echo(shell_exec("wp post delete $localhostPostID --force"));
     }
 
     private function generateRandomString($length = 10) {

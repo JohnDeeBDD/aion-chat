@@ -2,10 +2,10 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="13.58.79.164" id="7dddac4c-398a-4e26-b322-7c880a02f49d" keyPath="$USER_HOME$/sportsman.pem" port="22" customName="Remote" nameFormat="CUSTOM" username="ubuntu">
+      <sshConfig host="3.142.148.130" id="7dddac4c-398a-4e26-b322-7c880a02f49d" keyPath="$USER_HOME$/sportsman.pem" port="22" customName="Remote" nameFormat="CUSTOM" username="ubuntu">
         <option name="customName" value="Remote"/>
       </sshConfig>
-      <sshConfig host="18.218.72.121" id="e084db73-71ee-4f6b-be2a-0d282438da4b" keyPath="$USER_HOME$/sportsman.pem" port="22" customName="Mothership" nameFormat="CUSTOM" username="ubuntu">
+      <sshConfig host="18.118.194.148" id="e084db73-71ee-4f6b-be2a-0d282438da4b" keyPath="$USER_HOME$/sportsman.pem" port="22" customName="Mothership" nameFormat="CUSTOM" username="ubuntu">
         <option name="customName" value="Mothership"/>
       </sshConfig>
     </configs>

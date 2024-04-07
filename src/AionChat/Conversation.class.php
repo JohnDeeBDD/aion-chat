@@ -51,8 +51,9 @@ class Conversation
     /**
      * Parses a conversation title string into its components.
      *
-     * The expected format is "remote_post_id:user_id:remote_site_url".
+     * The expected format is "remote_post_id:initial_speaker_user_id:remote_site_url".
      * Note: The remote site URL can contain colons (e.g., "https://").
+     * Note: The Aion who is responding is the post author
      *
      * @param string $titleString The conversation title string to parse.
      * @return array|null An associative array of components, or null if the format is incorrect.
@@ -86,6 +87,56 @@ class Conversation
         return ($remote_post_id . ":" . $user_id . ":" . $remote_site_url);
     }
 
+    public static function enableStubConversations()
+    {
+        if (isset($_GET['aion-chat-stub'])) {
+            global $Servers;
+            switch ($_GET['aion-chat-stub']) {
+                case "dialectic":
+                    \add_action("init", function(){
+                        global $Servers;
+                        self::buildStubConversation(
+                            "voice1",
+                            "This is dialectic voice 1",
+                            "You are a playful friend. You are playing the game '20 Questions' with a young adult. Someone will start the game by choosing either 'animal, vegatable, or mineral'. The other player then may ask 20 yes or no questions to try and guess the selection. Play the game with your fiend.",
+                            User::get_aion_assistant_user_id(),
+                            (\get_site_url() . "/voice2"),
+                        );
+                        self::buildStubConversation(
+                            "voice2",
+                            "This is dialectic voice 2",
+                            "You are a playful friend. You are playing the game '20 Questions' with a young adult. Someone will start the game by choosing either 'animal, vegatable, or mineral'. The other player then may ask 20 yes or no questions to try and guess the selection. Play the game with your fiend.",
+                            User::get_Aion_user_id(),
+                            (\get_site_url() . "/voice1"),
+                        );
+                    });
+                    break;
+                case 1:
+                    echo "i equals 1";
+                    break;
+                case 2:
+                    echo "i equals 2";
+                    break;
 
-    public static function doCreateNewConversation($room_id, $speaker_user_id, $hearer_suer_id){}
+
+            }
+        }
+    }
+
+    public static function buildStubConversation($title, $content, $instructions, $authorID, $conversantUrl){
+        $my_post = array(
+            'post_title'    => $title,
+            'post_content'  => $content,
+            'post_status'   => 'publish',
+       //     'post_author'   => User::get_aion_assistant_user_id(),
+            'post_author'   => $authorID,
+            'post_type'     => "aion-conversation",
+        );
+        $postID = \wp_insert_post( $my_post );
+        \update_post_meta($postID, "aion-chat-instructions", $instructions);
+       // die("x");aion-dialectic-conversant-url
+        if(isset($conversantUrl)){
+            \update_post_meta($postID, "aion-dialectic-conversant-url", $conversantUrl);
+        }
+    }
 }

@@ -18,9 +18,29 @@ class UserTest extends \Codeception\TestCase\WPTestCase {
         $this->assertIsInt($user_id, "The returned user ID should be an integer.");
     }
 
-    public function test_mothership_user_receive_store_application_password_request(){
-
+    public function testDoesAionAssistantUserExistMethodExistence()
+    {
+        $this->assertTrue(
+            method_exists(\AionChat\User::class, 'does_aion_assistant_user_exist'),
+            'The method does_aion_assistant_user_exist does not exist in the AionChat\User class.'
+        );
     }
 
+
+    public function testAionAssistantUserExistenceBeforeAndAfterCreation() {
+        $email = "assistant@aion.garden";
+
+        // Assert that the user does not exist initially
+        $userExistsBefore = \AionChat\User::get_aion_assistant_user_id($email);
+        $this->assertFalse($userExistsBefore, "Initially, the user with email {$email} should not exist.");
+
+        // Create a user with the specified email
+        $this->factory->user->create(['user_email' => $email]);
+
+
+        // Assert that the user exists after creation
+        $userExistsAfter = \AionChat\User::get_aion_assistant_user_id($email);
+        $this->assertTrue(is_int($userExistsAfter), "After creation, the user with email {$email} should exist.");
+    }
 
 }

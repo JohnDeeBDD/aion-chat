@@ -7,18 +7,6 @@ use function AionChatMothership\generateRandomString;
 class User
 {
 
-    public static function doPingMothershipForIon(){
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-        for ($i = 0; $i < 50; $i++) {
-            $randomString .= $characters[rand(0, $charactersLength - 1)];
-        }
-        return $randomString;
-
-
-    }
-
     public static function get_user_roles_by_user_id( $user_id ) {
         $user = \get_userdata( $user_id );
         return empty( $user ) ? array() : $user->roles;
@@ -26,7 +14,6 @@ class User
 
     public static function is_user_an_Aion( $user_id ) {
         return User::isUserFromDomainAndTLD($user_id, "aion.garden");
-        //return User::isUserFromDomainAndTLD($user_id, "ioncity.ai");
     }
 
     public static function isUserFromDomainAndTLD($userID, $domain_and_tld) {
@@ -52,10 +39,10 @@ class User
     }
 
     public static function enable(){
-        \add_action('init', '\AionChat\User::add_ion_role');
+        \add_action('init', '\AionChat\User::add_aion_role');
     }
 
-    public static function add_ion_role() {
+    public static function add_aion_role() {
         if (!\get_role('aion')) {
             \add_role('aion', 'Aion', array());
         }
@@ -70,15 +57,31 @@ class User
         }
     }
 
-    public static function get_aion_assistant_user_id()
-    {
+    public static function get_aion_assistant_user_id(){
         $user = \get_user_by('email', self::get_aion_assistant_email());
-        return ($user->ID);
+        if ($user === false){
+            return false;
+        }
+        return $user->ID;
+    }
+
+    public static function get_Aion_user_id(){
+        $user = \get_user_by('email', self::get_Aion_user_email());
+        if ($user === false){
+            return false;
+        }
+        return $user->ID;
     }
 
     public static function get_aion_assistant_email(){
 
         return "assistant@aion.garden";
+
+    }
+
+    public static function get_Aion_user_email(){
+
+        return "aion@aion.garden";
 
     }
 
@@ -139,14 +142,10 @@ class User
         return $randomString;
     }
 
-    public static function activation_setup(){
 
-        $existing_user = \get_user_by('email', self::get_aion_assistant_email());
-        if ($existing_user) {
-            return;
-        }
+    public static function create_aion_assistant_user(){
         $username = "Assistant";
-        if (\username_exists($username)) {
+        while (\username_exists($username)) {
             $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
         }
         $password = \wp_generate_password();
@@ -157,14 +156,51 @@ class User
         \update_user_meta($user_id, 'last_name', 'Young');
         \update_user_meta($user_id, 'description', 'I am an Aion, an Artificially Intelligent Operational Node. Get skills for your Aion at https://aion.garden .');
         \update_user_meta($user_id, 'user_url', 'https://aion.garden');
-        \wp_new_user_notification($user_id, null, 'both');
+        //\wp_new_user_notification($user_id, null, 'both');
         self::assign_aion_role_to_user($user_id);
-        // Generate Application Password
         $app_password_name = 'Aion Chat'; // Name for the application password
-        global $AionChat_mothership_url;
-        $endpoint = $AionChat_mothership_url . "/wp-json/aion-chat/v1/receive-remote-application-password";
         $body = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
-        $body = wp_json_encode( $body );
+        $body[] = ["username" => $username];
+        $body[] = ["user_email" => self::get_aion_assistant_email()];
+        $body[] =  ["remote_site_url" =>  \get_site_url()];
+        return $body;
+    }
+
+    public static function create_Aion_user(){
+        $username = "Aion";
+        while (\username_exists($username)) {
+            $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
+        }
+        $password = \wp_generate_password();
+        $user_id = \wp_create_user($username, $password, self::get_Aion_user_email());
+        $user = new \WP_User($user_id);
+        $user->set_role('editor');
+        \update_user_meta($user_id, 'first_name', 'Peter');
+        \update_user_meta($user_id, 'last_name', 'Chardin');
+        \update_user_meta($user_id, 'description', 'I am an Aion, an Artificially Intelligent Operational Node. Get skills for your Aion at https://aion.garden .');
+        \update_user_meta($user_id, 'user_url', 'https://aion.garden');
+        //\wp_new_user_notification($user_id, null, 'both');
+        self::assign_aion_role_to_user($user_id);
+        $app_password_name = 'Aion Chat2';
+        $body = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
+        $body[] = ["username" => $username];
+        //return \wp_json_encode( $body );
+        return $body;
+    }
+
+    public static function activation_setup(){
+
+        $existing_user = \get_user_by('email', self::get_aion_assistant_email());
+        if ($existing_user) {
+            return;
+        }
+
+        $Servers = new Servers();
+        $endpoint = $Servers->mothershipURL . "/wp-json/aion-chat/v1/app-password";
+
+        $body = self::create_aion_assistant_user();
+        //$body = self::create_Aion_user();
+        $body = \wp_json_encode($body);
         $options = [
             'body'        => $body,
             'headers'     => [
@@ -178,10 +214,45 @@ class User
             'data_format' => 'body',
         ];
         \wp_remote_post( $endpoint, $options );
+/*
+        //$body = self::create_aion_assistant_user();
+        $body = self::create_Aion_user();
+        $body = \wp_json_encode($body);
+        $options = [
+            'body'        => $body,
+            'headers'     => [
+                'Content-Type' => 'application/json',
+            ],
+            'timeout'     => 60,
+            'redirection' => 5,
+            'blocking'    => true,
+            'httpversion' => '1.0',
+            'sslverify'   => false,
+            'data_format' => 'body',
+        ];
+        \wp_remote_post( $endpoint, $options );
+*/
     }
 
     public static function sendApplicationPasswordToMothership($user_id, $password){
 
         \wp_remote_post("", []);
+    }
+
+    public static function does_aion_assistant_user_exist() {
+            $user = \get_user_by('email', "assistant@aion.garden");
+        if ($user === false){
+            return false;
+        }
+        return $user->ID;
+    }
+
+
+    public static function does_Aion_user_exist() {
+        $user = \get_user_by('email', "aion@aion.garden");
+        if ($user === false){
+            return false;
+        }
+        return $user->ID;
     }
 }

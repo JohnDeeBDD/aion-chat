@@ -19,6 +19,13 @@
 class AcceptanceTester extends \Codeception\Actor
 {
 
+    public function __construct(\Codeception\Scenario $scenario)
+    {
+        parent::__construct($scenario);
+      //  require_once ("/var/www/html/wp-content/plugins/aion-chat/src/AionChat/autoloader.php");
+      //==  require_once ("/var/www/html/wp-content/plugins/aion-mother/src/AionChatMothership/autoloader.php");
+    }
+
     private $mothership_url;
     private $remote_node_url;
     private $page_source;
@@ -40,10 +47,8 @@ class AcceptanceTester extends \Codeception\Actor
         $I = $this;
 
         // Describe what this test is going to do
-        $I->wantToTest('Where does this go?');
-        $I->wantToTest('Traffic Controller Feature');
-        //$I->execute("123");
-
+        $I->wantToTest('there are two IPs in the servers.json file');
+        $I->wantToTest('the testing environment URLs are stored as properties in $I');
 
         // Define the path to servers.json
         $serversJsonPath = '/var/www/html/wp-content/plugins/aion-chat/servers.json';
@@ -56,9 +61,15 @@ class AcceptanceTester extends \Codeception\Actor
             $jsonContent = file_get_contents($serversJsonPath);
             $decodedServerIps = json_decode($jsonContent, true);
 
+            $I->expectTo('Verify exactly two valid IP addresses are present in the servers.json file and store them as properties');
+            if (count($decodedServerIps) === 2 && filter_var($decodedServerIps[0], FILTER_VALIDATE_IP) && filter_var($decodedServerIps[1], FILTER_VALIDATE_IP)) {
+                $I->comment('Exactly two valid IPs are found');
+            } else {
+                throw new Exception("Expected exactly two valid IP addresses in servers.json, found: " . json_encode($decodedServerIps));
+            }
+
             $this->mothership_url = "http://" . $decodedServerIps[0];
             $this->remote_node_url = "http://" . $decodedServerIps[1];
-
 
             // Validate the JSON content
             $I->expectTo('Have valid JSON content');
@@ -170,7 +181,9 @@ class AcceptanceTester extends \Codeception\Actor
         }
     }
 
-    public function setupPluginOnLocalhost()
+    public function setupFunctionTestPost(){}
+
+    public function setupTestPostOnLocalhost()
     {
         //This is the localhost context
 
@@ -193,7 +206,7 @@ class AcceptanceTester extends \Codeception\Actor
         return $postID;
     }
 
-    public function setupPluginOnMothership()
+    public function setupTestPostOnMothership()
     {
         $remoteNodeIP = $this->getSiteUrls();
         $remoteNodeIP = $remoteNodeIP[0];
@@ -206,7 +219,7 @@ class AcceptanceTester extends \Codeception\Actor
         return (shell_exec($command));
     }
 
-    public function setupPluginOnRemoteNode()
+    public function setupTestPostOnRemoteNode()
     {
         $remoteNodeIP = $this->getSiteUrls();
         $remoteNodeIP = $remoteNodeIP[1];

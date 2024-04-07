@@ -3,7 +3,7 @@
 /* This test performs a basic call and response under different modes. */
 
 $I = new AcceptanceTester($scenario);
-
+$I->getSiteUrls();
 localhost_mode_test($I);
 mothership_mode_test($I);
 remote_mode_test($I);
@@ -11,7 +11,7 @@ remote_mode_test($I);
 function localhost_mode_test($I){
     //LOCALHOST MODE TEST
 //This setup function creates a "test post" "aion-converstaion" CPT on localhost:
-    $localhostPostID = $I->setupPluginOnLocalhost();
+    $localhostPostID = $I->setupTestPostOnLocalhost();
 
 //The first call and response:
     $I->makeAComment("What is the capital city of France?");
@@ -29,7 +29,7 @@ function mothership_mode_test($I){
 //This test does a call and response directly on the mothership
 
 //This setup function creates a "test post" "aion-converstaion" CPT on the mothership:
-    $mothershipPostID = $I->setupPluginOnMothership();
+    $mothershipPostID = $I->setupTestPostOnMothership();
     $mothershipPostID = $I->extractPostNumeral($mothershipPostID);
 //The first call and response:
     $I->makeAComment("What is the capital city of the United States of America?");
@@ -53,7 +53,7 @@ function remote_mode_test($I){
     $mothershipIP = $I->getSiteUrls();
     $mothershipIP = $mothershipIP[0];
     $remoteNodeIP = $remoteNodeIP[1];
-    $remoteNodePostID = $I->setupPluginOnRemoteNode();
+    $remoteNodePostID = $I->setupTestPostOnRemoteNode();
     $remoteNodePostID = $I->extractPostNumeral($remoteNodePostID);
 //The first call and response:
     $I->makeAComment("Who was the President of the United States in 2003?");
@@ -63,7 +63,7 @@ function remote_mode_test($I){
     $I->makeAComment("Who was the next President after that one?");
     $I->shouldSeeAnIntelligentResponse("Obama");
 
-
+/*
 //Cleanup
     $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
     echo(shell_exec($command));
@@ -74,15 +74,6 @@ function remote_mode_test($I){
 
     $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
     echo(shell_exec($command));
+*/
 
 }
-
-
-
-
-
-
-
-
-
-

@@ -53,8 +53,8 @@ $SSH_Commands = [
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . ' wp plugin activate aion-chat --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . ' wp plugin activate wp-data-access --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . ' wp user create Ion ion@ioncity.ai --role=administrator --user_pass=password --path=/var/www/html',
+    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+    //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $MothershipIP . ' wp user create Ion ion@ioncity.ai --role=administrator --user_pass=password --path=/var/www/html',
 
     //Remote Node:
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . " /var/www/html/wp-content/plugins/WPbdd/startup.sh",
@@ -75,8 +75,8 @@ $SSH_Commands = [
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev2IP . ' wp plugin activate aion-chat --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp plugin activate wp-data-access --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . " wp rewrite structure '/%postname%/' --path=/var/www/html",
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp user create RemoteSubsriber remotesub@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+   // "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp user create Subscriberman subscriberman@email.com --role=subscriber --user_pass=password --path=/var/www/html',
+   // "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp user create RemoteSubsriber remotesub@email.com --role=subscriber --user_pass=password --path=/var/www/html',
    // "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $RemoteNodeIP . ' wp user create Ion ion@ioncity.ai --role=administrator --user_pass=password --path=/var/www/html',
     ];
 
@@ -109,8 +109,38 @@ updateXMLIPField(".idea/sshConfigs.xml", $PHP_Storm_RemoteNodeID, $RemoteNodeIP)
 $command = "cd /var/www/html/wp-content/plugins/aion-chat";
 echo ($command . PHP_EOL); shell_exec($command);
 
-$command = "bin/codecept run acceptance StartupServersCept.php -vvv --html";
-echo ($command . PHP_EOL); shell_exec($command);
+$I = new AcceptanceTester($scenario);
+global $testSiteURLs;
+$testSiteURLs = $I->getSiteUrls();
+$I->reconfigureThisVariable(["url" => ('http://' . $testSiteURLs[0])]);
+$I->loginAsAdmin();
+$I->see("WordPress");
+//$I->click(".fs-close");
+$I->click(".welcome-panel-close");
+$I->click(".woocommerce-message-close");
+$I->clickWithLeftButton(".fs-close");
+$I->amOnPage("/wp-admin/plugins.php");
+$I->click("#activate-aion-chat");
+$I->see("Plugin activated.");
+$I->click("#activate-aion-chat-mothership");
+
+$I->see("Plugin activated.");
+
+
+$I->reconfigureThisVariable(["url" => ('http://' . $testSiteURLs[1])]);
+$I->loginAsAdmin();
+$I->see("WordPress");
+try {
+    $I->click(".woocommerce-message-close");
+} catch (Exception $e) {
+    return true;
+}
+$I->clickWithLeftButton(".fs-close");
+$I->amOnPage("/wp-admin/plugins.php");
+$I->click("#activate-aion-chat");
+
+
+
 
 ////Creating WooCommerce product and order
 //$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $dev1IP . " php /var/www/html/wp-content/plugins/aion-chat/startupWooCommerce.php";

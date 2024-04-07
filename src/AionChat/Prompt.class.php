@@ -27,11 +27,17 @@ class Prompt
     public int $remote_post_id;
     public string $post_title;
     public string $post_content;
+    public array $tags = [];
 
     public int $user_id;
     public int $remote_user_id;
     public string $user_email;
     public string $remote_user_email;
+
+    public int $author_user_id;
+    public int $author_remote_user_id;
+    public string $author_user_email;
+    public string $author_remote_user_email;
 
     public $open_ai_api_key;
     public $remote_open_ai_api_key;
@@ -45,42 +51,13 @@ class Prompt
 
     public $functions;
 
-    public function xxconstructor(){
-        $this->functions = [
-            createFunctionMetadata(
-                "move_on_to_next_step",
-                "moves the situation on to the next step",
-                [
-                ]
-            )
-        ];
-    }
+    public $replyStrategy;
+    // sync http response
+    // async application password
+    // async username/password
+    // async email
+    // 2 factor
 
-
-    public function send_response_comment_to_post($comment_content)
-    {
-
-        $comment_content = str_replace('```', '###TRIPLE_BACKTICK###', $comment_content);
-        $comment_data = array(
-            'comment_post_ID' => $this->post_id,
-            'comment_author' => "Assistant",
-            'comment_content' => $comment_content,
-            'comment_type' => '',
-            'comment_parent' => 0,
-            'user_id' => User::get_aion_assistant_user_id(),
-            'comment_date' => current_time('mysql'),
-            'comment_approved' => 1,
-        );
-
-        // Insert the comment and get the comment ID
-        $comment_id = \wp_insert_comment($comment_data);
-
-        if ($comment_id) {
-            return true;
-        } else {
-            throw new Exception("An error occurred while posting the comment.");
-        }
-    }
 
     public function set_messages()
     {
@@ -95,10 +72,15 @@ class Prompt
         );
         $comments = \get_comments($args);
 
-
+        $post_author = \get_post_field ('post_author', $this->post_id);
         // Loop through each comment and add it to the messages array
         foreach ($comments as $comment) {
-            $role = User::is_user_an_Aion($comment->user_id) ? "assistant" : "user";
+            if($comment->user_id === $post_author){
+                $role = "assistant";
+            }else{
+                $role = "user";
+            }
+            //$role = User::is_user_an_Aion($comment->user_id) ? "assistant" : "user";
             $Message = [
                 "role" => $role,
                 "content" => $comment->comment_content
@@ -110,7 +92,6 @@ class Prompt
             if (\metadata_exists('post', $this->post_id, 'aion-chat-instructions')){
                 $this->system_instructions = \get_post_meta( $this->post_id, 'aion-chat-instructions', true);
             }else{
-                //$instructions = Instructions::bdd_red_step();
                 $this->system_instructions = Instructions::getHelpfulAssistantInstructions();
             }
         }
@@ -157,9 +138,9 @@ class Prompt
     public function send_up()
     {   //die("153");
         //this action is happening on the remote.
-        \update_option("aion-chat-up-bus", $this);
+        // \update_option("aion-chat-up-bus", $this);
         global $AionChat_mothership_url;
-        $response = \wp_remote_post($AionChat_mothership_url . "/wp-json/aion-chat/v1/ion-prompt", array(
+        $response = \wp_remote_post($AionChat_mothership_url . "/wp-json/aion-chat/v1/aion-prompt", array(
                 'method' => 'POST',
                 'timeout' => 45,
                 'redirection' => 5,
@@ -178,6 +159,33 @@ class Prompt
         }
         return $response;
 
+    }
+
+    public function directQuestion($question, $instructions = "You are a helpful assistant.") {
+        /*
+
+                'post_author'           => $user_id,
+                        'post_content'          => '',
+                        'post_content_filtered' => '',
+                        'post_title'            => '',
+                        'post_excerpt'          => '',
+                        'post_status'           => 'draft',
+                        'post_type'             => 'post',
+                        'comment_status'        => '',
+                        'ping_status'           => '',
+                        'post_password'         => '',
+                        'to_ping'               => '',
+                        'pinged'                => '',
+                        'post_parent'           => 0,
+                        'menu_order'            => 0,
+                        'guid'                  => '',
+                        'import_id'             => 0,
+                        'context'               => '',
+                        'post_date'             => '',
+                        'post_date_gmt'         => '',
+
+        */
+        \wp_insert_post();
     }
 
 }

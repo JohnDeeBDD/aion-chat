@@ -1,2 +1,15 @@
-<?php
 
+
+
+The Prompt is initiated from a specific comment that already exists in the database locally. Therefore, it's the last thing that has happened.
+
+
+
+Aion Conversations happening on the mothership are singular entities.
+Aion Conversations happening on remote node, are duplicated on the Mothership.
+
+When someone publishes a comment on an Aion Converstaion. That initiates a Prompt.
+
+If the site is in "remote_node" mode, the Prompt is "sent up" to the mothership.
+If the site is in "mothership" mode, the Prompt is fed into the duplicate copy of the Aion Conversation on the mothership.
+If the site is

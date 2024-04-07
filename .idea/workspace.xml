@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeception.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeception.yml" beforeDir="false" afterPath="$PROJECT_DIR$/codeception.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ActivationHook.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Plugin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Comment.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Comment.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Functions.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Functions.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Servers.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Servers.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/User_FunctionalFred.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User_FunctionalFred.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/ConnectRemoteNodeToMothership.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/ConnectRemoteNodeToMothership.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/DialecticCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/DialecticCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/EmailVerificationAfterApplicationPasswordTransfer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/EmailVerificationAfterApplicationPasswordTransfer.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/FunctionsCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/FunctionsCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/startAionChatServersCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/startAionChatServersCept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/FunctionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/FunctionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/IntelligentResponse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/IntelligentResponse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +168,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stopAionChatServers.php" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aion-dialectic" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -152,30 +177,44 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AionChat" />
+      <recent name="$PROJECT_DIR$/tests/unit" />
+      <recent name="$PROJECT_DIR$/../aion-dialectic/src/AionDialectic" />
+      <recent name="$PROJECT_DIR$/tests/acceptance" />
       <recent name="$PROJECT_DIR$/../aion-mother/src/AionChatMothership" />
-      <recent name="$PROJECT_DIR$/../aion-mother" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../aion-dialectic" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.Start">
+  <component name="RunManager" selected="Codeception.Unit Tests">
     <configuration name="Intelligent Response" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" method="" scope="File" />
       <method v="2" />
     </configuration>
-    <configuration name="Start" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/startAionChatServers.php">
+    <configuration name="StartServers" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/startAionChatServersCept.php" method="" scope="File" />
       <method v="2" />
     </configuration>
-    <configuration name="Stop" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/stopAionChatServers.php">
+    <configuration name="StopServers" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/stopAionChatServersCept.php" method="" scope="File" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings directory="$PROJECT_DIR$/tests/unit" method="" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Codeception.StartServers" />
+      <item itemvalue="Codeception.StopServers" />
+      <item itemvalue="Codeception.Unit Tests" />
       <item itemvalue="Codeception.Intelligent Response" />
-      <item itemvalue="PHP Script.Start" />
-      <item itemvalue="PHP Script.Stop" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -198,7 +237,45 @@
       <workItem from="1709030140615" duration="24110000" />
       <workItem from="1709122850809" duration="6481000" />
       <workItem from="1709161005168" duration="835000" />
-      <workItem from="1709219011239" duration="5757000" />
+      <workItem from="1709219011239" duration="6845000" />
+      <workItem from="1709306148758" duration="4770000" />
+      <workItem from="1709387458772" duration="4967000" />
+      <workItem from="1709413478343" duration="12000" />
+      <workItem from="1709461807076" duration="1233000" />
+      <workItem from="1709485856734" duration="2619000" />
+      <workItem from="1709581168360" duration="8243000" />
+      <workItem from="1709699561292" duration="1057000" />
+      <workItem from="1709744057695" duration="25334000" />
+      <workItem from="1709800428649" duration="35000" />
+      <workItem from="1709858919620" duration="9185000" />
+      <workItem from="1709948974423" duration="13805000" />
+      <workItem from="1710009135845" duration="359000" />
+      <workItem from="1710035881198" duration="7170000" />
+      <workItem from="1710107250768" duration="8330000" />
+      <workItem from="1710142224428" duration="609000" />
+      <workItem from="1710192210509" duration="16586000" />
+      <workItem from="1710258774749" duration="4633000" />
+      <workItem from="1710284343877" duration="12175000" />
+      <workItem from="1710725221872" duration="12433000" />
+      <workItem from="1710791997106" duration="13901000" />
+      <workItem from="1710893528064" duration="13688000" />
+      <workItem from="1710963144706" duration="18497000" />
+      <workItem from="1711056633914" duration="20051000" />
+      <workItem from="1711147077030" duration="37000" />
+      <workItem from="1711192864761" duration="431000" />
+      <workItem from="1711193755873" duration="1701000" />
+      <workItem from="1711227837704" duration="1301000" />
+      <workItem from="1711262399014" duration="5080000" />
+      <workItem from="1711312106129" duration="24590000" />
+      <workItem from="1711411507680" duration="4593000" />
+      <workItem from="1711521754822" duration="10867000" />
+      <workItem from="1711544188335" duration="725000" />
+      <workItem from="1711703628683" duration="1979000" />
+      <workItem from="1711762405119" duration="8771000" />
+      <workItem from="1711875312763" duration="6066000" />
+      <workItem from="1711954881903" duration="4051000" />
+      <workItem from="1712372632681" duration="3113000" />
+      <workItem from="1712420373624" duration="1493000" />
     </task>
     <servers />
   </component>
@@ -225,46 +302,54 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="539" y="209" width="842" height="710" key="#SSH_Configurations/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709031003539" />
-    <state x="752" y="244" width="1084" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1709036404951">
+    <state x="752" y="223" width="1084" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1709486603513">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="752" y="244" width="1084" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709036404951" />
-    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl" timestamp="1709036399868">
+    <state x="752" y="223" width="1084" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709486603513" />
+    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#" timestamp="1709607977028">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709036399868" />
-    <state width="1920" height="978" key="GridCell.Tab.0.bottom" timestamp="1709223013655">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709607977028" />
+    <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1711087341237">
+      <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290105" />
-    <state width="1920" height="978" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013655" />
-    <state width="1920" height="978" key="GridCell.Tab.0.center" timestamp="1709223013654">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1711087341237" />
+    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl" timestamp="1709486598465">
+      <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
-    <state width="1920" height="978" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
-    <state width="1920" height="978" key="GridCell.Tab.0.left" timestamp="1709223013654">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709486598465" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom" timestamp="1712387236340">
+      <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
-    <state width="1920" height="978" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
-    <state width="1920" height="978" key="GridCell.Tab.0.right" timestamp="1709223013654">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1712387236340" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1711766955864" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center" timestamp="1712387236340">
+      <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709163290104" />
-    <state width="1920" height="978" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1709223013654" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1712387236340" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1711766955864" />
+    <state width="1920" height="990" key="GridCell.Tab.0.left" timestamp="1712387236340">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1712387236340" />
+    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1711766955863" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right" timestamp="1712387236340">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1712387236340" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1711766955864" />
     <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1708541210783">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="449" y="193" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708541210783" />
-    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1708891023561">
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1710980197596">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708891023561" />
-    <state x="96" y="297" width="1396" height="534" key="find.popup" timestamp="1708797783868">
-      <screen x="0" y="31" width="1920" height="1049" />
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1710980197596" />
+    <state x="2029" y="176" width="1396" height="733" key="find.popup" timestamp="1711335882615">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="96" y="297" width="1396" height="534" key="find.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708797783868" />
+    <state x="2029" y="176" width="1396" height="733" key="find.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1711335882615" />
     <state x="861" y="264" width="432" height="599" key="ftp.server.browser" timestamp="1708550037448">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -273,10 +358,18 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="822" y="433" width="276" height="255" key="publish.login/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1708766152979" />
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1709132129686">
+    <state x="619" y="254" key="run.anything.popup" timestamp="1712372973920">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1709132129686" />
+    <state x="619" y="254" key="run.anything.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1712372973920" />
+    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1711105550792">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1711105550792" />
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1710979017280">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1710979017280" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
