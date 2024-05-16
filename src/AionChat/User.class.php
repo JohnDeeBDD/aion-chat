@@ -214,7 +214,7 @@ class User
             'data_format' => 'body',
         ];
         \wp_remote_post( $endpoint, $options );
-/*
+
         //$body = self::create_aion_assistant_user();
         $body = self::create_Aion_user();
         $body = \wp_json_encode($body);
@@ -231,7 +231,7 @@ class User
             'data_format' => 'body',
         ];
         \wp_remote_post( $endpoint, $options );
-*/
+
     }
 
     public static function sendApplicationPasswordToMothership($user_id, $password){

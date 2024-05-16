@@ -102,8 +102,8 @@ echo ($command . PHP_EOL);shell_exec($command);
 
 
 //Update the PHP storm files on the remotes, in case we want to push remote versions to git
-updateXMLIPField(".idea/sshConfigs.xml", $PHP_Storm_MothershipID, $MothershipIP);
-updateXMLIPField(".idea/sshConfigs.xml", $PHP_Storm_RemoteNodeID, $RemoteNodeIP);
+//updateXMLIPField(".idea/sshConfigs.xml", $PHP_Storm_MothershipID, $MothershipIP);
+//updateXMLIPField(".idea/sshConfigs.xml", $PHP_Storm_RemoteNodeID, $RemoteNodeIP);
 
 //Setting up chat plugins:
 $command = "cd /var/www/html/wp-content/plugins/aion-chat";

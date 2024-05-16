@@ -13,10 +13,7 @@ namespace AionChat;
 
 //die("AionChat");
 
-
 global $AionChatProtocal;
-
-
 $AionChatProtocal = \get_option("aion-chat-protocol");
 
 require_once(plugin_dir_path(__FILE__) . 'src/AionChat/autoloader.php');
