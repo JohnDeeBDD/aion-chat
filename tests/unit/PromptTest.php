@@ -102,34 +102,5 @@ class PromptTest extends \Codeception\TestCase\WPTestCase{
         );
     }
 
-
-    /**
-     * @test
-     */
-    public function it_sets_open_ai_api_key_correctly() {
-        // Given there is a class Prompt and it is instantiable
-        $Prompt = new Prompt();
-
-        // When the OpenAI API key exists in the WordPress database
-        update_option('openai-api-key', 'some-api-key');
-
-        // Use reflection to call the private method
-        $reflection = new \ReflectionClass('AionChat\Prompt');
-        $method = $reflection->getMethod('set_open_ai_api_key');
-        $method->setAccessible(true);
-        $method->invoke($Prompt);
-
-        // Then the OpenAI_api_key should be set correctly
-        $this->assertEquals('some-api-key', $Prompt->open_ai_api_key);
-
-        // When the OpenAI API key does not exist in the WordPress database
-        delete_option('openai-api-key');
-
-        // Call the method again
-        $method->invoke($Prompt);
-
-        // Then the OpenAI_api_key should be unset
-        $this->assertNull($Prompt->open_ai_api_key);
-    }
 }
 

@@ -2,20 +2,12 @@
 
 namespace AionChat;
 
-use AionDialectic\Dialectic;
+//use AionDialectic\Dialectic;
 
 class Comment
 {
 
-    public static function enable_interaction()
-    {
-        //The main action hook that initiates an intelligent response:
-        \add_action('comment_post', '\AionChat\Comment::comment_controller', 10, 1);
-    }
-
-
-
-    public static function comment_controller($comment_ID)
+    public static function route_comments($comment_ID)
     {
         global $AionChatProtocal;
         if ("remote_node" === $AionChatProtocal) {
@@ -34,6 +26,7 @@ class Comment
 
             $Prompt = new Prompt();
             $Prompt->init_this_prompt($comment_ID, "created on remote");
+            $Prompt->open_ai_api_key = ApiKey::get_openai_api_key();
 
             //Here we send the comment up
             $Prompt->response = $Prompt->send_up();
@@ -42,9 +35,7 @@ class Comment
             //$Prompt->send_response_comment_to_post(self::chopEnds($Prompt->response['body']), \get_post_field( 'post_author', $comment->comment_post_ID));
             self::send_response_comment_to_post(self::chopEnds($Prompt->response['body']), \get_post_field( 'post_author', $comment->comment_post_ID), $Prompt->post_id);
 
-            if (class_exists('AionDialectec/Dialectic')) {
-               // $Dialectic = \AionDialectic\Dialectic::chain_response($comment->comment_post_ID, self::chopEnds($Prompt->response['body']));
-            }
+            return self::chopEnds($Prompt->response['body']);
         }
     }
 

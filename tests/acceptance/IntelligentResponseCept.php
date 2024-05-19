@@ -3,9 +3,24 @@
 /* This test performs a basic call and response under different modes. */
 
 $I = new AcceptanceTester($scenario);
-$I->getSiteUrls();
-localhost_mode_test($I);
-mothership_mode_test($I);
+
+//delete old posts
+$remoteNodeIP = $I->getSiteUrls();
+$mothershipIP = $I->getSiteUrls();
+$mothershipIP = $mothershipIP[0];
+$remoteNodeIP = $remoteNodeIP[1];
+
+$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
+echo(shell_exec($command));
+$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
+echo(shell_exec($command));
+$command = "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
+echo(shell_exec($command));
+
+
+
+//localhost_mode_test($I);
+//mothership_mode_test($I);
 remote_mode_test($I);
 
 function localhost_mode_test($I){
@@ -42,7 +57,7 @@ function mothership_mode_test($I){
 //Cleanup mothership mode test:
     $mothershipIP = $I->getSiteUrls();
     $mothershipIP = $mothershipIP[0];
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $mothershipIP . " wp post delete $mothershipPostID --force --path=/var/www/html/";
+    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $mothershipPostID --force --path=/var/www/html/";
     echo(shell_exec($command));
 }
 function remote_mode_test($I){
@@ -63,17 +78,17 @@ function remote_mode_test($I){
     $I->makeAComment("Who was the next President after that one?");
     $I->shouldSeeAnIntelligentResponse("Obama");
 
-/*
+
 //Cleanup
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
+    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
     echo(shell_exec($command));
 
-    $command =  "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $mothershipIP . " wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/";
+    $command =  "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/";
     $conversationID = shell_exec($command);
     echo("convo ID is $conversationID");
 
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
+    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
     echo(shell_exec($command));
-*/
+
 
 }

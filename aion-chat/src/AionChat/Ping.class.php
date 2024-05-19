@@ -24,7 +24,7 @@ class Ping{
             );
             if (is_wp_error($response)) {
                 $error_message = $response->get_error_message();
-                echo "Something went wrong: $error_message";
+                echo "Something went wrong: \AionChat\Ping27 $error_message";
                 die();
             }
             return $response;

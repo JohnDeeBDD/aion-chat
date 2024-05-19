@@ -215,7 +215,7 @@ class AcceptanceTester extends \Codeception\Actor
         $this->amOnPage("/wp-admin/");
         $this->see("Mothership");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         return (shell_exec($command));
     }
 
@@ -228,7 +228,7 @@ class AcceptanceTester extends \Codeception\Actor
         $this->amOnPage("/wp-admin/");
         $this->see("RemoteNode");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         return(shell_exec($command));
     }
 

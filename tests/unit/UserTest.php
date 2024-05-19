@@ -2,6 +2,8 @@
 
 namespace AionChat\Tests;
 
+use AionChatMothership\User;
+
 class UserTest extends \Codeception\TestCase\WPTestCase {
 
     public function testGetAionAssistantEmail() {
@@ -14,7 +16,7 @@ class UserTest extends \Codeception\TestCase\WPTestCase {
         /* The purpose of this function is that when given an email address, it either returns the user ID or creates a new user and returns that id.
         */
         $email = 'new_user@example.com';
-        $user_id = \AionChat\User::force_return_user_id($email);
+        $user_id = User::force_return_user_id($email);
         $this->assertIsInt($user_id, "The returned user ID should be an integer.");
     }
 

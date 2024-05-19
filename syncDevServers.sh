@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#npx spack entry=/src/EmailTunnel/SettingsPage.js_src/SettingsPage.js output=/src/EmailTunnel
-
 # Path to the JSON file containing the server IPs
 JSON_FILE="servers.json"
 
@@ -16,11 +14,17 @@ SERVER1=$(jq -r '.[0]' $JSON_FILE)
 SERVER2=$(jq -r '.[1]' $JSON_FILE)
 
 # Local and Remote directory paths
-LOCAL_DIR="/var/www/html/wp-content/plugins/aion-chat"
-REMOTE_DIR="/var/www/html/wp-content/plugins/aion-chat"
+LOCAL_DIR1="/var/www/html/wp-content/plugins/aion-chat"
+REMOTE_DIR1="/var/www/html/wp-content/plugins/aion-chat"
 
-# SSH Key location
-SSH_KEY="~/ozempic.pem"
+LOCAL_DIR2="/var/www/html/wp-content/plugins/aion-mother"
+REMOTE_DIR2="/var/www/html/wp-content/plugins/aion-mother"
+
+LOCAL_DIR3="/var/www/html/wp-content/plugins/aion-dialectic"
+REMOTE_DIR3="/var/www/html/wp-content/plugins/aion-dialectic"
+
+# Hardcoded SSH Key location
+SSH_KEY="/home/johndee/ozempic.pem"
 
 # Exclusions for rsync
 EXCLUDES=(
@@ -28,26 +32,28 @@ EXCLUDES=(
     --exclude='.git'
     --exclude='bin'
     --exclude='node_modules'
-    --exclude='src/plugin-update-checker-4.11'
+    --exclude='src/update-checker'
+    --exclude='src/prismjs'
+    --exclude='src/action-scheduler'
     --exclude='tests'
     --exclude='vendor'
 )
 
-# Function to perform rsync
+# Function to perform rsync for multiple directories
 sync_files () {
-    echo "Syncing files to $1..."
-    rsync -avz -e "ssh -i $SSH_KEY" "${EXCLUDES[@]}" $LOCAL_DIR/ ubuntu@$1:$REMOTE_DIR
-    echo "Sync complete to $1."
+    local server=$1
+    echo "SYNCING files to $server..."
+
+    rsync -avz -e "ssh -i $SSH_KEY" "${EXCLUDES[@]}" $LOCAL_DIR1/ ubuntu@$server:$REMOTE_DIR1
+    echo "Sync complete to $server for $LOCAL_DIR1."
+
+    rsync -avz -e "ssh -i $SSH_KEY" "${EXCLUDES[@]}" $LOCAL_DIR2/ ubuntu@$server:$REMOTE_DIR2
+    echo "Sync complete to $server for $LOCAL_DIR2."
+
+    rsync -avz -e "ssh -i $SSH_KEY" "${EXCLUDES[@]}" $LOCAL_DIR3/ ubuntu@$server:$REMOTE_DIR3
+    echo "Sync complete to $server for $LOCAL_DIR3."
 }
 
 # Sync once immediately
 sync_files $SERVER1
 sync_files $SERVER2
-
-# Uncomment the following lines to start watching the directory and sync on changes
-#echo "Watching for changes. Ctrl+C to stop."
-#while true; do
-#    inotifywait -e close_write,moved_to,create $LOCAL_DIR
-#    sync_files $SERVER1
-#    sync_files $SERVER2
-#done

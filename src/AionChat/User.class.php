@@ -38,10 +38,6 @@ class User
         }
     }
 
-    public static function enable(){
-        \add_action('init', '\AionChat\User::add_aion_role');
-    }
-
     public static function add_aion_role() {
         if (!\get_role('aion')) {
             \add_role('aion', 'Aion', array());
@@ -89,6 +85,7 @@ class User
         return in_array( $role, \get_user_roles_by_user_id( $user_id ) );
 }
 
+/*
     public static function is_ion_user($user_id)
     {
         $user_info = \get_userdata($user_id);
@@ -100,36 +97,7 @@ class User
             return false;
         }
     }
-
-    public static function force_return_user_id(string $email): int
-    {
-        // Validate email
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new \Exception('Invalid email address.');
-        }
-
-        // Check if email belongs to a user
-        $user = \get_user_by('email', $email);
-
-        // If user exists, return user ID
-        if ($user) {
-            return $user->ID;
-        }
-
-        // Generate random screen name and password
-        $random_screen_name = self::generateRandomString();
-        $random_password = self::generateRandomString();
-
-        // Create new user
-        $user_id = \wp_create_user($random_screen_name, $random_password, $email);
-
-        // Set user role to 'subscriber'
-        $user = new \WP_User($user_id);
-        $user->set_role('subscriber');
-
-        // Return new user ID
-        return $user_id;
-    }
+*/
 
     public static function generateRandomString($length = 10)
     {
@@ -141,7 +109,6 @@ class User
         }
         return $randomString;
     }
-
 
     public static function create_aion_assistant_user(){
         $username = "Assistant";
@@ -246,7 +213,6 @@ class User
         }
         return $user->ID;
     }
-
 
     public static function does_Aion_user_exist() {
         $user = \get_user_by('email', "aion@aion.garden");

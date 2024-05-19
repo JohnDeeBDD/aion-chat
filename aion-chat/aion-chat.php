@@ -3,7 +3,7 @@
 Plugin Name: Aion Chat
 Plugin URI: https://aion.garden
 Description: The Singularity is here.
-Version: 1.1
+Version: 1.2
 Author: johndee
 Author URI: https://generalchicken.guru
 License: Copyright(C) 2024, generalchicken.guru . All rights reserved. THIS IS NOT FREE SOFTWARE.
@@ -13,11 +13,8 @@ namespace AionChat;
 
 //die("AionChat");
 
-
 global $AionChatProtocal;
-
-
-$AionChatProtocal = \get_option("aion-chat-protocol");
+$AionChatProtocal = "remote_node";
 
 require_once(plugin_dir_path(__FILE__) . 'src/AionChat/autoloader.php');
 
@@ -27,19 +24,13 @@ $Servers = new Servers();
 \add_filter('comment_flood_filter', '__return_false');
 \add_filter('duplicate_comment_id', '__return_false');
 \add_filter('wp_is_application_passwords_available', '__return_true' );
-
-//$modeStrategy = "dev";
-$modeStrategy = "prod";
-
-
-//Servers::loadServerGlobalVariablesFromJSON($modeStrategy);
-Plugin::setupProtocol($modeStrategy);
 \add_action('admin_menu', '\AionChat\Plugin::do_create_admin_page');
-Comment::enable_interaction();
-User::enable();
+\add_action('comment_post', '\AionChat\Comment::route_comments', 10, 1);
+\add_action('init', '\AionChat\User::add_aion_role');
 Conversation::enable_aion_conversation_cpt();
-Conversation::enableStubConversations();
+ExampleConversation::enablePublishExampleConversations();
 Functions::enableFunctionCall();
+
 
 \register_activation_hook(__FILE__, '\AionChat\ActivationHook::do_activation_hook');
 
@@ -50,3 +41,15 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
     __FILE__, //Full path to the main plugin file or functions.php.
     'aion-chat'
 );
+
+
+if(isset($_GET['q'])){
+    \add_action("init", function () {
+        echo(
+            DirectQuestion::ask(
+                "In Greek mythology, who was Asclepius?"
+            )
+        );
+        die();
+    });
+}

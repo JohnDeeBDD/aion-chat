@@ -4,30 +4,6 @@ namespace AionChat;
 
 class Plugin{
 
-    public static function setupProtocol($prodMode){
-        global $AionChat_mothership_url;
-        global $AionChat_remote_node_url;
-        if($prodMode === "prod"){
-            $AionChat_mothership_url = "https://aion.garden";
-            $AionChat_remote_node_url = "https://aion.garden";
-        }else{
-            $file = file_get_contents(\plugin_dir_path(__FILE__) . "../../servers.json");
-            // if(!file_exists($path)) return false
-            $IPs = json_decode($file);
-            $AionChat_mothership_url = "http://" . $IPs[0];
-            $AionChat_remote_node_url = "http://" . $IPs[1];
-        }
-        global $AionChatProtocal;
-        if (!isset($AionChatProtocal)) {
-            $AionChatProtocal = "remote_node";
-        }
-        $siteURL = \get_site_url();
-        if($siteURL === "http://localhost"){
-            $AionChatProtocal = "mothership";
-        }
-    }
-
-
     public static function do_create_admin_page(){
         if (!current_user_can('manage_options')) {
             return;
@@ -37,13 +13,13 @@ class Plugin{
             'Aion', // Menu title
             'manage_options', // Capability
             'aion-admin-page', // Menu slug
-            'AionChat\Plugin::ion_admin_page_content', // Callback function for content
+            'AionChat\Plugin::aion_chat_admin_page_content', // Callback function for content
             'dashicons-admin-generic', // Icon
             99 // Position
         );
     }
 
-    public static function ion_admin_page_content()
+    public static function aion_chat_admin_page_content()
     {
         // Check if form has been submitted
         if (isset($_POST['submit'])) {

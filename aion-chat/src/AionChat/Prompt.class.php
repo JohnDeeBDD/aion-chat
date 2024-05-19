@@ -59,7 +59,7 @@ class Prompt
     // 2 factor
 
 
-    public function set_messages()
+    public function  set_messages()
     {
 
         // Initialize an empty array to hold the messages
@@ -103,43 +103,24 @@ class Prompt
 
     }
 
-    protected function set_open_ai_api_key()
-    {
-        if ('not-exists' === get_option('openai-api-key', 'not-exists')) {
-            $this->open_ai_api_key = null;
-        } else {
-            $this->open_ai_api_key = \get_option("openai-api-key", true);
-        }
-    }
-
     public function init_this_prompt($comment_id, $status)
     {
-        $this->set_open_ai_api_key();
-
         $this->origin_domain_url = \get_site_url();
-
-
-        // Set the comment_id from the method argument
         $this->comment_id = $comment_id;
-
-        // Fetch the comment content based on the comment_id
         $comment = \get_comment($comment_id);
         $this->comment_content = $comment->comment_content;
-
-        // Fetch the post ID associated with the comment
         $this->post_id = $comment->comment_post_ID;
         $this->user_id = $comment->user_id;
         $this->user_email = $comment->comment_author_email;
         $this->set_messages();
-        // Set the status
         $this->status = $status;
+
+
     }
 
-    public function send_up()
-    {   //die("153");
-        //this action is happening on the remote.
-        // \update_option("aion-chat-up-bus", $this);
-        global $AionChat_mothership_url;
+    public function send_up(){
+        global $Servers;
+        $AionChat_mothership_url = $Servers->mothershipURL;
         $response = \wp_remote_post($AionChat_mothership_url . "/wp-json/aion-chat/v1/aion-prompt", array(
                 'method' => 'POST',
                 'timeout' => 45,
@@ -154,40 +135,11 @@ class Prompt
         );
         if (is_wp_error($response)) {
             $error_message = $response->get_error_message();
-            echo "Something went wrong: $error_message";
+            echo "Something went wrong: Prompt 154 $error_message $AionChat_mothership_url";
             die();
         }
         return $response;
-
     }
-
-    public function directQuestion($question, $instructions = "You are a helpful assistant.") {
-        /*
-
-                'post_author'           => $user_id,
-                        'post_content'          => '',
-                        'post_content_filtered' => '',
-                        'post_title'            => '',
-                        'post_excerpt'          => '',
-                        'post_status'           => 'draft',
-                        'post_type'             => 'post',
-                        'comment_status'        => '',
-                        'ping_status'           => '',
-                        'post_password'         => '',
-                        'to_ping'               => '',
-                        'pinged'                => '',
-                        'post_parent'           => 0,
-                        'menu_order'            => 0,
-                        'guid'                  => '',
-                        'import_id'             => 0,
-                        'context'               => '',
-                        'post_date'             => '',
-                        'post_date_gmt'         => '',
-
-        */
-        \wp_insert_post();
-    }
-
 }
 /*
 function createFunctionMetadata($name, $description, $parameters) {

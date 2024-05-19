@@ -83,7 +83,7 @@ class Functions {
 // Handle the response
                 if ( is_wp_error( $response ) ) {
                     $error_message = $response->get_error_message();
-                    echo "Something went wrong: $error_message";
+                    echo "Something went wrong: Functions 86 $error_message";
                 }
                 self::doRemoveTag($postID, "local-function-call");
             });
