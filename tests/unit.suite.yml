@@ -17,6 +17,6 @@ modules:
             domain: locahost
             adminEmail: admin@localhost
             title: WP Tests
-            plugins: []
-            activatePlugins: []
+            plugins: ["email-tunnel/email-tunnel.php"]
+            activatePlugins: ["email-tunnel/email-tunnel.php"]
             bootstrapActions: []

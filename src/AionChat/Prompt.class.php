@@ -6,18 +6,19 @@ class Prompt
 {
 
     public array $Choices = []; //array of Choice objects
-    public array $Functions = []; //Array of Functions objects
+    public array $Functions_available = []; //Array of Functions objects
+    public array $Functions_called = [];
     public array $Messages = []; //Array of Message object
+    public array $Comments = []; //Array of comments
     public int $account_user_id;
     public string $status;
+
     public int $completion_tokens;
     public int $max_tokens;
     public int $total_tokens;
-    public int $model_created;
     public int $prompt_tokens;
+
     public string $model;
-    public string $model_id;
-    public string $model_object_name;
 
     public int $comment_id;
     public int $remote_comment_id;
@@ -35,8 +36,8 @@ class Prompt
     public string $remote_user_email;
 
     public int $author_user_id;
-    public int $author_remote_user_id;
     public string $author_user_email;
+    public int $author_remote_user_id;
     public string $author_remote_user_email;
 
     public $open_ai_api_key;
@@ -48,6 +49,9 @@ class Prompt
     public string $system_instructions;
 
     public $response;
+    public array $response_meta;
+    public $response_comment_id;
+    public $remote_response;
 
     public $functions;
 
@@ -58,6 +62,17 @@ class Prompt
     // async email
     // 2 factor
 
+    public function set_comments(){
+
+        $this->Comments = [];
+
+        // Get the comments for the post with ID stored in $this->post_id
+        $args = array(
+            'post_id' => $this->post_id,
+            'status' => 'approve'
+        );
+        $this->Comments = \get_comments($args);
+    }
 
     public function  set_messages()
     {
@@ -88,13 +103,13 @@ class Prompt
             array_push($this->Messages, $Message);
         }
 
-        if(!isset($this->system_instructions)){
+
             if (\metadata_exists('post', $this->post_id, 'aion-chat-instructions')){
                 $this->system_instructions = \get_post_meta( $this->post_id, 'aion-chat-instructions', true);
             }else{
                 $this->system_instructions = Instructions::getHelpfulAssistantInstructions();
             }
-        }
+
 
 
         array_push($this->Messages, ["role" => "system", "content" => $this->system_instructions]);
@@ -103,29 +118,15 @@ class Prompt
 
     }
 
-    public function init_this_prompt($comment_id, $status)
-    {
-        $this->origin_domain_url = \get_site_url();
-        $this->comment_id = $comment_id;
-        $comment = \get_comment($comment_id);
-        $this->comment_content = $comment->comment_content;
-        $this->post_id = $comment->comment_post_ID;
-        $this->user_id = $comment->user_id;
-        $this->user_email = $comment->comment_author_email;
-        $this->set_messages();
-        $this->status = $status;
-
-
-    }
-
     public function send_up(){
+        //die("line 119");
         global $Servers;
         $AionChat_mothership_url = $Servers->mothershipURL;
         $response = \wp_remote_post($AionChat_mothership_url . "/wp-json/aion-chat/v1/aion-prompt", array(
                 'method' => 'POST',
-                'timeout' => 45,
-                'redirection' => 5,
-                'httpversion' => '1.0',
+                'timeout' => 60,
+                'redirection' => 1,
+                'httpversion' => '1.1',
                 'blocking' => true,
                 'headers' => array(),
                 'body' => array(
@@ -135,38 +136,31 @@ class Prompt
         );
         if (is_wp_error($response)) {
             $error_message = $response->get_error_message();
-            echo "Something went wrong: Prompt 154 $error_message $AionChat_mothership_url";
+            echo "Something went wrong: Prompt 139 $error_message $AionChat_mothership_url";
             die();
         }
-        return $response;
+        //update_option('response', $response);
+        return ($response);
     }
+
+    //This function is overwritten on the Mothership
+    public function init_this_prompt($comment_id, $status)
+    {
+        $this->origin_domain_url = \get_site_url();
+        $this->comment_id = $comment_id;
+        $comment = \get_comment($comment_id);
+        $this->comment_content = $comment->comment_content;
+        $this->post_id = $comment->comment_post_ID;
+        $this->user_id = $comment->user_id;
+        $this->user_email = $comment->comment_author_email;
+        $this->author_user_id = \get_post_field('post_author', $comment->comment_post_ID);
+        $this->author_user_email = \get_the_author_meta('user_email', $this->author_user_id);
+        $this->set_comments();
+        $this->set_messages();
+        $this->status = $status;
+        $this->open_ai_api_key = ApiKey::get_openai_api_key();
+
+    }
+
+
 }
-/*
-function createFunctionMetadata($name, $description, $parameters) {
-    return [
-        "name" => $name,
-        "description" => $description,
-        "parameters" => $parameters
-    ];
-}
-$functions = [
-    createFunctionMetadata(
-        "get_current_weather",
-        "Get the current weather in a given location",
-        [
-            "type" => "object",
-            "properties" => [
-                "location" => [
-                    "type" => "string",
-                    "description" => "The city and state, e.g. San Francisco, CA",
-                ],
-                "unit" => [
-                    "type" => "string",
-                    "enum" => ["celsius", "fahrenheit"]
-                ],
-            ],
-            "required" => ["location"],
-        ]
-    )
-];
-*/

@@ -38,7 +38,7 @@ class ConversationTest extends \Codeception\TestCase\WPTestCase
         $remote_site_url = 'https://example.com';
 
         // Create a string using the buildIonConversationTitle method
-        $builtTitle = Conversation::buildIonConversationTitle($remote_post_id, $user_id, $remote_site_url);
+        $builtTitle = Conversation::buildAionConversationTitle($remote_post_id, $user_id, $remote_site_url);
 
         // Now attempt to parse this string back into its components
         $parsedComponents = Conversation::parseIonConversationTitle($builtTitle);

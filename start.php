@@ -51,7 +51,7 @@ $SSH_Commands = [
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate user-switching --path=/var/www/html',
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-crontrol --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate disable-administration-email-verification-prompt --path=/var/www/html',
-    "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate woocommerce --path=/var/www/html',
+   // "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate woocommerce --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate disable-welcome-messages-and-tips --path=/var/www/html',
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate buddypress --path=/var/www/html',
     //"ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate bp-better-messages --path=/var/www/html',

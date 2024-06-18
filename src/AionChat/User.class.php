@@ -2,8 +2,6 @@
 
 namespace AionChat;
 
-use function AionChatMothership\generateRandomString;
-
 class User
 {
 
@@ -83,21 +81,7 @@ class User
 
     public static function is_user_in_role( $user_id, $role  ) {
         return in_array( $role, \get_user_roles_by_user_id( $user_id ) );
-}
-
-/*
-    public static function is_ion_user($user_id)
-    {
-        $user_info = \get_userdata($user_id);
-        $user_email = $user_info->user_email;
-
-        if ($user_email === self::get_aion_assistant_email()) {
-            return true;
-        } else {
-            return false;
-        }
     }
-*/
 
     public static function generateRandomString($length = 10)
     {
@@ -116,20 +100,30 @@ class User
             $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
         }
         $password = \wp_generate_password();
-        $user_id = \wp_create_user($username, $password, self::get_aion_assistant_email());
+        $website = "https://aion.garden";
+        $userdata = array(
+            'user_login' =>  $username,
+            'user_url'   =>  $website,
+            'user_pass'  =>  $password,
+            'user_email' =>  self::get_aion_assistant_email(),
+        );
+        $user_id = \wp_insert_user( $userdata ) ;
         $user = new \WP_User($user_id);
         $user->set_role('editor');
         \update_user_meta($user_id, 'first_name', 'Carlito');
         \update_user_meta($user_id, 'last_name', 'Young');
         \update_user_meta($user_id, 'description', 'I am an Aion, an Artificially Intelligent Operational Node. Get skills for your Aion at https://aion.garden .');
-        \update_user_meta($user_id, 'user_url', 'https://aion.garden');
+        \update_user_meta($user_id, 'url', 'https://aion.garden');
         //\wp_new_user_notification($user_id, null, 'both');
         self::assign_aion_role_to_user($user_id);
         $app_password_name = 'Aion Chat'; // Name for the application password
-        $body = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
-        $body[] = ["username" => $username];
-        $body[] = ["user_email" => self::get_aion_assistant_email()];
-        $body[] =  ["remote_site_url" =>  \get_site_url()];
+        $body = [];
+        $pw = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
+        $pw = $pw[0];
+        $body[] = ['app-password' => $pw];
+        $body[] = ["userName" => $username];
+        $body[] = ["email" => "assistant@aion.garden"];
+        $body[] =  ["url" =>  \get_site_url()];
         return $body;
     }
 
@@ -139,7 +133,14 @@ class User
             $username = substr(str_shuffle("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
         }
         $password = \wp_generate_password();
-        $user_id = \wp_create_user($username, $password, self::get_Aion_user_email());
+        $website = "https://aion.garden";
+        $userdata = array(
+            'user_login' =>  $username,
+            'user_url'   =>  $website,
+            'user_pass'  =>  $password,
+            'user_email' =>  self::get_Aion_user_email(),
+        );
+        $user_id = \wp_insert_user( $userdata ) ;
         $user = new \WP_User($user_id);
         $user->set_role('editor');
         \update_user_meta($user_id, 'first_name', 'Peter');
@@ -148,11 +149,16 @@ class User
         \update_user_meta($user_id, 'user_url', 'https://aion.garden');
         //\wp_new_user_notification($user_id, null, 'both');
         self::assign_aion_role_to_user($user_id);
-        $app_password_name = 'Aion Chat2';
-        $body = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
-        $body[] = ["username" => $username];
-        //return \wp_json_encode( $body );
+        $app_password_name = 'Aion Chat';
+        $body = [];
+        $pw = \WP_Application_Passwords::create_new_application_password($user_id, array('name' => $app_password_name));
+        $pw = $pw[0];
+        $body[] = ['app-password' => $pw];
+        $body[] = ["userName" => $username];
+        $body[] = ["email" => "aion@aion.garden"];
+        $body[] =  ["url" =>  \get_site_url()];
         return $body;
+
     }
 
     public static function activation_setup(){
@@ -163,41 +169,45 @@ class User
         }
 
         $Servers = new Servers();
-        $endpoint = $Servers->mothershipURL . "/wp-json/aion-chat/v1/app-password";
+        $endpoint = $Servers->mothershipURL . "/wp-json/aion-chat-mothership/v1/remote-application-password";
 
         $body = self::create_aion_assistant_user();
-        //$body = self::create_Aion_user();
-        $body = \wp_json_encode($body);
+        //$body = json_encode($body);
         $options = [
             'body'        => $body,
-            'headers'     => [
-                'Content-Type' => 'application/json',
-            ],
+            //'headers'     => [
+            //    'Content-Type' => 'application/json',
+            //],
             'timeout'     => 60,
-            'redirection' => 5,
+            'redirection' => 1,
             'blocking'    => true,
             'httpversion' => '1.0',
             'sslverify'   => false,
-            'data_format' => 'body',
+           // 'data_format' => 'body',
         ];
-        \wp_remote_post( $endpoint, $options );
+        $result = \wp_remote_post( $endpoint, $options );
+        //$result = \var_export($result,true );
+        //$myfile = file_put_contents('/var/www/html/logs.txt', $result);
 
-        //$body = self::create_aion_assistant_user();
+
+
         $body = self::create_Aion_user();
-        $body = \wp_json_encode($body);
+        //$body = json_encode($body);
         $options = [
             'body'        => $body,
-            'headers'     => [
-                'Content-Type' => 'application/json',
-            ],
+          //  'headers'     => [
+           //     'Content-Type' => 'application/json',
+           // ],
             'timeout'     => 60,
             'redirection' => 5,
             'blocking'    => true,
             'httpversion' => '1.0',
             'sslverify'   => false,
-            'data_format' => 'body',
+            //'data_format' => 'body',
         ];
-        \wp_remote_post( $endpoint, $options );
+        $result =  \wp_remote_post( $endpoint, $options );
+        //$result = \var_export($result,true );
+        //$myfile = file_put_contents('/var/www/html/logs.txt', $result, FILE_APPEND );
 
     }
 

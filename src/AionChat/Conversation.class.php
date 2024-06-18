@@ -85,7 +85,7 @@ class Conversation
      * @param string $remote_site_url The URL of the remote site.
      * @return string The constructed title string.
      */
-    public static function buildIonConversationTitle($remote_post_id, $user_id, $remote_site_url) {
+    public static function buildAionConversationTitle($remote_post_id, $user_id, $remote_site_url) {
         return sprintf('%d:%d:%s', $remote_post_id, $user_id, $remote_site_url);
     }
 

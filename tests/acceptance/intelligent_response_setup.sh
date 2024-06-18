@@ -24,7 +24,7 @@ else
     echo "User 'Assistant' has ID $AUTHOR_ID"
 fi
 
-wp post meta set $POST_ID aion-chat-instructions "You are a helpful assistant named John." --path=/var/www/html
+#wp post meta set $POST_ID aion-chat-instructions "You are a helpful assistant named Johnny." --path=/var/www/html
 
 if [ $? -eq 0 ]; then
     echo "Post meta updated successfully."

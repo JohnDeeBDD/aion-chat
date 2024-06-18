@@ -10,8 +10,8 @@ $mothershipIP = $I->getSiteUrls();
 $mothershipIP = $mothershipIP[0];
 $remoteNodeIP = $remoteNodeIP[1];
 
-$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
-echo(shell_exec($command));
+$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteAllEtmConnections.php";
+echo("Deleting on mothership: " . shell_exec($command));
 $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
 echo(shell_exec($command));
 $command = "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
@@ -19,9 +19,48 @@ echo(shell_exec($command));
 
 
 
-//localhost_mode_test($I);
-//mothership_mode_test($I);
+
+//$command = "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
+//echo("Deleting test posts on localhost" . shell_exec($command));
+localhost_mode_test($I);
+mothership_mode_test($I);
 remote_mode_test($I);
+
+function remote_mode_test($I){
+
+
+    //REMOTE NODE MODE
+    $remoteNodeIP = $I->getSiteUrls();
+    $mothershipIP = $I->getSiteUrls();
+    $mothershipIP = $mothershipIP[0];
+    $remoteNodeIP = $remoteNodeIP[1];
+    $remoteNodePostID = $I->setupTestPostOnRemoteNode();
+    $remoteNodePostID = $I->extractPostNumeral($remoteNodePostID);
+//The first call and response:
+
+    $I->makeAComment("Who was the President of the United States in 2003?");
+    $I->shouldSeeAnIntelligentResponse("Bush");
+
+//The second call and response references the first one:
+    $I->makeAComment("Who was the next President after that one?");
+    $I->shouldSeeAnIntelligentResponse("Obama");
+
+    $cleanup = false;
+
+    if($cleanup){
+        //Cleanup
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
+        echo(shell_exec($command));
+
+        $command =  "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/";
+        $conversationID = shell_exec($command);
+        echo("convo ID is $conversationID");
+
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
+        echo(shell_exec($command));
+    }
+
+}
 
 function localhost_mode_test($I){
     //LOCALHOST MODE TEST
@@ -29,6 +68,7 @@ function localhost_mode_test($I){
     $localhostPostID = $I->setupTestPostOnLocalhost();
 
 //The first call and response:
+    $I->wantTo("Test an intelligence response on localhost");
     $I->makeAComment("What is the capital city of France?");
     $I->shouldSeeAnIntelligentResponse("Paris");
 
@@ -54,41 +94,14 @@ function mothership_mode_test($I){
     $I->makeAComment("What is the first name of the person that city is named after?");
     $I->shouldSeeAnIntelligentResponse("George");
 
-//Cleanup mothership mode test:
-    $mothershipIP = $I->getSiteUrls();
-    $mothershipIP = $mothershipIP[0];
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $mothershipPostID --force --path=/var/www/html/";
-    echo(shell_exec($command));
-}
-function remote_mode_test($I){
-
-
-    //REMOTE NODE MODE
-    $remoteNodeIP = $I->getSiteUrls();
-    $mothershipIP = $I->getSiteUrls();
-    $mothershipIP = $mothershipIP[0];
-    $remoteNodeIP = $remoteNodeIP[1];
-    $remoteNodePostID = $I->setupTestPostOnRemoteNode();
-    $remoteNodePostID = $I->extractPostNumeral($remoteNodePostID);
-//The first call and response:
-    $I->makeAComment("Who was the President of the United States in 2003?");
-    $I->shouldSeeAnIntelligentResponse("Bush");
-
-//The second call and response references the first one:
-    $I->makeAComment("Who was the next President after that one?");
-    $I->shouldSeeAnIntelligentResponse("Obama");
-
-
-//Cleanup
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
-    echo(shell_exec($command));
-
-    $command =  "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/";
-    $conversationID = shell_exec($command);
-    echo("convo ID is $conversationID");
-
-    $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
-    echo(shell_exec($command));
-
+    $cleanup = false;
+    if($cleanup){
+        //Cleanup mothership mode test:
+        $mothershipIP = $I->getSiteUrls();
+        $mothershipIP = $mothershipIP[0];
+        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $mothershipPostID --force --path=/var/www/html/";
+        echo(shell_exec($command));
+    }
 
 }
+

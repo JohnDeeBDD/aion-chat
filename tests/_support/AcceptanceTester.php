@@ -252,6 +252,7 @@ class AcceptanceTester extends \Codeception\Actor
         $I->amOnPage("/aion-conversation/testpost");
         $I->see("Leave a Reply");
         $I->fillField("comment", $comment);
+        $I->scrollTo("#submit");
         $I->click("Post Comment");
     }
 

@@ -1,17 +1,17 @@
 {
-  "name" : "Ion Chat",
-  "slug" : "ion-chat",
+  "name" : "Aion Chat",
+  "slug" : "aion-chat",
   "author" : "<a href='https://generalchicken.guru'>General Chicken</a>",
   "author_profile" : "https://generalchicken.guru",
-  "version" : "1.2",
-  "download_url" : "https://ioncity.ai/wp-content/uploads/ion-chat.zip",
+  "version" : "3",
+  "download_url" : "https://aion.garden/wp-content/uploads/aion-chat.zip",
   "requires" : "3.0",
   "tested" : "6.3",
   "requires_php" : "7.4",
   "last_updated" : "2023-01-01 01:01:01",
   "sections" : {
-    "description" : "Chat with Ion on your site",
-    "installation" : "Click the activate button and that's it. Say 'Hello Ion!' in any comment on any post."
+    "description" : "Chat with an Aion on your site",
+    "installation" : "Click the activate button."
   },
   "banners" : {
     "low" : "https://rudrastyh.com/wp-content/uploads/updater/banner-772x250.jpg",
