@@ -24,7 +24,9 @@ class Comment
             $Prompt->init_this_prompt($comment_ID, "created on remote");
             $Prompt = self::set_prompt_params_from_optional_http_request($Prompt);
             $Prompt->response = $Prompt->send_up();
+            \update_option("response_Comment_line27", \var_export($Prompt->response, true));
             $comment_content = json_decode($Prompt->response['body']);
+            \update_option("response_Comment_line29", \var_export($comment_content, true));
             if (isset($Prompt->model)){
                 if($Prompt->model === "dall-e-3"){
                     $comment_content = Dall_E_3::doHandleResponse($Prompt);
@@ -88,21 +90,4 @@ class Comment
         }
         return substr($string, 1, -1);
     }
-
-    /*
-    public static function is_ion_mentioned($post_id)
-    {
-        $args = array(
-            'post_id' => $post_id,
-        );
-        $comments = \get_comments($args);
-        foreach ($comments as $comment) {
-            if (preg_match('/\b(Ion|ion)\b/', $comment->comment_content) === 1) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    */
 }

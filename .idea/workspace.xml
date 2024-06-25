@@ -20,332 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aion-chat-1.3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-1.4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doDeleteAllEtmConnections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Abstract_Model.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/CommentButton.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Dall_E_3.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Media.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/aion-conversation-cpt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syncProd.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/HandleJSONTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AionChat/ModelInitiator.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/std" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/TrafficControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-1.3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-1.3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-1.4.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-1.4.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-3.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/aion-chat.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/ActivationHook.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/ApiKey.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Comment.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Conversation.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Dialectic.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/DirectQuestion.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/ErrorHandler.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/ExampleConversation.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Functions.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Instructions.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Ping.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Plugin.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Prompt.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Questions20.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/Servers.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/User.class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/AionChat/autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/action-scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_ActionClaim.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_ActionFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_AdminView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_Compatibility.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_DataController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_DateTime.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_Exception.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_FatalErrorMonitor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_InvalidActionException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_ListTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_LogEntry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_NullLogEntry.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_OptionLock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_QueueCleaner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_Versions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_WPCommentCleaner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/ActionScheduler_wcSystemStatus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Clean_Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/WP_CLI/ActionScheduler_WPCLI_Scheduler_command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/WP_CLI/Migration_Command.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/WP_CLI/ProgressBar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_ListTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_RecurringSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_Schedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Abstract_Schema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Lock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Logger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_Store.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/abstracts/ActionScheduler_TimezoneHelper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/actions/ActionScheduler_Action.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/actions/ActionScheduler_CanceledAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/actions/ActionScheduler_FinishedAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/actions/ActionScheduler_NullAction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_DBLogger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_HybridStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpCommentLogger.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostStatusRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/ActionMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/ActionScheduler_DBStoreMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/BatchFetcher.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/Config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/DryRun_ActionMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/DryRun_LogMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/LogMigrator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/Runner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/migration/Scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_CanceledSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_CronSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_IntervalSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_NullSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_Schedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schedules/ActionScheduler_SimpleSchedule.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schema/ActionScheduler_LoggerSchema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/classes/schema/ActionScheduler_StoreSchema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/codecov.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/deprecated/ActionScheduler_Abstract_QueueRunner_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/deprecated/ActionScheduler_AdminView_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/deprecated/ActionScheduler_Schedule_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/deprecated/ActionScheduler_Store_Deprecated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/deprecated/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/admin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/android-chrome-256x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/api.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/assets/css/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/google14ef723abb376cd3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/perf.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/version3-0.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/docs/wp-cli.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/WP_Async_Request.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_AbstractField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_DayOfMonthField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_DayOfWeekField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_FieldFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_FieldInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_HoursField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_MinutesField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_MonthField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/CronExpression_YearField.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/lib/cron-expression/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/phpcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/ActionScheduler_UnitTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/ActionScheduler_Mock_Async_Request_QueueRunner.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/ActionScheduler_Mocker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/deprecated/ActionScheduler_UnitTestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_Callbacks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_Compatibility_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/helpers/ActionScheduler_TimezoneHelper_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobs/ActionScheduler_Action_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobs/ActionScheduler_NullAction_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobstore/AbstractStoreTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_DBStoreMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_DBStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_HybridStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/jobstore/ActionScheduler_wpPostStore_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/lock/ActionScheduler_OptionLock_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/logging/ActionScheduler_DBLogger_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/logging/ActionScheduler_wpCommentLogger_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/ActionMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/BatchFetcher_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/Config_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/Controller_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/LogMigrator_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/Runner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/migration/Scheduler_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/procedural_api/procedural_api_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/procedural_api/wc_get_scheduled_actions_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/runner/ActionScheduler_QueueCleaner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/runner/ActionScheduler_QueueRunner_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_CronSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_IntervalSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_NullSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/schedules/ActionScheduler_SimpleSchedule_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/action-scheduler/tests/phpunit/versioning/ActionScheduler_Versions_Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5/PucFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Autoloader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/DebugBar/Extension.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/DebugBar/Panel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/DebugBar/PluginExtension.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/DebugBar/PluginPanel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/DebugBar/ThemePanel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/InstalledPackage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Metadata.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/OAuthSignature.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Plugin/Package.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Plugin/PluginInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Plugin/Ui.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Plugin/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Plugin/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/PucFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Scheduler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/StateStore.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Theme/Package.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Theme/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Theme/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/UpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/UpgraderStatus.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Utils.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/Api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/BaseChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/BitBucketApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/GitHubApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/GitLabApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/Reference.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/ReleaseAssetSupport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/ReleaseFilteringFeature.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/ThemeUpdateChecker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/Puc/v5p2/Vcs/VcsCheckerMethods.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/build/bump-version.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/css/puc-debug-bar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/examples/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/examples/theme.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/js/debug-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ca.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ca.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-cs_CZ.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-da_DK.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-da_DK.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-de_DE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-de_DE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_AR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_AR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CO.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_CR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_DO.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_DO.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_ES.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_ES.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_GT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_GT.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_HN.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_HN.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_MX.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_MX.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_PE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_PE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_PR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_PR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_UY.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_UY.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_VE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-es_VE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fa_IR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fa_IR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fr_CA.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fr_CA.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fr_FR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-fr_FR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-hu_HU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-hu_HU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-it_IT.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-it_IT.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ja.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ja.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-nl_BE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-nl_BE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-nl_NL.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-pt_BR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ru_RU.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-ru_RU.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-sl_SI.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-sl_SI.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-sv_SE.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-sv_SE.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-tr_TR.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-tr_TR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-uk_UA.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-uk_UA.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-zh_CN.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker-zh_CN.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/languages/plugin-update-checker.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/load-v5p2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/phpcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/plugin-update-checker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/vendor/Parsedown.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/vendor/ParsedownModern.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aion-chat/src/update-checker/vendor/PucReadmeParser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doDeleteTestEtmConnections.php" beforeDir="false" afterPath="$PROJECT_DIR$/doDeleteTestEtmConnections.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doMakeProd.php" beforeDir="false" afterPath="$PROJECT_DIR$/doMakeProd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/ApiKey.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ApiKey.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Abstract_Model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Abstract_Model.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Comment.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Comment.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/DirectQuestion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/DirectQuestion.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/ExampleConversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ExampleConversation.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/CommentButton.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/CommentButton.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Dall_E_3.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Dall_E_3.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Media.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Media.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/syncDevServers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/syncDev.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/UnitTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/UnitTesterActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response_setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit.suite.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/ConversationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/ConversationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/IonChatMothership_UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/aion-conversation-cpt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/aion-conversation-cpt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strip.php" beforeDir="false" afterPath="$PROJECT_DIR$/strip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/HandleJSONTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/HandleJSONTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -512,7 +205,7 @@
       <recent name="$PROJECT_DIR$/../aion-dialectic" />
     </key>
   </component>
-  <component name="RunManager" selected="Codeception.Intelligent Response">
+  <component name="RunManager" selected="PHP Script.Stop">
     <configuration name="Intelligent Response" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" method="" scope="File" />
       <method v="2" />
@@ -635,7 +328,13 @@
       <workItem from="1718547212862" duration="10983000" />
       <workItem from="1718626142978" duration="24136000" />
       <workItem from="1718685744316" duration="10165000" />
-      <workItem from="1718706781067" duration="22173000" />
+      <workItem from="1718706781067" duration="24802000" />
+      <workItem from="1718806389812" duration="7513000" />
+      <workItem from="1718899747663" duration="4767000" />
+      <workItem from="1719068017710" duration="4436000" />
+      <workItem from="1719244012699" duration="9310000" />
+      <workItem from="1719291079840" duration="11192000" />
+      <workItem from="1719322728872" duration="7968000" />
     </task>
     <servers />
   </component>
@@ -696,10 +395,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1715967835578" />
-    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#" timestamp="1716054538047">
+    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#" timestamp="1719256376428">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1716054538047" />
+    <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719256376428" />
     <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1711087341237">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -709,42 +408,42 @@
     </state>
     <state x="743" y="322" width="434" height="490" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1716283077669" />
     <state x="2663" y="300" key="FileChooserDialogImpl/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1713000813609" />
-    <state width="1920" height="991" key="GridCell.Tab.0.bottom" timestamp="1718730272271">
+    <state width="1920" height="1021" key="GridCell.Tab.0.bottom" timestamp="1719316010082">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="991" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718730272271" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719316010082" />
     <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="991" key="GridCell.Tab.0.center" timestamp="1718730272271">
+    <state width="1920" height="1021" key="GridCell.Tab.0.center" timestamp="1719316010082">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="991" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718730272271" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719316010082" />
     <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="991" key="GridCell.Tab.0.left" timestamp="1718730272271">
+    <state width="1920" height="1021" key="GridCell.Tab.0.left" timestamp="1719316010082">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="991" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718730272271" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719316010082" />
     <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="991" key="GridCell.Tab.0.right" timestamp="1718730272271">
+    <state width="1920" height="1021" key="GridCell.Tab.0.right" timestamp="1719316010082">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1920" height="991" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718730272271" />
+    <state width="1920" height="1021" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719316010082" />
     <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1864" height="341" key="GridCell.Tab.1.bottom" timestamp="1718146096164">
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1718912334676">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1864" height="341" key="GridCell.Tab.1.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718146096164" />
-    <state width="1864" height="341" key="GridCell.Tab.1.center" timestamp="1718146096164">
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718912334676" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1718912334676">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1864" height="341" key="GridCell.Tab.1.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718146096164" />
-    <state width="1864" height="341" key="GridCell.Tab.1.left" timestamp="1718146096164">
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718912334676" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1718912334676">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1864" height="341" key="GridCell.Tab.1.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718146096164" />
-    <state width="1864" height="341" key="GridCell.Tab.1.right" timestamp="1718146096164">
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718912334676" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1718912334676">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state width="1864" height="341" key="GridCell.Tab.1.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718146096164" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718912334676" />
     <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1715906166361">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -765,10 +464,10 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="623" y="263" width="672" height="678" key="search.everywhere.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718708773311" />
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1716276774803">
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1718902356448">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1716276774803" />
+    <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718902356448" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>

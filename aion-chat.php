@@ -78,13 +78,6 @@ function add_custom_comment_button() {
 }
 
 
-if(isset($_GET['x'])){
-    \add_action("init", function(){
-        \set_post_thumbnail(115, 117);
-    });
-}
-
-
 // Hook the methods to the appropriate WordPress actions and filters
 //add_filter('comment_text', ['AionChat\CommentButton', 'add_button_after_comment'], 10, 3);
 //add_action('wp_footer', ['AionChat\CommentButton', 'my_custom_button_script']);
