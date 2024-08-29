@@ -35,7 +35,7 @@ class DirectQuestion{
         );
         $comment_id = wp_insert_comment($data);
 
-        return stripslashes_deep(Comment::action_comment_post($comment_id));
+        return stripslashes_deep(Comment::do_on_WordPress_action_comment_post($comment_id));
     }
 
     public static function bool($question){
@@ -75,7 +75,7 @@ class DirectQuestion{
             'comment_approved' => 1,
         );
         $comment_id = wp_insert_comment($data);
-        return filter_var(stripslashes_deep(Comment::action_comment_post($comment_id)), FILTER_VALIDATE_BOOLEAN);
+        return filter_var(stripslashes_deep(Comment::do_on_WordPress_action_comment_post($comment_id)), FILTER_VALIDATE_BOOLEAN);
 
 
     }

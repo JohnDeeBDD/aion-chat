@@ -42,6 +42,8 @@ class Conversation
             'has_archive'           => false,
             'hierarchical'          => true,
             'menu_position'         => null,
+            'rest_base'             => 'aion-conversations',
+            'show_in_rest'          => true,
             'supports'              => ['title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'revisions', 'page-attributes'],
             'taxonomies'            => ['category', 'post_tag']
         ];

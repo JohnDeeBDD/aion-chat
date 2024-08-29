@@ -12,7 +12,7 @@ The singularity is here! Now you can talk to artificial intelligence agents righ
 == Quick Start ==
 1. Login as an admin.
 2. Upload the plugin zip file to your site, and activate "Aion Chat".
-3. Two new users, "Assistant" and "Aion" will be registered on your site as editors. These are the Aions, or Artificially Intelligent Operational Nodes, for your site.
+3. Two new users, the "Assistant" and the "Aion" will be registered on your site as editors. These are the Aions, or Artificially Intelligent Operational Nodes, for your site.
 4. A new custom post type, the "Aion Conversation", will be available from the WordPress admin area.
 5. Go to the "Aion Conversations" tab in the admin area. Click "Add New".
 6. Give the conversation a title, i.e., "testing". Change the Author of the Aion Conversation to "Assistant". Publish the post [you can make it private if you want].
@@ -20,23 +20,6 @@ The singularity is here! Now you can talk to artificial intelligence agents righ
 For instance, post the comment "What is the capital of the country of France?" and the Aion will respond "Paris".
 
 Now that the chat responses are stored in the WordPress database, you can access them like normal comments and do anything you want with them.
-
-== Usage ==
-Put this in your “functions.php” or in a plugin:
-
-if(isset($_GET['q'])){
-   add_action("init", function () {
-      echo(
-         \AionChat\DirectQuestion::ask(
-            "In Greek mythology, who is Asclepius?"
-         )
-      );
-      die();
-   });
-}
-
-Navigate to:
-https://yoursite.com?q=1
 
 == Architecture ==
 

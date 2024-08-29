@@ -1,107 +1,155 @@
 <?php
 
-/* This test performs a basic call and response under different modes. */
+/**
+ * This test performs a basic call and response under different modes.
+ */
 
 $I = new AcceptanceTester($scenario);
 
-//delete old posts
-$remoteNodeIP = $I->getSiteUrls();
-$mothershipIP = $I->getSiteUrls();
-$mothershipIP = $mothershipIP[0];
-$remoteNodeIP = $remoteNodeIP[1];
+// Get IPs for Mothership and Remote Node
+$siteUrls = $I->getSiteUrls();
+$mothershipIP = $siteUrls[0];
+$remoteNodeIP = $siteUrls[1];
 
-$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteAllEtmConnections.php";
-echo("Deleting on mothership: " . shell_exec($command));
-$command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
-echo(shell_exec($command));
-$command = "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
-echo(shell_exec($command));
+// Delete old posts on all servers
+deleteOldPosts($mothershipIP, $remoteNodeIP);
 
+// Run tests in different modes
+//localhost_mode_test($I);
+//mothership_mode_test($I, $mothershipIP);
+remote_mode_test($I, $mothershipIP, $remoteNodeIP);
 
+/**
+ * Function to delete old posts from servers
+ */
+function deleteOldPosts($mothershipIP, $remoteNodeIP) {
+    $privateKey = '/home/johndee/ozempic.pem';
 
+    // Delete on mothership
+    executeRemoteCommand($mothershipIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteAllEtmConnections.php", $privateKey);
 
-//$command = "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php";
-//echo("Deleting test posts on localhost" . shell_exec($command));
-localhost_mode_test($I);
-mothership_mode_test($I);
-remote_mode_test($I);
+    // Delete on remote node
+    executeRemoteCommand($remoteNodeIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php", $privateKey);
 
-function remote_mode_test($I){
+    // Delete locally
+    echo(shell_exec("php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php"));
+}
 
+/**
+ * Helper function to execute remote commands via SSH
+ */
+function executeRemoteCommand($serverIP, $command, $privateKey) {
+    $sshCommand = "ssh -o StrictHostKeyChecking=no -i $privateKey ubuntu@$serverIP $command";
+    echo(shell_exec($sshCommand));
+}
 
-    //REMOTE NODE MODE
-    $remoteNodeIP = $I->getSiteUrls();
-    $mothershipIP = $I->getSiteUrls();
-    $mothershipIP = $mothershipIP[0];
-    $remoteNodeIP = $remoteNodeIP[1];
-    $remoteNodePostID = $I->setupTestPostOnRemoteNode();
-    $remoteNodePostID = $I->extractPostNumeral($remoteNodePostID);
-//The first call and response:
+/**
+ * Test function for remote mode
+ */
+function remote_mode_test($I, $mothershipIP, $remoteNodeIP) {
+    $remoteNodePostID = setupRemoteNodeTest($I);
 
+    // The first call and response
     $I->makeAComment("Who was the President of the United States in 2003?");
     $I->shouldSeeAnIntelligentResponse("Bush");
 
-//The second call and response references the first one:
+    // The second call and response referencing the first one
     $I->makeAComment("Who was the next President after that one?");
     $I->shouldSeeAnIntelligentResponse("Obama");
 
-    $cleanup = false;
+    $I->makeAComment("What was that President's wife's first name?");
+    $I->shouldSeeAnIntelligentResponse("Michelle");
 
-    if($cleanup){
-        //Cleanup
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $remoteNodeIP . " wp post delete $remoteNodePostID --force --path=/var/www/html/";
-        echo(shell_exec($command));
+    $I->makeAComment("In the first question I asked you, what year did I ask about?");
+    $I->shouldSeeAnIntelligentResponse("2003");
 
-        $command =  "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/";
-        $conversationID = shell_exec($command);
-        echo("convo ID is $conversationID");
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $conversationID --force --path=/var/www/html/";
-        echo(shell_exec($command));
-    }
 
+    // Optionally cleanup after the test
+    cleanupTest($remoteNodeIP, $mothershipIP, $remoteNodePostID);
 }
 
-function localhost_mode_test($I){
-    //LOCALHOST MODE TEST
-//This setup function creates a "test post" "aion-converstaion" CPT on localhost:
+/**
+ * Setup test on the remote node
+ */
+function setupRemoteNodeTest($I) {
+    $remoteNodePostID = $I->setupTestPostOnRemoteNode();
+    return $I->extractPostNumeral($remoteNodePostID);
+}
+
+/**
+ * Cleanup test posts
+ */
+function cleanupTest($remoteNodeIP, $mothershipIP, $postID) {
+    $cleanup = false;
+
+    if ($cleanup) {
+        $privateKey = '/home/johndee/ozempic.pem';
+
+        // Cleanup remote node post
+        executeRemoteCommand($remoteNodeIP, "wp post delete $postID --force --path=/var/www/html/", $privateKey);
+
+        // Get conversation ID and delete it
+        $conversationID = shell_exec("ssh -o StrictHostKeyChecking=no -i $privateKey ubuntu@$mothershipIP wp post list --post_type='aion-conversation' --format=ids --path=/var/www/html/");
+        executeRemoteCommand($mothershipIP, "wp post delete $conversationID --force --path=/var/www/html/", $privateKey);
+    }
+}
+
+/**
+ * Test function for localhost mode
+ */
+function localhost_mode_test($I) {
+    // Setup a test post on localhost
     $localhostPostID = $I->setupTestPostOnLocalhost();
 
-//The first call and response:
+    // The first call and response
     $I->wantTo("Test an intelligence response on localhost");
     $I->makeAComment("What is the capital city of France?");
     $I->shouldSeeAnIntelligentResponse("Paris");
 
-//The second call and response references the first one:
+    // The second call and response referencing the first one
     $I->makeAComment("What is the tallest structure in that city?");
     $I->shouldSeeAnIntelligentResponse("Eiffel Tower");
 
-//cleanup localhost test:
+    // Cleanup localhost test
     echo(shell_exec("wp post delete $localhostPostID --force"));
 }
-function mothership_mode_test($I){
-    //MOTHERSHIP MODE TEST
-//This test does a call and response directly on the mothership
 
-//This setup function creates a "test post" "aion-converstaion" CPT on the mothership:
-    $mothershipPostID = $I->setupTestPostOnMothership();
-    $mothershipPostID = $I->extractPostNumeral($mothershipPostID);
-//The first call and response:
+/**
+ * Test function for mothership mode
+ */
+function mothership_mode_test($I, $mothershipIP) {
+    // Setup a test post on the mothership
+    $mothershipPostID = setupMothershipTest($I);
+
+    // The first call and response
     $I->makeAComment("What is the capital city of the United States of America?");
     $I->shouldSeeAnIntelligentResponse("Washington");
 
-//The second call and response references the first one:
+    // The second call and response referencing the first one
     $I->makeAComment("What is the first name of the person that city is named after?");
     $I->shouldSeeAnIntelligentResponse("George");
 
-    $cleanup = false;
-    if($cleanup){
-        //Cleanup mothership mode test:
-        $mothershipIP = $I->getSiteUrls();
-        $mothershipIP = $mothershipIP[0];
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $mothershipIP . " wp post delete $mothershipPostID --force --path=/var/www/html/";
-        echo(shell_exec($command));
-    }
-
+    // Optionally cleanup after the test
+    cleanupMothershipTest($mothershipIP, $mothershipPostID);
 }
 
+/**
+ * Setup test on the mothership
+ */
+function setupMothershipTest($I) {
+    $mothershipPostID = $I->setupTestPostOnMothership();
+    return $I->extractPostNumeral($mothershipPostID);
+}
+
+/**
+ * Cleanup mothership test posts
+ */
+function cleanupMothershipTest($mothershipIP, $postID) {
+    $cleanup = false;
+
+    if ($cleanup) {
+        $privateKey = '/home/johndee/ozempic.pem';
+        executeRemoteCommand($mothershipIP, "wp post delete $postID --force --path=/var/www/html/", $privateKey);
+    }
+}

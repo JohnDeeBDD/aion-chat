@@ -2,7 +2,7 @@
 
 namespace AionChat;
 
-class ModelInitiator {
+class Interlocutor{
 
 
 }

@@ -1,0 +1,2 @@
+This document details some of the coding decisions and guidelines used in Aion Chat.
+

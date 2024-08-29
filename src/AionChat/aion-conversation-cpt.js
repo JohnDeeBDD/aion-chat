@@ -1,4 +1,9 @@
+/* global aion_chat_nonce */
+
 console.log("aion-conversation-cpt.js loaded");
+console.log("nonce:");
+aion_chat_nonce = aion_chat_nonce.nonce;
+console.log(aion_chat_nonce);
 
 document.addEventListener('DOMContentLoaded', function () {
     // Select the comment form

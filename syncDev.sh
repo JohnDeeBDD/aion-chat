@@ -17,7 +17,7 @@ SERVER2=$(jq -r '.[1]' $JSON_FILE)
 LOCAL_DIR1="/var/www/html/wp-content/plugins/aion-chat"
 REMOTE_DIR1="/var/www/html/wp-content/plugins/aion-chat"
 
-LOCAL_DIR2="/var/www/html/wp-content/plugins/aion-mother"
+LOCAL_DIR2= "/var/www/html/wp-content/plugins/aion-mother"
 REMOTE_DIR2="/var/www/html/wp-content/plugins/aion-mother"
 
 # Hardcoded SSH Key location

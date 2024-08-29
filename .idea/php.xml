@@ -58,7 +58,6 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-filesystem" />
       <path value="$PROJECT_DIR$/vendor/codeception/stub" />
-      <path value="$PROJECT_DIR$/vendor/openai-php/client" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-phpbrowser" />
       <path value="$PROJECT_DIR$/vendor/codeception/phpunit-wrapper" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-cli" />
@@ -80,8 +79,6 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/codeception/module-rest" />
       <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
-      <path value="$PROJECT_DIR$/vendor/php-http/multipart-stream-builder" />
-      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
       <path value="$PROJECT_DIR$/vendor/vria/nodiacritic" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/behat/behat" />
@@ -108,6 +105,47 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/gettext/languages" />
+      <path value="$PROJECT_DIR$/vendor/gettext/gettext" />
+      <path value="$PROJECT_DIR$/vendor/nb/oxymel" />
+      <path value="$PROJECT_DIR$/vendor/eftec/bladeone" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/signal-handler" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/mck89/peast" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/core-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/embed-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/shell-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/config-command" />
+      <path value="$PROJECT_DIR$/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/role-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/cron-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/eval-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/i18n-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/widget-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/rewrite-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/cache-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/extension-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/wp-cli-bundle" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/db-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/super-admin-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/entity-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/language-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/checksum-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/maintenance-mode-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/media-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/package-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/export-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/scaffold-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/import-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/search-replace-command" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/wp-config-transformer" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/server-command" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

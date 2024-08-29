@@ -10,6 +10,7 @@ class Servers{
     public $remoteNodeURL;
 
     public function __construct(){
+
         $fileName = "/var/www/html/wp-content/plugins/aion-chat/servers.json";
         if(file_exists($fileName)){
             $file = file_get_contents($fileName);

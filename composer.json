@@ -18,12 +18,10 @@
   },
   "autoload": {
     "classmap": [
-      "src/AionChat",
-      "src/AionChatMothership"
+      "src/AionChat"
     ]
   },
   "require": {
-    "openai-php/client": "*",
     "guzzlehttp/guzzle": "*"
   }
 }
