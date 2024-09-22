@@ -190,7 +190,7 @@ class AcceptanceTester extends \Codeception\Actor
         $this->amOnUrl("http://localhost/");
         $this->loginAsAdmin();
         $this->amOnPage("/wp-admin/");
-        $this->see("Ion");
+        $this->see("Aion");
         $command = 'wp post create --post_type=aion-conversation --post_title="TestPost"';
         $postID = ( $this->extractPostNumeral(shell_exec($command)));
 
@@ -265,4 +265,22 @@ class AcceptanceTester extends \Codeception\Actor
     }
 
     public function cleanupAfterRemotenodeIntelligentResponse(){}
+
+    /**
+     * Function to delete old posts from servers
+     */
+    public function deleteOldPosts($mothershipIP, $remoteNodeIP) {
+        $privateKey = '/home/johndee/ozempic.pem';
+
+        // Delete on mothership
+        executeRemoteCommand($mothershipIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteAllEtmConnections.php", $privateKey);
+
+        // Delete on remote node
+        executeRemoteCommand($remoteNodeIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php", $privateKey);
+
+        // Delete locally
+        echo(shell_exec("php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php"));
+    }
+
+
 }

@@ -23,6 +23,7 @@ class CommentMetaTest extends WPTestCase
         $userId = $this->factory->user->create();
         wp_set_current_user($userId);
 
+
         $postId = wp_insert_post([
             'post_title'   => "Test Post",
             'post_content' => 'Lorem ipsum.',
@@ -54,14 +55,5 @@ class CommentMetaTest extends WPTestCase
         $this->assertEmpty(get_comment_meta($commentId, '_aion_chat_non_settable_key', true));
         $this->assertEquals("fast", get_comment_meta($commentId, '_aion_chat_reply_strategy', true));
 
-        /*
-        $Prompt = new \AionChat\Prompt();
-        $Prompt->init_this_prompt($commentId, "created in unit test");
-
-        $this->assertEquals(123, $Prompt->max_tokens);
-        $this->assertEquals("SomeModel", $Prompt->model);
-        $this->assertEquals("Abc123Abc123", $Prompt->open_ai_api_key, \var_export($Prompt, true));
-        $this->assertEquals("fast", $Prompt->reply_strategy, \var_export($Prompt, true));
-*/
     }
 }

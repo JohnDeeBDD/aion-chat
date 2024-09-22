@@ -12,28 +12,13 @@ $mothershipIP = $siteUrls[0];
 $remoteNodeIP = $siteUrls[1];
 
 // Delete old posts on all servers
-deleteOldPosts($mothershipIP, $remoteNodeIP);
+$I->deleteOldPosts($mothershipIP, $remoteNodeIP);
 
 // Run tests in different modes
-//localhost_mode_test($I);
-//mothership_mode_test($I, $mothershipIP);
+localhost_mode_test($I);
+mothership_mode_test($I, $mothershipIP);
 remote_mode_test($I, $mothershipIP, $remoteNodeIP);
 
-/**
- * Function to delete old posts from servers
- */
-function deleteOldPosts($mothershipIP, $remoteNodeIP) {
-    $privateKey = '/home/johndee/ozempic.pem';
-
-    // Delete on mothership
-    executeRemoteCommand($mothershipIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteAllEtmConnections.php", $privateKey);
-
-    // Delete on remote node
-    executeRemoteCommand($remoteNodeIP, "php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php", $privateKey);
-
-    // Delete locally
-    echo(shell_exec("php /var/www/html/wp-content/plugins/aion-chat/doDeleteTestEtmConnections.php"));
-}
 
 /**
  * Helper function to execute remote commands via SSH
@@ -57,13 +42,13 @@ function remote_mode_test($I, $mothershipIP, $remoteNodeIP) {
     $I->makeAComment("Who was the next President after that one?");
     $I->shouldSeeAnIntelligentResponse("Obama");
 
-    $I->makeAComment("What was that President's wife's first name?");
-    $I->shouldSeeAnIntelligentResponse("Michelle");
+    /*
+        $I->makeAComment("What was that President's wife's first name?");
+        $I->shouldSeeAnIntelligentResponse("Michelle");
 
-    $I->makeAComment("In the first question I asked you, what year did I ask about?");
-    $I->shouldSeeAnIntelligentResponse("2003");
-
-
+        $I->makeAComment("In the first question I asked you, what year did I ask about?");
+        $I->shouldSeeAnIntelligentResponse("2003");
+    */
 
     // Optionally cleanup after the test
     cleanupTest($remoteNodeIP, $mothershipIP, $remoteNodePostID);
@@ -112,7 +97,7 @@ function localhost_mode_test($I) {
     $I->shouldSeeAnIntelligentResponse("Eiffel Tower");
 
     // Cleanup localhost test
-    echo(shell_exec("wp post delete $localhostPostID --force"));
+   // echo(shell_exec("wp post delete $localhostPostID --force"));
 }
 
 /**

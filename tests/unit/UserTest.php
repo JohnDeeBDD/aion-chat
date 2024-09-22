@@ -28,7 +28,6 @@ class UserTest extends \Codeception\TestCase\WPTestCase {
         );
     }
 
-
     public function testAionAssistantUserExistenceBeforeAndAfterCreation() {
         $email = "assistant@aion.garden";
 
@@ -43,6 +42,27 @@ class UserTest extends \Codeception\TestCase\WPTestCase {
         // Assert that the user exists after creation
         $userExistsAfter = \AionChat\User::get_aion_assistant_user_id($email);
         $this->assertTrue(is_int($userExistsAfter), "After creation, the user with email {$email} should exist.");
+    }
+
+    public function testAddAionRole() {
+        // Ensure the role does not already exist before running the test
+        remove_role('aion');
+
+        // Call the method to add the 'aion' role
+        \AionChat\User::add_aion_role();
+
+        // Retrieve the role object
+        $aion_role = \get_role('aion');
+
+        // Assert that the role has been created
+        $this->assertNotNull($aion_role, "The 'aion' role should have been added.");
+
+        // Assert that the role has the expected capabilities (if any were defined in the add_aion_role method)
+        // Example assertion: (Uncomment and adjust based on actual role capabilities defined in add_aion_role)
+        // $this->assertEquals($expected_capabilities, $aion_role->capabilities, "The 'aion' role should have the expected capabilities.");
+
+        // Cleanup: Remove the 'aion' role after testing to maintain test isolation
+        remove_role('aion');
     }
 
 }

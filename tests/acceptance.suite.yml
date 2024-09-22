@@ -29,4 +29,5 @@ gherkin:
     default:
       - AcceptanceTester
       - intelligent_response_from_ion_localhost_context
+      - DialecticTester
       #- intelligent_response_from_ion_remotenode_context

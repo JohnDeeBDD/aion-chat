@@ -43,43 +43,14 @@ class Acceptance extends \Codeception\Module{
         return json_decode(file_get_contents('/var/www/html/wp-content/plugins/aion-chat/servers.json'), true);
     }
 
-
-
-    /*
-    public function clickSendConnectionEmailButton(\AcceptanceTester $I, $siteURL){
-        $I->reconfigureThisVariable(["url" => ('http://' . $siteURL)]);
-        $I->loginAsAdmin();
-        $I->amOnPage('/wp-admin/tools.php?page=email-tunnel');
-        $I->expect("the connection button is visible and active");
-        $I->see("This site is not connected yet.");
-
-        $I->amGoingTo('click the button');
-        $I->expect("the remote to contact the mothership and a nonce to be created");
-        $I->click("#request-connection-email-button");
-        //sleep(1);
-        //return;
+    /**
+     * Helper function to execute remote commands via SSH
+     */
+    public function executeRemoteCommandAsUbuntu($serverIP, $command) {
+        $sshCommand = "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@$serverIP $command";
+        $result = shell_exec($sshCommand);
+        echo($result);
+        return $result;
     }
-*/
-    /*
-    public function resetEmailTunnel(\AcceptanceTester $I){
-        //This script resets email-tunnel and ETM to a ready state
-        global $testSiteURLs;
-        $testSiteURLs = $I->getSiteUrls();
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $testSiteURLs[0] . " php /var/www/html/wp-content/plugins/email-tunnel/doDeleteAlletmConnectionCPTs.php";
-        echo(shell_exec($command));
 
-        $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $testSiteURLs[1] . " php /var/www/html/wp-content/plugins/email-tunnel/doDeleteAlletmConnectionCPTs.php";
-        echo(shell_exec($command));
-
-        try {
-            $I->reconfigureThisVariable(["url" => ('http://' . $testSiteURLs[0])]);
-            $I->loginAsAdmin();
-            $I->amOnPage("/wp-admin/admin.php?page=email-log");
-            $I->see("Email Logs");
-            $I->selectOption('#bulk-action-selector-top','Delete All Logs');
-            $I->click("#doaction");
-        } catch (Exception $e) {
-        }//Nothing. We don't care about an error here. It just means 'nothing to delete'
-    }
-    */
 }

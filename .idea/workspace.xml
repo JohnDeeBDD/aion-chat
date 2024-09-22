@@ -20,55 +20,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee117c3a-026c-4f23-b58d-7fde95e7a848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aion-chat-4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-5.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aion-chat-7.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/AbstractReplyStrategy.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/ActionButtonManager.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/AionConversationCloner.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/CloneConversation.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/CommentDeletionUtility.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/CommentMeta.trait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Epistle.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Interlocutor.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/ModelFactory.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Response.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AionChat/Scripts.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style_guide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/ActionButtonTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/CommentDeletionUtilityTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/CommentMetaTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/MessageSetterTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aion-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aion-chat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aion-chat-10.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aion-chat-8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aion-chat-9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AionChat/SettableHTTP_Properties.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AionChat/aion-chat-dialectic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/t" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/_support/DialecticTester.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/Dialectic.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/InstallTestCept.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/prompts/20Questions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/prompts/AionChatDescription.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/prompts/ForwardFacingChatter.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/prompts/JS_CodingStandards.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/InterlocutorTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalesPitchSystemInstructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SalesPitchSystemInstructions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-5.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-5.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-6.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-6.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aion-chat-7.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat-7.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aion-chat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/aion-chat.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.json" beforeDir="false" afterPath="$PROJECT_DIR$/details.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doDeleteTestEtmConnections.php" beforeDir="false" afterPath="$PROJECT_DIR$/doDeleteTestEtmConnections.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/AbstractReplyStrategy.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/AbstractReplyStrategy.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ActionButtonManager.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ActionButtonManager.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/AionConversationCloner.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/AionConversationCloner.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ApiKey.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/ApiKey.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/CloneConversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/CloneConversation.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Comment.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Comment.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/CommentButton.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/CommentButton.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/CommentDeletionUtility.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/CommentDeletionUtility.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/CommentMeta.trait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/CommentMeta.trait.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Conversation.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Dall_E_3.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Dall_E_3.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Dialectic.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Dialectic.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/DirectQuestion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/DirectQuestion.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Epistle.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Epistle.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Instructions.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/ModelInitiator.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Interlocutor.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Interlocutor.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/ModelFactory.class.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Prompt.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/Servers.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Servers.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AionChat/User.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/User.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Response.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Response.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AionChat/Scripts.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/Scripts.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AionChat/aion-conversation-cpt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AionChat/aion-conversation-cpt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/start.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/std" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style_guide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/style_guide.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/syncDev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/syncDev.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/DialecticCept.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/GeneralArchitecture.feature" beforeDir="false" afterPath="$PROJECT_DIR$/SalesPitchSystemInstructions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/AcceptanceTester.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/FeaturesTester.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/FeaturesTester.phpxxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_localhost_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/intelligent_response_from_ion_remotenode_context.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance.suite.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/FunctionsCept.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/IntelligentResponseCept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/startAionChatServersCept.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/startAionChatServersCept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/xxxStartupServersCept.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/PromptTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/PromptTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/TrafficControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/TrafficControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/instance_data.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/intelligent_response_from_ion.feature" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/intelligent_response.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/ActionButtonTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/ActionButtonTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/CommentDeletionUtilityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/CommentDeletionUtilityTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/CommentMetaTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/CommentMetaTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/MessageSetterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/MessageSetterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +95,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/AionChat/User.class.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -259,19 +276,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/AionChat" />
+      <recent name="$PROJECT_DIR$/tests/unit" />
+      <recent name="$PROJECT_DIR$/../aion-dialectic/src/AionDialectic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/aion-chat" />
       <recent name="$PROJECT_DIR$/src/AionChat" />
       <recent name="$PROJECT_DIR$/../aion-mother/src/AionChatMothership" />
       <recent name="$PROJECT_DIR$/../aion-dialectic" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/AionChat" />
-      <recent name="$PROJECT_DIR$/tests/unit" />
-      <recent name="$PROJECT_DIR$/../aion-dialectic/src/AionDialectic" />
-      <recent name="$PROJECT_DIR$/tests/acceptance" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Stop">
@@ -479,7 +496,48 @@
       <workItem from="1724770259389" duration="9950000" />
       <workItem from="1724811387941" duration="4546000" />
       <workItem from="1724915439314" duration="3684000" />
-      <workItem from="1724942194637" duration="11210000" />
+      <workItem from="1724942194637" duration="39659000" />
+      <workItem from="1725027418795" duration="19905000" />
+      <workItem from="1725096835888" duration="22000" />
+      <workItem from="1725119599877" duration="2627000" />
+      <workItem from="1725152315443" duration="5570000" />
+      <workItem from="1725199320509" duration="15021000" />
+      <workItem from="1725297942630" duration="13255000" />
+      <workItem from="1725387078888" duration="5209000" />
+      <workItem from="1725463997277" duration="12089000" />
+      <workItem from="1725566590178" duration="7369000" />
+      <workItem from="1725630895454" duration="9277000" />
+      <workItem from="1725817593524" duration="10243000" />
+      <workItem from="1725832270218" duration="8000" />
+      <workItem from="1725837506120" duration="4073000" />
+      <workItem from="1725869251629" duration="6650000" />
+      <workItem from="1725905100115" duration="23164000" />
+      <workItem from="1725967732756" duration="12409000" />
+      <workItem from="1726000971095" duration="6383000" />
+      <workItem from="1726105655894" duration="4106000" />
+      <workItem from="1726115519813" duration="792000" />
+      <workItem from="1726147910480" duration="8404000" />
+      <workItem from="1726254678797" duration="10068000" />
+      <workItem from="1726300491776" duration="6867000" />
+      <workItem from="1726344119180" duration="5514000" />
+      <workItem from="1726381923231" duration="3666000" />
+      <workItem from="1726416245661" duration="14095000" />
+      <workItem from="1726462980065" duration="766000" />
+      <workItem from="1726467202587" duration="1506000" />
+      <workItem from="1726493676382" duration="25203000" />
+      <workItem from="1726607620151" duration="15438000" />
+      <workItem from="1726654877454" duration="5469000" />
+      <workItem from="1726696712742" duration="7549000" />
+      <workItem from="1726724202804" duration="3415000" />
+      <workItem from="1726767953241" duration="1817000" />
+      <workItem from="1726816594520" duration="3663000" />
+      <workItem from="1726874793552" duration="3888000" />
+      <workItem from="1726916079544" duration="2257000" />
+      <workItem from="1726959724394" duration="1972000" />
+      <workItem from="1726970402861" duration="9000" />
+      <workItem from="1727000443581" duration="2603000" />
+      <workItem from="1727028205109" duration="3585000" />
+      <workItem from="1727033506778" duration="1101000" />
     </task>
     <servers />
   </component>
@@ -510,10 +568,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1961" y="131" width="1720" height="855" maximized="true" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724784911582" />
-    <state x="597" y="358" width="725" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1718028156420">
+    <state x="597" y="358" width="725" height="405" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1725822282231">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="597" y="358" width="725" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1718028156420" />
+    <state x="597" y="358" width="725" height="405" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1725822282231" />
     <state x="752" y="237" width="416" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1724309735527">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -526,34 +584,38 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="693" y="306" width="534" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1719598522444" />
+    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1725925734584">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="693" y="316" width="534" height="490" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1725925734584" />
     <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#" timestamp="1722392818905">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="737" y="286" width="446" height="549" key="#com.jetbrains.php.refactoring.move.member.PhpMoveMemberDialog#/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1722392818905" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.bottom" timestamp="1724959642007">
+    <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1726260852322">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="697" y="396" width="525" height="329" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726260852322" />
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom" timestamp="1727003480390">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state width="1920" height="973" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1723727710090" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724959642007" />
-    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.center" timestamp="1724959642007">
+    <state width="1920" height="990" key="GridCell.Tab.0.bottom/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1727003480390" />
+    <state width="1920" height="990" key="GridCell.Tab.0.center" timestamp="1727003480390">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state width="1920" height="973" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1723727710089" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724959642007" />
-    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.left" timestamp="1724959642006">
+    <state width="1920" height="990" key="GridCell.Tab.0.center/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1727003480390" />
+    <state width="1920" height="990" key="GridCell.Tab.0.left" timestamp="1727003480389">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state width="1920" height="973" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1723727710089" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724959642006" />
-    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.right" timestamp="1724959642007">
+    <state width="1920" height="990" key="GridCell.Tab.0.left/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1727003480389" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right" timestamp="1727003480390">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state width="1920" height="973" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1723727710090" />
-    <state width="1920" height="1015" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724959642007" />
-    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@1920.0.1920.1080" timestamp="1716851391644" />
+    <state width="1920" height="990" key="GridCell.Tab.0.right/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1727003480390" />
     <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1724483416685">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
@@ -574,34 +636,38 @@
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="756" y="482" width="407" height="157" key="NewPhpFileDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724812368953" />
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1724959139681">
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor" timestamp="1726382424590">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724959139681" />
+    <state x="449" y="190" width="1022" height="736" key="SettingsEditor/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726382424590" />
     <state x="684" y="289" width="540" height="524" key="StructurePopup" timestamp="1720357342099">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
     <state x="684" y="289" width="540" height="524" key="StructurePopup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1720357342099" />
-    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1724308728921">
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1726440510341">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724308728921" />
-    <state x="1920" y="0" width="1213" height="1010" maximized="true" key="dock-window-1" timestamp="1724640089204">
+    <state x="574" y="239" width="772" height="643" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726440510341" />
+    <state x="2165" y="0" width="1190" height="1010" maximized="true" key="dock-window-1" timestamp="1725915849925">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1920" y="0" width="1213" height="1010" maximized="true" key="dock-window-1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724640089204" />
-    <state x="297" y="231" width="1396" height="733" key="find.popup" timestamp="1724953547974">
+    <state x="2165" y="0" width="1190" height="1010" maximized="true" key="dock-window-1/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1725915849925" />
+    <state x="297" y="231" width="1396" height="733" key="find.popup" timestamp="1726876700743">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="297" y="231" width="1396" height="733" key="find.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1724953547974" />
-    <state x="619" y="254" key="run.anything.popup" timestamp="1717255599432">
+    <state x="297" y="231" width="1396" height="733" key="find.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726876700743" />
+    <state x="684" y="482" width="552" height="158" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1726383181866">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="619" y="254" key="run.anything.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1717255599432" />
-    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1722111089511">
+    <state x="684" y="482" width="552" height="158" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726383181866" />
+    <state x="619" y="254" key="run.anything.popup" timestamp="1726622132066">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>
-    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1722111089511" />
+    <state x="619" y="254" key="run.anything.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726622132066" />
+    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1726352311340">
+      <screen x="0" y="31" width="1920" height="1049" />
+    </state>
+    <state x="623" y="263" width="672" height="678" key="search.everywhere.popup/0.31.1920.1049/1920.0.1920.1080@0.31.1920.1049" timestamp="1726352311340" />
     <state x="685" y="448" width="550" height="226" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1723671856905">
       <screen x="0" y="31" width="1920" height="1049" />
     </state>

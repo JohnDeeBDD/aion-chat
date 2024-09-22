@@ -38,10 +38,10 @@ class intelligent_response_from_ion_remotenode_context extends \Codeception\Acto
         $command = "ssh -o StrictHostKeyChecking=no -i /home/johndee/sportsman.pem ubuntu@" . $remoteNodeIP . " /var/www/html/wp-content/plugins/aion-chat/tests/acceptance/intelligent_response_setup.sh";
         echo(shell_exec($command));
     }
-
+/*
     /**
      * @When /^I make a comment$/
-     */
+
     public function iMakeAComment()
     {
         $I = $this;
@@ -51,7 +51,7 @@ class intelligent_response_from_ion_remotenode_context extends \Codeception\Acto
         $I->click("Post Comment");
 
     }
-
+*/
     /**
      * @Then /^I should see an intelligent response from Ion$/
      */

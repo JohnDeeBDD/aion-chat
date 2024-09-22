@@ -8,6 +8,8 @@ trait CommentMeta
     // List of meta keys that can be set for a comment
     public $settable_meta_keys = [
         "account_user_id",
+        "interlocutor_user_id",
+        "interlocutor_user_email",
         "completion_tokens",
         "functions",
         "instructions",
@@ -15,12 +17,48 @@ trait CommentMeta
         "model",
         "open_ai_api_key",
         "prompt_tokens",
-        "remote_open_ai_api_key",
         "reply_strategy",
         "status",
         "system_instructions",
-        "total_tokens"
+        "total_tokens",
     ];
+
+    public array $converatible_id_to_email_properties = [
+        "",
+        "account_",
+        "author_",
+        "interlocutor_",
+        ];
+
+
+    public function populate_user_email_properties() {
+        foreach ($this->converatible_id_to_email_properties as $property) {
+
+            $id_property = $property . "user_id";
+            // Check if the ID property is set in the current object
+            if (isset($this->{$id_property})) {
+                $user_id = $this->{$id_property};
+
+                // Check if the ID is an integer
+                if (!is_int($user_id)) {
+                    return new \WP_Error('invalid_user_id', sprintf('The user ID for %s must be an integer.', $id_property));
+                }
+
+                // Attempt to get the user object
+                $user = \get_userdata($user_id);
+
+                // Check if the user object was retrieved successfully
+                if (!$user) {
+                    return new \WP_Error('user_not_found', sprintf('User with ID %d not found for %s.', $user_id, $id_property));
+                }
+
+                // Set the email property in the current object
+                $email_property = $property . "user_email";
+                $this->{$email_property} = $user->user_email;
+            }
+        }
+    }
+
 
     /**
      * Sets comment meta data from prompt properties.
@@ -88,7 +126,7 @@ trait CommentMeta
      *
      * @param int $commentId ID of the comment to retrieve meta data from
      */
-    public function setPromptPropertiesFromCommentMeta(int $commentId): void
+    public function setPromptPropertiesFromCommentMeta(int $commentId, int $post_id): void
     {
         foreach ($this->settable_meta_keys as $key) {
             $metaKey = $this->getPrefixedMetaKey($key);
@@ -98,6 +136,9 @@ trait CommentMeta
                 $this->{$key} = $metaValue;
             }
         }
+        //if(\metadata_exists('post', $post_id, '_aion_chat_interlocutor')) {
+          //  $interlocutor_user_id = \get_post_meta($post_id, '_aion_chat_interlocutor', true);
+       // }
     }
 
     /**
@@ -115,6 +156,10 @@ trait CommentMeta
                 }
             }
         }
+        if (\metadata_exists('post', $postId, "_aion_chat_system_instructions")) {
+            $this->system_instructions = \get_post_meta($postId, "_aion_chat_system_instructions", true);
+        }
+
     }
 
     /**

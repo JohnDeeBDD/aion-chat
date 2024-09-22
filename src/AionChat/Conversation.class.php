@@ -91,4 +91,33 @@ class Conversation
         return sprintf('%d:%d:%s', $remote_post_id, $user_id, $remote_site_url);
     }
 
+    /**
+     * Function to set the comment status of a WordPress post.
+     *
+     * @param int $post_id The ID of the post to update.
+     * @param string $status The desired comment status ('open' or 'closed').
+     * @return bool True on success, false on failure.
+     */
+    public static function set_post_comment_status($post_id, $status) {
+        // Ensure the status is valid ('open' or 'closed')
+        if (!in_array($status, array('open', 'closed'))) {
+            return false; // Invalid status provided
+        }
+
+        // Ensure the post ID is valid
+        if (empty($post_id) || !is_numeric($post_id)) {
+            return false; // Invalid post ID
+        }
+
+        // Use the WordPress function to update the comment status
+        $result = \wp_update_post(array(
+            'ID' => $post_id,
+            'comment_status' => $status
+        ));
+
+        // Return true on success, false on failure
+        return ($result !== 0);
+    }
+
+
 }

@@ -50,18 +50,7 @@ class intelligent_response_from_ion_localhost_context extends \Codeception\Actor
 
     }
 
-    /**
-     * @When /^I make a comment$/
-     */
-    public function iMakeAComment()
-    {
-        $I = $this;
-        $I->amOnPage("/aion-conversation/" . $this->createdPostTitle);
-        $I->see("Leave a Reply");
-        $I->fillField("comment", "What is the capital city of France?");
-        $I->click("Post Comment");
 
-    }
 
     /**
      * @Then /^I should see an intelligent response from Ion$/

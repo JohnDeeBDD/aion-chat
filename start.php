@@ -54,6 +54,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate sql-buddy --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate wp-rest-api-log --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate jsm-show-user-meta --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate jsm-show-post-meta --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate jsm-show-comment-meta --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev1IP . ' wp plugin activate auto-login/auto-login --path=/var/www/html',
 
@@ -87,6 +88,7 @@ $SSH_Commands = [
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate wp-rest-api-log --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate jsm-show-user-meta --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate jsm-show-comment-meta --path=/var/www/html',
+    "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate jsm-show-post-meta --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate lh-add-media-from-url --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate auto-login/auto-login --path=/var/www/html',
     "ssh -o StrictHostKeyChecking=no -i /home/johndee/ozempic.pem ubuntu@" . $dev2IP . ' wp plugin activate duplicate-post --path=/var/www/html',

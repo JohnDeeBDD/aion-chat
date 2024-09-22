@@ -1,0 +1,12 @@
+We have a particular way we do Javascript in WordPress plugins.
+
+e.g. dialectic.js
+/aion-chat/src/AionChat/dialectic.js
+
+there is also
+/aion-chat/src/AionChat/dialectic.js_src/
+withing dialectic.js_src are several other function files e.g.
+fetchRemoteComment.js
+These interior files are functions and classes that are transpiled to dialectic.js in our custom deployment pipeline. Specifically,
+we use SWC [Speedy Web Compiler] to bundle the seperate JS files into a single file for distribution. We use a combination of functional, OOP, as appropriate.
+The js files can be localized by WordPress to pass information from the server to the browser.

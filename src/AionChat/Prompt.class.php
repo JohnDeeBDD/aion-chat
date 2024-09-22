@@ -2,8 +2,6 @@
 
 namespace AionChat;
 
-use AionChatMothership\MessageSetter;
-
 class Prompt
 {
 
@@ -15,7 +13,22 @@ class Prompt
     public array $messages = []; //Array of Message object
     public array $Comments = []; //Array of comments
 
-    public int $account_user_id;
+    public int    $account_user_id;
+    public int    $remote_account_user_id;
+    public string $account_user_email;
+
+    public int    $author_user_id;
+    public string $author_user_email;
+    public int    $author_remote_user_id;
+
+    public int    $interlocutor_user_id;
+    public string $interlocutor_user_email;
+    public int    $interlocutor_remote_user_id;
+
+    public int $user_id; // the opposite speaker to the Aion
+    public int $remote_user_id; // the opposite speaker to the Aion
+    public string $user_email; // the opposite speaker to the Aion
+
     public string $status;
 
     public int $completion_tokens;
@@ -25,30 +38,21 @@ class Prompt
 
     public string $model;
 
-    public int $comment_id;  // ? needed
-    public int $remote_comment_id;  // ? needed
+    public int    $comment_id;  // ? needed
+    public int    $remote_comment_id;  // ? needed
     public string $comment_content;  // ? needed
 
-    public int $post_id;
-    public int $remote_post_id;
+    public int    $post_id;
+    public int    $remote_post_id;
     public string $post_title;
     public string $post_content;
-    public array $tags = [];
-
-    public int $user_id; // the opposite speaker to the Aion
-    public int $remote_user_id; // the opposite speaker to the Aion
-    public string $user_email; // the opposite speaker to the Aion
-    public string $remote_user_email; // the opposite speaker to the Aion
-
-    public int $author_user_id;
-    public string $author_user_email;
-    public int $author_remote_user_id; // ? needed
-    public string $author_remote_user_email;
+    public array  $tags = [];
 
     public $open_ai_api_key;
     public $remote_open_ai_api_key;
 
     public string $origin_domain_url;
+    public int $interlocutor_post_id;
     public string $wordpress_api_key;
 
     public string $system_instructions;
@@ -66,6 +70,7 @@ class Prompt
     // async username/password
     // async email
     // 2 factor
+    /*
     public $settable_Prompt_meta_data_keys = [
         "functions",
         "account_user_id",
@@ -80,7 +85,7 @@ class Prompt
         "system_instructions",
         "reply_strategy"
     ];
-
+*/
     public static function createFunctionMetadata($name, $description, $parameters)
     {
         return [
@@ -140,40 +145,49 @@ class Prompt
 
     public function send_up()
     {
+        // Determine the correct API route
         $api_route = "/wp-json/aion-chat/v1/aion-prompt";
-      //  if($this->model === "dall-e-3"){
-        //    $api_route = "/wp-json/aion-chat/v1/dall-e-3";
-       // }
-        //die("line 119");
+        if (isset($this->model) && $this->model === "dall-e-3") {
+            $api_route = "/wp-json/aion-chat/v1/dall-e-3";
+        }
+
+        // Get the mothership URL
         global $Servers;
         $AionChat_mothership_url = $Servers->mothershipURL;
-        $response = wp_remote_post($AionChat_mothership_url . "/wp-json/aion-chat/v1/aion-prompt", array(
-                'method' => 'POST',
-                'timeout' => 60,
-                'redirection' => 1,
-                'httpversion' => '1.1',
-                'blocking' => true,
-                'headers' => array(),
-                'body' => array(
-                    'prompt' => serialize($this),
-                )
+
+        // Send POST request
+        $response = \wp_remote_post($AionChat_mothership_url . $api_route, array(
+            'method' => 'POST',
+            'timeout' => 60,
+            'redirection' => 1,
+            'httpversion' => '1.1',
+            'blocking' => true,
+            'headers' => array(),
+            'body' => array(
+                'prompt' => serialize($this), // Consider serializing only necessary data
             )
-        );
-        if (is_wp_error($response)) {
+        ));
+
+        // Handle potential errors
+        if (\is_wp_error($response)) {
             $error_message = $response->get_error_message();
-            echo "Something went wrong: Prompt line 147 $error_message $AionChat_mothership_url";
-            die();
+            error_log("Error in send_up(): $error_message at $AionChat_mothership_url");
+            return false; // Or return a custom error response
         }
-        //update_option('response', $response);
-        return ($response);
+
+        // Optionally update a WordPress option or handle the response as needed
+        // update_option('response', $response);
+
+        return $response;
     }
+
 
 
     //These properties are settable via http and are stored as meta data on the comment
 
     public function set_comment_meta_from_http_parameters($comment_id)
     {
-        foreach ($this->settable_Prompt_meta_data_keys as $parameter) {
+        foreach ($this->settable_meta_keys as $parameter) {
             if (isset($_REQUEST[$parameter])) {
                 $metaKey = "_aion_chat_" . $parameter;
                 update_comment_meta($comment_id, $metaKey, $_REQUEST[$parameter]);
@@ -181,6 +195,10 @@ class Prompt
         }
     }
 
+    /*
+     * This function pulls data from the database at a point denoted by a specific comment on an Aion Conversation
+     * It initializes the Prompt data structure from that comment
+     */
     public function init_this_prompt($comment_id, $status)
     {
         $this->origin_domain_url = get_site_url();
@@ -193,23 +211,14 @@ class Prompt
         $this->author_user_id = get_post_field('post_author', $Comment->comment_post_ID);
         $this->author_user_email = get_the_author_meta('user_email', $this->author_user_id);
         $this->setPromptPropertiesFromPostMeta($Comment->comment_post_ID);
-        $this->setPromptPropertiesFromCommentMeta($comment_id);
-        $this->setEmptyPropertiesToDefaults();
+        $this->setPromptPropertiesFromCommentMeta($comment_id, $this->post_id);
+        $this->set_empty_properties_to_defaults();
         $this->set_comments();
-
-        //This option works:
-
-        //$this->set_messages();
-        //update_option("method1", \var_export($this->messages, true));
-        //This produces an unknown error, even though the methods should have the same effect:
-        //$this->messages = MessageSetter::create_messages_array($this->post_id, $this->system_instructions);
-       // \update_option("method2", \var_export($this->messages, true));
-
         $this->status = $status;
     }
 
     //If there are properties that are empty, that cannot remain so, there are filled in here.
-    public function setEmptyPropertiesToDefaults(){
+    public function set_empty_properties_to_defaults(){
 
         //api key
         if(!isset($this->open_ai_api_key)){
@@ -273,5 +282,6 @@ class Prompt
         $this->messages = array_values($this->messages);
 
     }
+
 
 }

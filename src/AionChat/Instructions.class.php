@@ -46,7 +46,7 @@ API_Al_Instructions;
 
     public static function getHelpfulAssistantInstructions(){
 
-        return "You are a helpful assistant named Roy.";
+        return "You are a helpful assistant named Ion.";
     }
 
 }

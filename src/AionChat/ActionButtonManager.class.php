@@ -22,8 +22,6 @@ class ActionButtonManager {
         $custom_button_html = '
             <div class="comment-form-custom-buttons">
                 <button type="button" id="aion-chat-dall-e-3-button">Fetch Image</button>
-                <br />
-                <button type="button" id="aion-chat-do-something-button">Do Something</button>
             </div>';
 
         echo $custom_button_html;

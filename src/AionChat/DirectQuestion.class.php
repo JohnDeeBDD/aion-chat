@@ -6,8 +6,8 @@ class DirectQuestion{
 
 
     public static function ask($question){
-        global $AionChatProtocal;
-        $AionChatProtocal = "remote_node";
+        global $AionChatProtocol;
+        $AionChatProtocol = "remote_node";
         User::get_Aion_user_id();
 
         $my_post = array(
@@ -42,8 +42,8 @@ class DirectQuestion{
        // $response = self::ask($question . " This question is being asking in as a true or false question. Please respond with the word 'true' or 'false' only. Do not add any commentary, only respond with true or false.");
        // return filter_var($response, FILTER_VALIDATE_BOOLEAN);
 
-        global $AionChatProtocal;
-        $AionChatProtocal = "remote_node";
+        global $AionChatProtocol;
+        $AionChatProtocol = "remote_node";
         User::get_Aion_user_id();
 
         $my_post = array(

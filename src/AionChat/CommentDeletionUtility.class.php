@@ -28,7 +28,7 @@ class CommentDeletionUtility{
             return false; // Invalid post ID
         }
 
-        // Get all comments associated with the post ID
+        // Get all comments associated with the post ID, including spam
         $comments = \get_comments(array(
             'post_id' => $post_id,
             'status' => 'all', // Include all comment statuses
@@ -42,9 +42,14 @@ class CommentDeletionUtility{
 
         // Loop through each comment and force delete it
         foreach($comments as $comment) {
-            \wp_delete_comment($comment->comment_ID, true);
+            // For spam comments, mark them as deleted explicitly
+           // if ($comment->comment_approved === 'spam') {
+           //     \wp_spam_comment($comment->comment_ID);
+           // }
+            \wp_delete_comment($comment->comment_ID, true); // Force delete
         }
 
         return true; // Successfully deleted all comments
     }
+
 }
